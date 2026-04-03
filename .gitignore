@@ -9,7 +9,7 @@ __pycache__/
 *.pyc
 
 # data (raw data should not be pushed)
-data/
+data/raw/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
