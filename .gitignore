@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# temp files
+~$*
+
+# Python
+__pycache__/
+*.pyc
+
+# data (raw data should not be pushed)
+data/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
