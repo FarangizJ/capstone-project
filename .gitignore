@@ -13,3 +13,6 @@ data/raw/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Claude worktrees & local config
+.claude/

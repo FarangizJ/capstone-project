@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: uzbekistan-power-tracker
+    runtime: python
+    plan: free
+    pythonVersion: "3.11"
+    buildCommand: pip install -r dashboard/requirements.txt
+    startCommand: gunicorn --chdir dashboard app:server --bind 0.0.0.0:$PORT --workers 1 --timeout 120
+    autoDeploy: true
