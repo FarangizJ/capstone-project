@@ -1,0 +1,7 @@
+ILF category,Signal,Magnitude,Capex (USD bn),Timing,ILF role
+1. Generation,Govt-target generation build,~25 GW new RE 2024-2040,28.4,2024-2030,"Owner's engineer, technical due diligence, design"
+2. Grid modernization,T&D losses ~9% chronic,"~6,000 km HV lines + 1,450 km wind corridor",3.0,continuous,"Network planning, substation design"
+3. Renewable integration,Solar+wind ≥40% by 2030 → storage need,~5 GWh BESS Govt scenario,2.0,2025-2030,"BESS sizing, grid-code studies"
+4. Energy efficiency (NEEA),Tariff reform + EE programs,Industrial+residential EE,1.5,2024-2030,"Auditing, M&V, EPC supervision"
+5. PPP / IFI advisory,Active EBRD/ADB/IFC pipeline,"Multiple PPPs (ACWA, Masdar, EDF, Total Eren)",n/a (fees),continuous,"Lender's engineer, transaction advisory"
+Plan B — Nuclear (parametric),Jizzakh SMR construction begun,1.2-3.6 GW @ 2030-2034,6-18,2030+,"Independent expert review, balance-of-plant"

@@ -1,0 +1,425 @@
+"""Uzbekistan Power Sector Transition Tracker — Plotly Dash app.
+
+Run locally:
+    cd dashboard && python app.py
+    → http://127.0.0.1:8050
+
+Deploy to Render / HF Spaces: requirements in dashboard/requirements.txt; entrypoint app.py exposes `server` for gunicorn.
+"""
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import dash
+from dash import dcc, html, Input, Output
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+# ── Paths ─────────────────────────────────────────────────────────────
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / 'data' / 'processed'
+
+# ── Load data once ────────────────────────────────────────────────────
+master       = pd.read_csv(DATA / 'master_dataset_core.csv')
+df_c         = master[master['data_status'] == 'confirmed'].copy()
+demand_fc    = pd.read_csv(DATA / 'forecast_demand.csv')
+scenarios_fc = pd.read_csv(DATA / 'forecast_scenarios.csv')
+co2_fc       = pd.read_csv(DATA / 'forecast_co2.csv')
+invest_fc    = pd.read_csv(DATA / 'investment_signals.csv')
+scoreboard   = pd.read_csv(DATA / 'forecast_scoreboard.csv')
+oblasts      = pd.read_csv(DATA / 'oblast_atlas.csv')
+
+WINNER       = demand_fc['winner_model'].iat[0]
+
+COLORS = {
+    'gas':'#d97706','coal':'#374151','hydro':'#0891b2','solar':'#facc15',
+    'wind':'#10b981','nuclear':'#6b21a8',
+    'BAU':'#9ca3af','Government':'#16a34a','Accelerated':'#0d9488',
+    'history':'#1f2937','demand':'#1e3a8a',
+}
+
+# ── Helper: parametric nuclear overlay (Plan B) ───────────────────────
+def apply_nuclear(scen_df, capacity_mw, commission_year, cf=0.85):
+    if capacity_mw <= 0:
+        out = scen_df.copy(); out['gen_nuclear_twh'] = 0.0
+        return out
+    out = scen_df.copy()
+    nuc = []
+    for yr in out['year']:
+        if yr < commission_year:
+            nuc.append(0.0)
+        else:
+            ramp = min(1.0, (yr - commission_year + 1) / 2)
+            nuc.append(capacity_mw * 8760 * cf * ramp / 1e6)
+    out['gen_nuclear_twh'] = nuc
+    out['gen_thermal_twh'] = (out['gen_thermal_twh'] - out['gen_nuclear_twh']).clip(lower=0)
+    out['gen_total_twh']   = (out['gen_thermal_twh'] + out['gen_hydro_twh']
+                              + out['gen_solar_twh'] + out['gen_wind_twh']
+                              + out['gen_nuclear_twh'])
+    re_plus = out['gen_hydro_twh'] + out['gen_solar_twh'] + out['gen_wind_twh'] + out['gen_nuclear_twh']
+    out['re_share_pct'] = ((out['gen_hydro_twh']+out['gen_solar_twh']+out['gen_wind_twh'])
+                          / out['gen_total_twh'] * 100)
+    out['re_plus_nuclear_share_pct'] = re_plus / out['gen_total_twh'] * 100
+    return out
+
+# ── Layout ────────────────────────────────────────────────────────────
+external_stylesheets = ['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap']
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
+                title='Uzbekistan Power Transition Tracker')
+server = app.server   # for gunicorn
+
+HEADER_STYLE = {'background':'linear-gradient(135deg,#0d4d7a 0%,#1e3a8a 100%)',
+                'color':'white','padding':'24px 36px'}
+CARD_STYLE = {'background':'white','border':'1px solid #e5e7eb','borderRadius':'10px',
+              'padding':'18px','marginBottom':'14px','boxShadow':'0 1px 2px rgba(0,0,0,0.02)'}
+SIDEBAR_STYLE = {'background':'white','padding':'18px 14px','borderRight':'1px solid #e5e7eb',
+                 'position':'sticky','top':0,'height':'100vh','overflowY':'auto'}
+LABEL = {'fontSize':'12px','color':'#6b7280','textTransform':'uppercase','letterSpacing':'0.5px',
+         'margin':'10px 0 4px','fontWeight':600}
+
+app.layout = html.Div(style={'fontFamily':'Inter,system-ui,sans-serif','background':'#fafafa','margin':0}, children=[
+    html.Div(style=HEADER_STYLE, children=[
+        html.H1('🇺🇿 Uzbekistan — Power Sector Transition Tracker', style={'margin':0,'fontSize':'24px'}),
+        html.P(['Capstone Project · Farangiz Jurakhonova · CEU × ILF Consulting Engineers · ',
+                html.Span(f'Forecast winner: {WINNER}', style={'fontWeight':600})],
+               style={'margin':'6px 0 0','opacity':0.9,'fontSize':'13px'}),
+    ]),
+    html.Div(style={'display':'grid','gridTemplateColumns':'240px 1fr','gap':0}, children=[
+        # Sidebar with scenario controls
+        html.Div(style=SIDEBAR_STYLE, children=[
+            html.Div(style=LABEL, children='Scenario'),
+            dcc.RadioItems(id='scenario', value='Government',
+                           options=[{'label': s, 'value': s} for s in ['BAU','Government','Accelerated']],
+                           labelStyle={'display':'block','padding':'4px 0'}),
+            html.Div(style=LABEL, children='Plan B — Nuclear toggle'),
+            dcc.Checklist(id='nuclear-on', options=[{'label':' Include nuclear','value':'on'}],
+                          value=[], labelStyle={'display':'block','padding':'4px 0'}),
+            html.Div(style=LABEL, children='Nuclear capacity (MW)'),
+            dcc.Slider(id='nuc-cap', min=0, max=4000, step=400, value=1200,
+                       marks={0:'0', 1200:'1.2 GW', 2400:'2.4 GW', 3600:'3.6 GW'}),
+            html.Div(style=LABEL, children='Commission year'),
+            dcc.Slider(id='nuc-year', min=2030, max=2034, step=1, value=2032,
+                       marks={2030:'30', 2032:'32', 2034:'34'}),
+            html.Div(style={**LABEL,'marginTop':'24px'}, children='Sections'),
+            html.Ul(style={'listStyle':'none','padding':0,'margin':0,'fontSize':'13px'}, children=[
+                html.Li(html.A('Country snapshot', href='#snap', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('Demand forecast',  href='#demand', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('Generation mix',   href='#mix', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('CO₂ emissions',    href='#co2', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('Investment',       href='#invest', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('Regional map',     href='#map', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('Model scoreboard', href='#methods', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+                html.Li(html.A('Glossary',         href='#glossary', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+            ]),
+        ]),
+        # Main
+        html.Div(style={'padding':'24px 36px','maxWidth':'1100px'}, children=[
+            html.Section(id='snap', children=[
+                html.H2('Country snapshot'),
+                html.Div(id='kpi-cards', style={'display':'grid','gridTemplateColumns':'repeat(auto-fit,minmax(200px,1fr))','gap':'12px','marginBottom':'18px'}),
+            ]),
+            html.Section(id='demand', children=[
+                html.H2('Electricity demand forecast'),
+                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='demand-chart', config={'displayModeBar': False})]),
+            ]),
+            html.Section(id='mix', children=[
+                html.H2('Generation mix by scenario'),
+                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='mix-chart', config={'displayModeBar': False})]),
+                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='re-share-chart', config={'displayModeBar': False})]),
+            ]),
+            html.Section(id='co2', children=[
+                html.H2('CO₂ emissions'),
+                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='co2-chart', config={'displayModeBar': False})]),
+            ]),
+            html.Section(id='invest', children=[
+                html.H2('Investment outlook 2024–2040'),
+                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='invest-chart', config={'displayModeBar': False})]),
+            ]),
+            html.Section(id='map', children=[
+                html.H2('Regional renewable map'),
+                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='oblast-map', config={'displayModeBar': False})]),
+            ]),
+            html.Section(id='methods', children=[
+                html.H2('Methodology — model scoreboard'),
+                html.Div(style=CARD_STYLE, children=[
+                    html.P('Eleven candidate models compared on a 2019–2023 hold-out and on 8-fold expanding-window time-series CV. '
+                           'Selection rule: pre-registered — among models with CV mean MAPE < 10% (Lewis 1982 "highly accurate"), '
+                           'pick the one with lowest CV std. Bootstrap 80/95% CIs from residual sampling.',
+                           style={'color':'#374151','fontSize':'14px','lineHeight':1.5}),
+                    dcc.Graph(id='scoreboard-chart', config={'displayModeBar': False}),
+                ]),
+            ]),
+            html.Section(id='glossary', children=[
+                html.H2('Glossary — terms used in this dashboard'),
+                html.P('Quick reference for non-technical readers. Hover any KPI card for the same definitions inline.',
+                       style={'color':'#6b7280','fontSize':'14px','marginBottom':'14px'}),
+                html.Div(id='glossary-grid', style={'display':'grid','gridTemplateColumns':'repeat(auto-fit,minmax(360px,1fr))','gap':'14px'}),
+            ]),
+        ]),
+    ]),
+    html.Footer(style={'padding':'20px 36px','color':'#6b7280','fontSize':'12px','borderTop':'1px solid #e5e7eb'},
+                children=['Data: IEA, IRENA, World Bank, StatSUZ, EDB 2026. Forecasts: notebooks 03–06. ',
+                         html.Span('Use the sidebar to change scenario or toggle Plan B nuclear — all charts update.', style={'fontStyle':'italic'})]),
+])
+
+# ── Glossary data ─────────────────────────────────────────────────────
+GLOSSARY = [
+    ('Units', [
+        ('TWh', 'Terawatt-hour. A unit of energy. 1 TWh = 1 billion kWh = enough to power ~100,000 average households for a year.'),
+        ('GW / MW', 'Gigawatt / Megawatt. Units of *power* (capacity). 1 GW = 1,000 MW = 1 million kW. A typical gas plant is 200-800 MW; a wind turbine is 3-6 MW.'),
+        ('bcm', 'Billion cubic metres — standard unit for natural gas volumes. Uzbekistan consumed ~52 bcm/yr in 2023; ~17 bcm of that went into electricity generation.'),
+        ('gCO₂/kWh', 'Grams of CO₂ emitted per kilowatt-hour of electricity generated. World average ~475. Modern gas CCGT ~380; coal ~950; renewables ~0.'),
+    ]),
+    ('Scenarios used in this tracker', [
+        ('BAU (Business-As-Usual)', 'Current build pace continues. Reaches ~60% of the official 2030 renewable target — what is most likely if no policy acceleration occurs.'),
+        ('Government Target', 'Meets the official April 2025 targets exactly: 12 GW solar, 8 GW wind, 4.7 GW hydro by 2030 (≈27 GW total RE). 54% renewable share is the stated headline.'),
+        ('Accelerated', 'Stretch case — exceeds government targets by ~25%. Reaches 60%+ RE share by 2030; implies a faster build than any country has historically achieved at this scale.'),
+        ('Plan B (Nuclear overlay)', 'A *parametric* sensitivity scenario, NOT a baseline forecast. Lets you switch on a small modular reactor (SMR) and see how it would change the RE+nuclear share. Toggle in the left sidebar.'),
+    ]),
+    ('Power-sector concepts', [
+        ('RE share / penetration', 'Share of total electricity generation that comes from renewables (hydro + solar + wind). Uzbekistan stands at ~10% in 2023; the target is 54% by 2030.'),
+        ('Capacity factor (CF)', 'How much of a plant\'s nameplate capacity it actually produces over a year. Assumed annual averages: solar 18%, wind 30%, hydro 36%, gas 55%, nuclear 85%.'),
+        ('T&D losses', 'Transmission & Distribution losses — electricity lost between generation and the customer. Uzbekistan ~9-10% (regional median ~8%); a chronic grid-investment signal.'),
+        ('Gas self-sufficiency', 'Domestic gas production ÷ consumption. Below 100% means Uzbekistan must import (mainly winter); fell below 100% around 2018.'),
+    ]),
+    ('Forecasting terms', [
+        ('MAPE', 'Mean Absolute Percentage Error. The average % error of a forecast. Lower is better. Lewis (1982) bands: <10% "highly accurate", 10-20% "good", 20-50% "reasonable".'),
+        ('Cross-validation (CV)', 'A way to test model accuracy fairly by repeatedly fitting on past data and predicting the next chunk. We use 8 "expanding window" splits with a 3-year forecast horizon each.'),
+        ('Bootstrap CI (80% / 95%)', 'Confidence interval from resampling the model\'s historical residuals 1,000 times. "80% CI" means we expect the true value to fall inside this band 80% of the time.'),
+        ('Hold-out test', 'A single chunk of recent data (2019-2023 in our case) kept aside and not used for training. Scores on this hold-out are the headline accuracy metric.'),
+    ]),
+    ('Models in the bench', [
+        ('Prophet', 'Facebook/Meta\'s time-series tool. Decomposes a series into trend + seasonality + holidays. Won our bench (CV MAPE 6.4%) thanks to flexible trend changepoints — good for the post-2018 demand regime shift in Uzbekistan.'),
+        ('ARIMA / SARIMAX', 'Classical statistical models — predict next year from past values (and past errors). SARIMAX adds external variables (e.g. GDP, population). Order chosen by AICc.'),
+        ('Holt-Winters / ETS', 'Exponential smoothing — gives recent observations more weight. Simple, robust to small samples; placed 2nd in our bench.'),
+        ('Theta method', 'Decomposes the series and recombines — classic M3-competition winner. 3rd in our bench.'),
+        ('OLS first-difference', 'Linear regression on year-on-year changes (not levels). Avoids "spurious regression" on non-stationary series (Granger & Newbold 1974).'),
+        ('Ridge / Gradient Boosting', 'Machine-learning models that take lagged values and macro variables as features. Tend to overfit short annual series; placed lower in our bench.'),
+    ]),
+    ('Acronyms — institutions', [
+        ('IEA', 'International Energy Agency (Paris). Publishes country profiles and energy balances; primary data source.'),
+        ('IRENA', 'International Renewable Energy Agency (Abu Dhabi). Publishes annual renewable capacity statistics.'),
+        ('WB (World Bank)', 'World Bank Data360 — used for GDP, population, CO₂, T&D losses.'),
+        ('EBRD / ADB / AIIB / IFC', 'European Bank for Reconstruction & Development / Asian Development Bank / Asian Infrastructure Investment Bank / International Finance Corporation — the main multilateral financiers active in Uzbek power.'),
+        ('NEEA', 'National Energy Efficiency Agency of Uzbekistan — ILF\'s key advisory counterpart.'),
+        ('MoE / MEF', 'Ministry of Energy / Ministry of Economy & Finance.'),
+        ('StatSUZ', 'State Statistics Committee of Uzbekistan.'),
+    ]),
+    ('Acronyms — technologies & projects', [
+        ('CCGT / OCGT', 'Combined-Cycle / Open-Cycle Gas Turbine. CCGT is the modern efficient gas plant (~55-60% efficiency, ~380 gCO₂/kWh). OCGT is older, less efficient (~30-35%, ~650 gCO₂/kWh). Uzbekistan\'s fleet is mostly OCGT/CHP today.'),
+        ('PV', 'Photovoltaic — solar electricity from semiconductor panels.'),
+        ('BESS', 'Battery Energy Storage System — lithium-ion battery installations that smooth out the variability of solar/wind. 2030 storage requirement is ~5 GWh under the Government scenario.'),
+        ('SMR', 'Small Modular Reactor — the nuclear technology Uzbekistan is exploring with Rosatom at Jizzakh. Plan B overlay assumes 1.2-3.6 GW commissioned 2030-2034.'),
+        ('PPP / IPP', 'Public-Private Partnership / Independent Power Producer — the contract structures used for ACWA Power, Masdar, EDF, Total Eren projects.'),
+        ('PPA', 'Power Purchase Agreement — the long-term contract under which the offtaker (state utility) commits to buy power at a fixed tariff.'),
+    ]),
+    ('Geography', [
+        ('Oblast', 'Russian/Uzbek term for "region" or "province". Uzbekistan has 12 oblasts + 1 autonomous republic (Karakalpakstan) + Tashkent city.'),
+        ('Karakalpakstan', 'Westernmost region — sparsely populated, highest wind technical potential (4.4 TWh/yr). Site of ACWA Power\'s 1.6 GW wind build (2026).'),
+        ('Bukhara / Navoi / Kashkadarya', 'Western/southern provinces — highest solar irradiance (1,800-1,850 kWh/m²/yr). Most utility-scale solar PPAs sit here.'),
+        ('Jizzakh', 'Central province — site of the SMR construction. Close to the Tashkent demand centre.'),
+    ]),
+]
+
+# ── Callbacks ─────────────────────────────────────────────────────────
+@app.callback(Output('glossary-grid','children'), Input('scenario','value'))
+def render_glossary(_):
+    cards = []
+    for cat_name, terms in GLOSSARY:
+        items = []
+        for term, defn in terms:
+            items.append(html.Div(style={'marginBottom':'10px'}, children=[
+                html.Span(term, style={'fontWeight':600, 'color':'#0d4d7a', 'fontSize':'13px'}),
+                html.Span(' — ' + defn, style={'fontSize':'13px', 'color':'#374151', 'lineHeight':1.45}),
+            ]))
+        cards.append(html.Div(style=CARD_STYLE, children=[
+            html.H3(cat_name, style={'fontSize':'15px','margin':'0 0 10px','color':'#111827'}),
+            *items,
+        ]))
+    return cards
+
+
+def apply_overlay(scenario_name, nuclear_on, nuc_cap, nuc_year):
+    sd = scenarios_fc.copy()
+    if nuclear_on and 'on' in nuclear_on:
+        sd = apply_nuclear(sd, nuc_cap, nuc_year)
+    else:
+        sd['gen_nuclear_twh'] = 0.0
+        sd['re_plus_nuclear_share_pct'] = sd['re_share_pct']
+    return sd[sd['scenario'] == scenario_name]
+
+@app.callback(
+    Output('kpi-cards', 'children'),
+    Input('scenario', 'value'), Input('nuclear-on', 'value'),
+    Input('nuc-cap', 'value'), Input('nuc-year', 'value'),
+)
+def update_kpis(scen, nuc_on, nuc_cap, nuc_year):
+    sd = apply_overlay(scen, nuc_on, nuc_cap, nuc_year)
+    latest = df_c[df_c['year'] == df_c['year'].max()].iloc[0]
+    sd_2030 = sd[sd['year'] == 2030].iloc[0]
+    co2_row = co2_fc[(co2_fc['scenario'] == scen) & (co2_fc['year'] == 2030)].iloc[0]
+    demand_2030 = demand_fc.loc[demand_fc['year'] == 2030, 'demand_twh'].iat[0]
+
+    def card(label, value, sub, color='#0d4d7a'):
+        return html.Div(style={**CARD_STYLE, 'display':'flex','flexDirection':'column','gap':'4px'}, children=[
+            html.Span(label, style={'fontSize':'11px','color':'#6b7280','textTransform':'uppercase','letterSpacing':'0.5px'}),
+            html.Span(value, style={'fontSize':'26px','fontWeight':600,'color':color}),
+            html.Span(sub, style={'fontSize':'12px','color':'#6b7280'}),
+        ])
+    return [
+        card(f"Demand {int(latest['year'])}", f"{latest['elec_consumption_twh_bridged']:.1f} TWh",
+             f"→ {demand_2030:.1f} TWh in 2030"),
+        card(f"RE share 2030 ({scen})", f"{sd_2030['re_plus_nuclear_share_pct']:.1f}%",
+             f"(RE only: {sd_2030['re_share_pct']:.1f}%) target 54%"),
+        card(f"Power CO₂ 2030 ({scen})", f"{co2_row['co2_power_mt']:.1f} Mt",
+             f"intensity {co2_row['co2_intensity_gco2_per_kwh']:.0f} gCO₂/kWh"),
+        card("Plan B nuclear", f"{(nuc_cap if 'on' in (nuc_on or []) else 0)/1000:.1f} GW",
+             f"from {nuc_year} @ 85% CF" if 'on' in (nuc_on or []) else "off"),
+    ]
+
+@app.callback(Output('demand-chart','figure'),
+              Input('scenario','value'))
+def update_demand(_):
+    fig = go.Figure()
+    y_h = df_c[['year','elec_consumption_twh_bridged']].dropna()
+    fig.add_trace(go.Scatter(x=y_h['year'], y=y_h['elec_consumption_twh_bridged'], name='History',
+                              mode='lines+markers', line=dict(color='#111827', width=2)))
+    fig.add_trace(go.Scatter(x=demand_fc['year'], y=demand_fc['ci_hi95'], mode='lines',
+                              line=dict(width=0), showlegend=False))
+    fig.add_trace(go.Scatter(x=demand_fc['year'], y=demand_fc['ci_lo95'], mode='lines',
+                              line=dict(width=0), fill='tonexty',
+                              fillcolor='rgba(30,58,138,0.08)', name='95% CI'))
+    fig.add_trace(go.Scatter(x=demand_fc['year'], y=demand_fc['ci_hi80'], mode='lines',
+                              line=dict(width=0), showlegend=False))
+    fig.add_trace(go.Scatter(x=demand_fc['year'], y=demand_fc['ci_lo80'], mode='lines',
+                              line=dict(width=0), fill='tonexty',
+                              fillcolor='rgba(30,58,138,0.18)', name='80% CI'))
+    fig.add_trace(go.Scatter(x=demand_fc['year'], y=demand_fc['demand_twh'], name=f'★ {WINNER}',
+                              line=dict(color='#111827', width=3)))
+    fig.add_trace(go.Scatter(x=[2025,2026], y=[86.7/1.09, 90.0/1.09], mode='markers',
+                              name='News-reported', marker=dict(symbol='star', size=14, color='#dc2626')))
+    fig.add_vline(x=2023.5, line=dict(dash='dot', color='grey'))
+    fig.update_layout(template='plotly_white', height=420, margin=dict(l=50,r=20,t=40,b=40),
+                      title=f'Electricity demand 1990–2035 — winner: {WINNER}',
+                      yaxis_title='TWh', xaxis_title='Year', hovermode='x unified')
+    return fig
+
+@app.callback(Output('mix-chart','figure'),
+              Input('scenario','value'), Input('nuclear-on','value'),
+              Input('nuc-cap','value'), Input('nuc-year','value'))
+def update_mix(scen, nuc_on, nuc_cap, nuc_year):
+    sd = apply_overlay(scen, nuc_on, nuc_cap, nuc_year)
+    hist = df_c[['year','gen_gas_twh','gen_coal_twh','gen_hydro_twh','gen_solar_twh','gen_wind_twh']].fillna(0)
+    sd_plot = sd.copy()
+    sd_plot['gen_gas_twh']  = sd_plot['gen_thermal_twh'] * 0.88
+    sd_plot['gen_coal_twh'] = sd_plot['gen_thermal_twh'] * 0.12
+    if 'gen_nuclear_twh' not in sd_plot.columns: sd_plot['gen_nuclear_twh'] = 0.0
+    fig = go.Figure()
+    for src, col, name in [('gen_gas_twh','gas','Gas'),('gen_coal_twh','coal','Coal'),
+                            ('gen_hydro_twh','hydro','Hydro'),('gen_solar_twh','solar','Solar'),
+                            ('gen_wind_twh','wind','Wind'),('gen_nuclear_twh','nuclear','Nuclear')]:
+        if src not in hist.columns: hist[src] = 0
+        y_vals = pd.concat([hist[src], sd_plot[src]])
+        x_vals = pd.concat([hist['year'], sd_plot['year']])
+        fig.add_trace(go.Scatter(x=x_vals, y=y_vals, name=name, stackgroup='one', mode='none',
+                                  fillcolor=COLORS[col]))
+    fig.add_vline(x=2023.5, line=dict(dash='dot', color='grey'),
+                   annotation_text='forecast →', annotation_position='top right')
+    fig.update_layout(template='plotly_white', height=460, margin=dict(l=50,r=20,t=40,b=40),
+                      title=f'Generation mix — {scen} scenario',
+                      yaxis_title='TWh', xaxis_title='Year', hovermode='x unified')
+    return fig
+
+@app.callback(Output('re-share-chart','figure'),
+              Input('scenario','value'), Input('nuclear-on','value'),
+              Input('nuc-cap','value'), Input('nuc-year','value'))
+def update_re(scen, nuc_on, nuc_cap, nuc_year):
+    fig = go.Figure()
+    re_h = df_c[['year','re_penetration_pct']].dropna()
+    fig.add_trace(go.Scatter(x=re_h['year'], y=re_h['re_penetration_pct'], name='Historical',
+                              line=dict(color='#111827', width=2), mode='lines+markers'))
+    for sc in ['BAU','Government','Accelerated']:
+        sd = apply_overlay(sc, nuc_on, nuc_cap, nuc_year)
+        line_w = 3 if sc == scen else 1.5
+        dash = None if sc == scen else 'dash'
+        fig.add_trace(go.Scatter(x=sd['year'], y=sd['re_plus_nuclear_share_pct'],
+                                  name=f'{sc} (RE+nuclear)', line=dict(color=COLORS[sc], width=line_w, dash=dash)))
+        fig.add_trace(go.Scatter(x=sd['year'], y=sd['re_share_pct'],
+                                  name=f'{sc} (RE only)', line=dict(color=COLORS[sc], width=1, dash='dot'),
+                                  showlegend=(sc==scen)))
+    fig.add_hline(y=54, line=dict(dash='dot', color='grey'),
+                   annotation_text='2030 target 54%', annotation_position='top left')
+    fig.add_vline(x=2023.5, line=dict(dash='dot', color='grey'))
+    fig.update_layout(template='plotly_white', height=420, margin=dict(l=50,r=20,t=40,b=40),
+                      title='Low-carbon share of generation — all scenarios',
+                      yaxis_title='%', xaxis_title='Year', hovermode='x unified')
+    return fig
+
+@app.callback(Output('co2-chart','figure'), Input('scenario','value'))
+def update_co2(_):
+    fig = make_subplots(rows=1, cols=2, subplot_titles=('Power-sector CO₂ emissions','CO₂ intensity'))
+    co2_h = df_c[['year','wb_co2_power_mt']].dropna()
+    fig.add_trace(go.Scatter(x=co2_h['year'], y=co2_h['wb_co2_power_mt'], name='History',
+                              line=dict(color='#111827', width=2), mode='lines+markers'), row=1, col=1)
+    for sc in ['BAU','Government','Accelerated']:
+        sd = co2_fc[co2_fc['scenario']==sc]
+        fig.add_trace(go.Scatter(x=sd['year'], y=sd['co2_power_mt'], name=sc,
+                                  line=dict(color=COLORS[sc], width=2, dash='dash')), row=1, col=1)
+        fig.add_trace(go.Scatter(x=sd['year'], y=sd['co2_intensity_gco2_per_kwh'], name=f'{sc} int',
+                                  line=dict(color=COLORS[sc], width=2, dash='dash'), showlegend=False), row=1, col=2)
+    fig.update_yaxes(title_text='Mt CO₂/yr', row=1, col=1); fig.update_yaxes(title_text='gCO₂/kWh', row=1, col=2)
+    fig.update_layout(template='plotly_white', height=420, margin=dict(l=50,r=20,t=60,b=40),
+                      title='Power-sector carbon footprint', hovermode='x unified')
+    return fig
+
+@app.callback(Output('invest-chart','figure'), Input('scenario','value'))
+def update_invest(scen):
+    pivot = invest_fc.pivot(index='tech', columns='scenario', values='capex_bn_usd').fillna(0)
+    pivot = pivot.reindex(['solar','wind','hydro','thermal','storage','transmission'])
+    fig = go.Figure()
+    for sc in ['BAU','Government','Accelerated']:
+        if sc not in pivot.columns: continue
+        opacity = 1.0 if sc == scen else 0.45
+        fig.add_trace(go.Bar(name=sc, x=pivot.index, y=pivot[sc], marker_color=COLORS[sc],
+                              opacity=opacity, text=[f'${v:.1f}bn' for v in pivot[sc]], textposition='outside'))
+    fig.update_layout(template='plotly_white', barmode='group', height=440,
+                      margin=dict(l=50,r=20,t=40,b=40),
+                      title='Capex by technology & scenario (2024–2035, USD bn)',
+                      yaxis_title='USD billion', xaxis_title='Technology', hovermode='x unified')
+    return fig
+
+@app.callback(Output('oblast-map','figure'), Input('scenario','value'))
+def update_map(_):
+    fig = go.Figure()
+    tech_colors = {'solar':'#facc15','wind':'#10b981','hydro':'#0891b2'}
+    for tech, color in tech_colors.items():
+        sub = oblasts[oblasts['dominant']==tech]
+        fig.add_trace(go.Scattergeo(
+            lon=sub['lon'], lat=sub['lat'], text=sub['oblast']+'<br>'+sub['projects'],
+            marker=dict(size=sub['total_re_mw']/40+8, color=color, line=dict(color='black',width=1)),
+            name=tech.title(), hovertemplate='<b>%{text}</b><extra></extra>'))
+    fig.update_layout(template='plotly_white', height=480, margin=dict(l=10,r=10,t=40,b=10),
+                      title='Renewables by oblast — bubble size ∝ total RE capacity',
+                      geo=dict(scope='asia', center=dict(lat=41.5, lon=64.5), projection_scale=4.5,
+                               showland=True, landcolor='#fafafa', showcountries=True,
+                               countrycolor='#cbd5e1', showsubunits=True))
+    return fig
+
+@app.callback(Output('scoreboard-chart','figure'), Input('scenario','value'))
+def update_scoreboard(_):
+    df = scoreboard.sort_values('CV mean MAPE')
+    fig = go.Figure()
+    colors = ['#16a34a' if v < 10 else '#facc15' if v < 20 else '#dc2626' for v in df['CV mean MAPE']]
+    fig.add_trace(go.Bar(y=df['Model'], x=df['CV mean MAPE'], orientation='h',
+                          marker_color=colors,
+                          text=[f'{v:.1f}%' for v in df['CV mean MAPE']], textposition='auto',
+                          error_x=dict(type='data', array=df['CV std']),
+                          name='CV mean MAPE'))
+    fig.add_vline(x=10, line=dict(dash='dot', color='grey'),
+                   annotation_text='Lewis 10% threshold', annotation_position='top right')
+    fig.update_layout(template='plotly_white', height=460, margin=dict(l=120,r=20,t=40,b=40),
+                      title='Forecasting model scoreboard — CV mean MAPE (error bars = ±1 σ across folds)',
+                      xaxis_title='MAPE %', yaxis_title='')
+    return fig
+
+if __name__ == '__main__':
+    app.run(debug=True, host='127.0.0.1', port=8050)
