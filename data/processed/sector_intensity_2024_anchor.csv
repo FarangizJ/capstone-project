@@ -1,0 +1,6 @@
+sector,electricity_twh_2024,driver_var,driver_value_2023_bn_usd,intensity_kwh_per_usd,source
+Industry — total,26.151573249986292,industry_va_const2015_usd,33.0907495013792,790.3,UzStat 2024 balance + WB sectoral GDP 2023
+Manufacturing,25.19157324998629,mfg_va_const2015_usd,18.6091553243543,1353.7,UzStat 2024 balance + WB sectoral GDP 2023
+Agriculture,9.530151248565735,agri_va_const2015_usd,32.2242668195325,295.7,UzStat 2024 balance + WB sectoral GDP 2023
+Commercial+gov,7.635745290816723,services_va_const2015_usd,55.295157613261296,138.1,UzStat 2024 balance + WB sectoral GDP 2023
+Residential,16.293133121059043,population,36.6,445.2,UzStat 2024 balance + WB sectoral GDP 2023

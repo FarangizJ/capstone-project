@@ -1,0 +1,7 @@
+column,source,url
+tmean_c_natl / hdd18_natl / cdd24_natl,Open-Meteo ERA5 pop-weighted across 13 Uzbekistan oblast capitals,https://open-meteo.com/en/docs/historical-weather-api
+industry_pct_gdp / mfg_pct_gdp / services_pct_gdp / agri_pct_gdp,"World Bank WDI (NV.IND.TOTL.ZS, NV.IND.MANF.ZS, NV.SRV.TOTL.ZS, NV.AGR.TOTL.ZS)",https://databank.worldbank.org/source/world-development-indicators
+gdp_per_energy_2017ppp / energy_use_pcap_kgoe / energy_imports_pct,"World Bank WDI (EG.GDP.PUSE.KO.PP.KD, EG.USE.PCAP.KG.OE, EG.IMP.CONS.ZS)",https://databank.worldbank.org/source/world-development-indicators
+internet_users_pct / mobile_per_100,"World Bank WDI (IT.NET.USER.ZS, IT.CEL.SETS.P2)",https://databank.worldbank.org/source/world-development-indicators
+urban_growth_pct / pop_growth_pct,"World Bank WDI (SP.URB.GROW, SP.POP.GROW)",https://databank.worldbank.org/source/world-development-indicators
+owid_elec_demand_twh / owid_elec_gen_twh / owid_net_imports_pct,Our World In Data — energy dataset (compiled from EI Stat Review + Ember),https://github.com/owid/energy-data
