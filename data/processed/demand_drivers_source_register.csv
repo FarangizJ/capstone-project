@@ -1,0 +1,9 @@
+file,source,url
+wb_sectoral_uzb.csv,World Bank WDI (live `wbdata` API),https://databank.worldbank.org/source/world-development-indicators
+climate_tashkent_annual.csv,Open-Meteo Historical Weather API (ERA5 reanalysis),https://open-meteo.com/en/docs/historical-weather-api
+tariff_history_uzb.csv,IEA Uzbekistan Energy Profile + Gazeta.uz,https://www.iea.org/reports/uzbekistan-energy-profile/market-design ; https://www.gazeta.uz/en/2024/04/16/tariffs/
+imf_weo_uzb.csv,IMF DataMapper / WEO Oct 2025,https://www.imf.org/external/datamapper/api/v1/
+demand_drivers_panel.csv,merge of above + master_dataset_core.csv,(internal)
+demand_drivers_sources_todo.csv,NOT-YET-FETCHED variables registry,(internal)
+forecast_demand_drivers.csv,OLS Δln model trained on real panel,(internal)
+forecast_demand_scenarios_drivers.csv,same + Broomandi et al. 2025 CDD trend,https://onlinelibrary.wiley.com/doi/full/10.1002/gch2.202400356
