@@ -1,0 +1,10 @@
+variable,source,url,status
+cons_residential_twh,IEA World Energy Balances,https://www.iea.org/data-and-statistics/data-product/world-energy-balances,NOT FETCHED
+cons_industrial_twh,IEA World Energy Balances,https://www.iea.org/data-and-statistics/data-product/world-energy-balances,NOT FETCHED
+cons_commercial_twh,IEA World Energy Balances,https://www.iea.org/data-and-statistics/data-product/world-energy-balances,NOT FETCHED
+cons_agriculture_twh,UzStat statistical yearbook,https://stat.uz/en/,NOT FETCHED
+construction_va,UzStat National Accounts,https://stat.uz/en/official-statistics/national-accounts,NOT FETCHED
+households_n,UN WPP 2024 + UzStat,https://population.un.org/wpp/,NOT FETCHED
+ac_imports_units,UzStat foreign trade (HS 8415),https://stat.uz/en/,NOT FETCHED
+industrial_pipeline_mw,MoE press releases,https://minenergy.uz/en/news,NOT FETCHED
+crypto_mw_licensed,NAPP decrees,https://www.lex.uz/,NOT FETCHED

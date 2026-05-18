@@ -1,0 +1,20 @@
+sector_en,electricity_ktoe,electricity_gwh,electricity_twh,share_of_total_pct,source,source_url
+TOTAL FINAL CONSUMPTION,5618.314009152267,65340.991926440875,65.34099192644088,100.0,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — total,2248.630546000541,26151.573249986293,26.151573249986292,40.02322658252116,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — Mining & quarrying,82.48258585940901,959.2724735449269,0.959272473544927,1.4681020983349164,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — Chemicals,302.3450766680806,3516.2732416497774,3.5162732416497775,5.381420051915194,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — Metallurgy,574.6248905837348,6682.887477488836,6.682887477488836,10.227710477692549,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+"Industry — Non-metallic minerals (cement, glass)",254.30426670341632,2957.558621760732,2.957558621760732,4.526344848101283,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — Machinery,181.25622904257088,2108.0099437650993,2.1080099437650994,3.226167650069102,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+"Industry — Food, beverages, tobacco",248.42666278326564,2889.2020881693797,2.88920208816938,4.421729764099641,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+"Industry — Pulp, paper & printing",24.906036637141877,289.65720608996,0.28965720608996004,0.4433009012413652,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — Textile & leather,503.8355481240049,5859.607424682177,5.859607424682177,8.967735646374583,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Industry — Other branches,76.44924959891702,889.104772835405,0.889104772835405,1.360715144692531,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Transport — total,113.54945173229503,1320.5801236465913,1.3205801236465913,2.0210591922651933,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Other sectors — total,3256.1340114194318,37868.838552807996,37.86883855280799,57.95571422521364,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Households (residential),1400.9572761013792,16293.133121059042,16.293133121059043,24.93554603425888,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Construction,51.673588777782406,600.9638374856095,0.6009638374856094,0.919734793989902,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Commercial & government services,656.5559149455479,7635.745290816722,7.635745290816723,11.685995369358393,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Agriculture,819.4455071853598,9530.151248565735,9.530151248565735,14.585256463958371,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Fisheries,2.6715182664406716,31.06975743870501,0.03106975743870501,0.04755017718996752,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
+Unspecified other,324.8302061429218,3777.7752974421805,3.7777752974421803,5.781631386458132,UzStat 2024 preliminary balance,https://stat.uz/en/official-statistics/energy-efficiency-and-fuel-balance
