@@ -1,0 +1,619 @@
+id,file,theme,monthly,n_rows,n_time,t_start,t_end,top_entities,known_topic,n_vals,min,max,median,magnitude_order,looks_integer
+1105,sdmx_data_1105.csv,international,0,228,15,2010,2024,Cuba | Côte d’Ivoire | Papua New Guinea | Tuvalu | Chad,,3420,0.0,11679752.8,10.5,7,False
+1141,sdmx_data_1141.csv,national_single,1,1,59,2021-M01,2025-M11,Republic of Uzbekistan,,59,527.2,22416.6,9376.8,4,False
+1143,sdmx_data_1143.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,8974.0,19698.4,11687.9,4,False
+1151,sdmx_data_1151.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,8685.4,35574.8,12997.3,4,False
+1166,sdmx_data_1166.csv,national_single,1,1,59,2021-M01,2025-M11,Republic of Uzbekistan,,59,1583.4,37419.7,15562.3,4,False
+1170,sdmx_data_1170.csv,international,1,233,63,2021-M01,2026-M03,Cuba | Côte d’Ivoire | Papua New Guinea | Tuvalu | Chad,,14679,0.0,16150189.5,3.0,7,False
+1173,sdmx_data_1173.csv,international,1,200,66,2021-M01,2026-M03,Cuba | Côte d’Ivoire | Tuvalu | Chad | Albania,,13200,0.0,14755927.5,67.9,7,False
+1176,sdmx_data_1176.csv,international,0,234,15,2010,2024,Cuba | Côte d’Ivoire | Papua New Guinea | Tuvalu | Chad,,3510,0.0,11339099.0,7.68,7,False
+1177,sdmx_data_1177.csv,international,0,4,13,2010,2022,Consumer products | Wine-vodka products and beer | Non-food products | Food products,,52,92.9,128.1,108.1,2,False
+1178,sdmx_data_1178.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,355.9,134209.0,4170.8,5,False
+1180,sdmx_data_1180.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,71.6,162.0,104.6,2,False
+1182,sdmx_data_1182.csv,national_with_regions,0,15,13,2010,2022,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,195,136.8,12556.3,1251.3,4,False
+1189,sdmx_data_1189.csv,international,0,23,13,2010,2022,"Food and Beverage | Raw materials | Processed | Source products for industry, not elsewhere classified | Raw materials",,299,0.0,10168.1,228.6,4,False
+1190,sdmx_data_1190.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,1420026.0,4844.0,6,True
+1191,sdmx_data_1191.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,2230661.0,7027.0,6,True
+1203,sdmx_data_1203.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,0.7,0.02,-1,False
+1206,sdmx_data_1206.csv,international,0,13,16,2010,2025,Trade | Information and communication | Transport activities | Accommodation and food service activities | Financial activities,Growth of market services rendered (%),208,87.4,146.6,114.75,2,False
+1207,sdmx_data_1207.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Volume of motor transport services,240,90.4,95853.8,1543.0500000000002,5,False
+1208,sdmx_data_1208.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Communication & info services volume,240,26.7,79485.5,404.6,4,False
+1210,sdmx_data_1210.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Total service sector volume by region,240,347.1,1050292.5,10053.2,6,False
+1212,sdmx_data_1212.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Financial services volume,240,38.5,171867.0,1011.85,5,False
+1213,sdmx_data_1213.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Transport services volume,240,93.0,188270.8,1822.25,5,False
+1214,sdmx_data_1214.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,12.6,51150.3,363.6,4,False
+1215,sdmx_data_1215.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,8.4,12797.6,161.75,4,False
+1216,sdmx_data_1216.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,13.9,14381.8,216.3,4,False
+1217,sdmx_data_1217.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,2.8,13059.5,95.44999999999999,4,False
+1218,sdmx_data_1218.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,13.7,19928.0,244.7,4,False
+1219,sdmx_data_1219.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,3.7,19890.6,141.95,4,False
+1220,sdmx_data_1220.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Education services volume,240,11.3,39626.7,311.1,4,False
+1221,sdmx_data_1221.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,11.2,25921.6,222.75,4,False
+1222,sdmx_data_1222.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Trade services volume,240,106.4,186957.3,2417.9,5,False
+1223,sdmx_data_1223.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Accommodation and food services,240,2.3,226955.8,1781.3,5,False
+1224,sdmx_data_1224.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,60.1,168.5,120.9,2,False
+1225,sdmx_data_1225.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,76.8,197.4,124.65,2,False
+1226,sdmx_data_1226.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,79.6,138.5,113.0,2,False
+1227,sdmx_data_1227.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,82.8,141.8,114.3,2,False
+1228,sdmx_data_1228.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,74.2,187.3,113.45,2,False
+1229,sdmx_data_1229.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,94.3,141.2,112.95,2,False
+1230,sdmx_data_1230.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,77.4,168.8,115.5,2,False
+1231,sdmx_data_1231.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,65.9,162.3,109.69999999999999,2,False
+1232,sdmx_data_1232.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,77.6,187.3,117.75,2,False
+1233,sdmx_data_1233.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,72.7,144.9,114.15,2,False
+1234,sdmx_data_1234.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,87.9,162.0,112.6,2,False
+1235,sdmx_data_1235.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,87.2,139.4,110.9,2,False
+1236,sdmx_data_1236.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,39.4,265.7,113.45,2,False
+1237,sdmx_data_1237.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,68.1,472.9,114.19999999999999,2,False
+1238,sdmx_data_1238.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,93.7,127.9,115.15,2,False
+1239,sdmx_data_1239.csv,national_with_regions,0,220,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3520,0.0,126343.7,0.0,5,False
+1240,sdmx_data_1240.csv,national_with_regions,0,220,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3520,0.0,125.6,0.0,2,False
+1242,sdmx_data_1242.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Apartments with sewage (share),3315,0.0,100.0,12.0,2,False
+1243,sdmx_data_1243.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Apartments with natural gas (share),3315,0.0,100.0,66.7,2,False
+1244,sdmx_data_1244.csv,national_with_regions,0,222,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,Total area of housing stock,3330,0.0,703766136.7,2532824.0,8,False
+1245,sdmx_data_1245.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Number of residential apartments,3315,0.0,7568679.0,29436.0,6,True
+1247,sdmx_data_1247.csv,national_with_regions,0,222,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,3330,0.0,575042.0,1267.5,5,True
+1248,sdmx_data_1248.csv,national_with_regions,0,222,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,3330,0.0,1539667.0,5390.5,6,False
+1249,sdmx_data_1249.csv,national_with_regions,0,222,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,3330,0.0,2300904.0,9321.0,6,False
+1250,sdmx_data_1250.csv,national_with_regions,0,222,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,3330,0.0,2245886.0,7672.5,6,False
+1251,sdmx_data_1251.csv,national_with_regions,0,221,6,2019,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,1326,0.0,894005.0,3005.0,5,True
+1252,sdmx_data_1252.csv,national_with_regions,0,221,6,2019,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,1326,0.0,747290.0,1984.5,5,True
+1253,sdmx_data_1253.csv,national_with_regions,0,15,11,2014,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,165,11553.3,703766.1,42501.5,5,False
+1254,sdmx_data_1254.csv,national_with_regions,0,15,11,2014,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,165,0.0,3527.5,196.6,3,False
+1255,sdmx_data_1255.csv,national_with_regions,0,15,11,2014,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,165,11461.8,700276.0,42309.2,5,False
+1256,sdmx_data_1256.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,813.4,213877.7,8829.5,5,False
+1257,sdmx_data_1257.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,3664.3,260772.5,11871.4,5,False
+1258,sdmx_data_1258.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,46521.8,1841.4,4,False
+1259,sdmx_data_1259.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,3.8,62656.6,1813.4,4,False
+1261,sdmx_data_1261.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.4,51.0,8.6,1,False
+1262,sdmx_data_1262.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,25.2,7165.5,151.6,3,False
+1263,sdmx_data_1263.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Telecommunication services volume,15,1923.7,21025.5,6946.8,4,False
+1264,sdmx_data_1264.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,26.7,1375.7,257.3,3,False
+1265,sdmx_data_1265.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,37.5,22487.5,325.5,4,False
+1266,sdmx_data_1266.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,55.7,4067.1,468.6,3,False
+1267,sdmx_data_1267.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,11.4,695.8,46.9,2,False
+1268,sdmx_data_1268.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,212.4,32138.6,1100.8000000000002,4,False
+1269,sdmx_data_1269.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,9.9,209.2,48.95,2,False
+1270,sdmx_data_1270.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,523.6,36251.7,1661.4,4,False
+1271,sdmx_data_1271.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,20.2,276.5,68.5,2,False
+1272,sdmx_data_1272.csv,national_single,0,1,10,2015,2024,Republic of Uzbekistan,,10,1900.8,2272.0,2145.6000000000004,3,False
+1275,sdmx_data_1275.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,1.2,27.0,3.7,1,False
+1276,sdmx_data_1276.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,25.6,1769.1,83.75,3,False
+1279,sdmx_data_1279.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,17331.0,1318790.0,55663.0,6,True
+1280,sdmx_data_1280.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,19.7,81.0,50.0,1,False
+1281,sdmx_data_1281.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,5777.0,670317.0,19225.0,5,True
+1282,sdmx_data_1282.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,1.3,19.8,4.8,1,False
+1283,sdmx_data_1283.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,3961.0,826396.0,20409.5,5,True
+1284,sdmx_data_1284.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,7.2,50.9,21.6,1,False
+1285,sdmx_data_1285.csv,international,0,28,132,2010-М01,2020-М12,Cumulative index | Food products | Non-food products | Services | Bakery products,,3696,74.3,129.9,100.45,2,False
+1286,sdmx_data_1286.csv,international,1,17,64,2021-M01,2026-M04,Cumulative index | Food products | Non-food products | Services | Food and non-alcoholic drinks,,1088,97.81,140.8,100.57,2,False
+1287,sdmx_data_1287.csv,international,0,28,11,2010,2020,Cumulative index | Food products | Non-food products | Services | Bakery products,,308,0.00188,1.0,0.028970000000000003,0,False
+1288,sdmx_data_1288.csv,international,0,17,6,2021,2026,Cumulative index | Food products | Non-food products | Services | Food and non-alcoholic drinks,,102,0.0023,1.0,0.06906,0,False
+1289,sdmx_data_1289.csv,international,0,27,11,2010,2020,Cumulative index | Food products | Non-food products | Services | Bakery products,,297,60.1,137.6,108.6,2,False
+1290,sdmx_data_1290.csv,international,0,17,5,2021,2025,Cumulative index | Food products | Non-food products | Services | Food and non-alcoholic drinks,,85,99.7,138.1,108.8,2,False
+1291,sdmx_data_1291.csv,international,0,27,11,2010,2020,Cumulative index | Food products | Non-food products | Services | Bakery products,,297,70.6,144.1,108.3,2,False
+1292,sdmx_data_1292.csv,international,0,17,5,2021,2025,Cumulative index | Food products | Non-food products | Services | Food and non-alcoholic drinks,,85,99.3,129.8,109.5,2,False
+1294,sdmx_data_1294.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,102.4,180.8,115.265,2,False
+1295,sdmx_data_1295.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,102.9,174.5,116.1,2,False
+1296,sdmx_data_1296.csv,international,0,3,124,2016-М01,2026-M04,J. INFORMATION AND COMMUNICATION | Wired communication services | Provision of wireless services,,372,61.2,113.0,100.0,2,False
+1297,sdmx_data_1297.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,96.2,159.5,108.535,2,False
+1298,sdmx_data_1298.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,99.47,149.8,109.85,2,False
+1301,sdmx_data_1301.csv,international,0,64,196,2010-М01,2026-M04,Composite index | Construction and installation works | Material costs | Electricity | Electricity,,12544,0.0,179.9,100.0,2,False
+1302,sdmx_data_1302.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,103.1,136.0,111.6,2,False
+1303,sdmx_data_1303.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,105.2,133.8,111.85,2,False
+1305,sdmx_data_1305.csv,national_with_regions,0,15,17,2022-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,97.1,115.0,101.7,2,False
+1306,sdmx_data_1306.csv,national_with_regions,0,15,24,2020-Q2,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,360,97.0,115.3,100.95,2,False
+1307,sdmx_data_1307.csv,national_with_regions,0,15,24,2020-Q2,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,360,93.7,114.7,101.1,2,False
+1308,sdmx_data_1308.csv,international,0,41,64,2021-М01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,2624,0.0,129508.4,10521.35,5,False
+1310,sdmx_data_1310.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Officially registered unemployed,240,5.0,98689.0,910.5,5,True
+1311,sdmx_data_1311.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Employment rate,240,56.0,86.9,67.1,1,False
+1313,sdmx_data_1313.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Number of unemployed,3536,0.0,1561.0,4.2,3,False
+1314,sdmx_data_1314.csv,international,0,116,87,2019-М01,2026-M03,"Composite index | LIVE ANIMALS; ANIMAL PRODUCTS | LIVE ANIMALS | MEAT AND  MEAT PREPARATIONS | FISH, CRUSTACEANS, MOLLUSCS AND AQUATIC INVERTEBRATES, AND PREPARATIONS THEREOF",,10092,0.0,303.1,100.0,2,False
+1315,sdmx_data_1315.csv,international,0,19,16,2010,2025,"Agriculture, forestry and fisheries | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",Distribution of employed by economic activity,304,44.7,3671.3,305.4,3,False
+1317,sdmx_data_1317.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,6.1,8.5,7.05,0,False
+1320,sdmx_data_1320.csv,international,0,116,87,2019-М01,2026-M03,"Composite index | LIVE ANIMALS; ANIMAL PRODUCTS | LIVE ANIMALS | MEAT AND  MEAT PREPARATIONS | FISH, CRUSTACEANS, MOLLUSCS AND AQUATIC INVERTEBRATES, AND PREPARATIONS THEREOF",,10092,20.5,1724.7,100.2,3,False
+1321,sdmx_data_1321.csv,international,0,115,7,2019,2025,"Composite index | LIVE ANIMALS; ANIMAL PRODUCTS | LIVE ANIMALS | MEAT AND  MEAT PREPARATIONS | FISH, CRUSTACEANS, MOLLUSCS AND AQUATIC INVERTEBRATES, AND PREPARATIONS THEREOF",,805,0.0,251.4,108.4,2,False
+1323,sdmx_data_1323.csv,international,0,116,7,2019,2025,"Composite index | LIVE ANIMALS; ANIMAL PRODUCTS | LIVE ANIMALS | MEAT AND  MEAT PREPARATIONS | FISH, CRUSTACEANS, MOLLUSCS AND AQUATIC INVERTEBRATES, AND PREPARATIONS THEREOF",,812,44.3,1851.9,110.05,3,False
+1325,sdmx_data_1325.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Average household size,240,3.8,6.3,5.1,0,False
+1326,sdmx_data_1326.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,507490.2,242.9,5,False
+1327,sdmx_data_1327.csv,international,0,41,160,2013-М01,2026-М04,Rice | Barley | Wheat | Corn | Bran,,6560,0.0,126399.4,4010.25,5,False
+1328,sdmx_data_1328.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,741666.5,1537.6,5,False
+1329,sdmx_data_1329.csv,international,0,42,64,2021-М01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,2688,0.0,136365.9,10364.55,5,False
+1331,sdmx_data_1331.csv,national_with_regions,0,15,25,2020-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,50.0,314.2,113.4,2,False
+1332,sdmx_data_1332.csv,national_with_regions,0,15,25,2020-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,479.1,39076.6,4361.1,4,False
+1333,sdmx_data_1333.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,103.9,146.2,118.25,2,False
+1334,sdmx_data_1334.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,0.7,56.7,8.0,1,False
+1336,sdmx_data_1336.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,1.6,82.3,19.8,1,False
+1337,sdmx_data_1337.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,10.8,84.9,49.1,1,False
+1338,sdmx_data_1338.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,0.1,36.1,7.1,1,False
+1339,sdmx_data_1339.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,15.1,89.2,50.9,1,False
+1340,sdmx_data_1340.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,18.9,34.9,20.9,1,False
+1341,sdmx_data_1341.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,115.6,8.9,2,False
+1342,sdmx_data_1342.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,14.7,1.5,1,False
+1439,sdmx_data_1439.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,439948.0,9824.6,5,False
+1451,sdmx_data_1451.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,218400.2,5267.1,5,False
+1453,sdmx_data_1453.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,221547.8,4773.5,5,False
+1454,sdmx_data_1454.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,121.3,104.2,2,False
+1455,sdmx_data_1455.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,130.9,104.5,2,False
+1456,sdmx_data_1456.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,115.8,105.2,2,False
+1458,sdmx_data_1458.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,6964.7,496.8,3,False
+1459,sdmx_data_1459.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,135.3,103.3,2,False
+1460,sdmx_data_1460.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,115.3,104.1,2,False
+1461,sdmx_data_1461.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,350.3,108.1,2,False
+1463,sdmx_data_1463.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,136.2,102.9,2,False
+1464,sdmx_data_1464.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,117.9,103.0,2,False
+1465,sdmx_data_1465.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,375.7,109.0,2,False
+1469,sdmx_data_1469.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,200.4,108.6,2,False
+1470,sdmx_data_1470.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,115.6,104.8,2,False
+1471,sdmx_data_1471.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,15.2,0.0,1,False
+1473,sdmx_data_1473.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,53.8,1.9,1,False
+1474,sdmx_data_1474.csv,national_with_regions,0,220,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3300,0.0,303.3,0.0,2,False
+1475,sdmx_data_1475.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,9.6,0.01,1,False
+1476,sdmx_data_1476.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,120.1,104.2,2,False
+1478,sdmx_data_1478.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,16.7,0.01,1,False
+1479,sdmx_data_1479.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,43.2,29.2,1,False
+1480,sdmx_data_1480.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,31.2,0.1,1,False
+1481,sdmx_data_1481.csv,national_with_regions,0,220,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3300,0.0,462839.2,0.0,5,False
+1482,sdmx_data_1482.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,78.6,66.5,1,False
+1483,sdmx_data_1483.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,32.5,0.1,1,False
+1484,sdmx_data_1484.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,20.3,2.7,1,False
+1485,sdmx_data_1485.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,71.0,53.6,1,False
+1486,sdmx_data_1486.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,64.7,40.6,1,False
+1488,sdmx_data_1488.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,23.6,2.4,1,False
+1490,sdmx_data_1490.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,12.0,4.2,1,False
+1491,sdmx_data_1491.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,18.1,2.3,1,False
+1492,sdmx_data_1492.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,98.1,92.7,2,False
+1494,sdmx_data_1494.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,195100.0,456623261.0,2198747.1,8,False
+1496,sdmx_data_1496.csv,international,1,10,63,2021-M01,2026-M03,Export of services | Maintenance and repair services not elsewhere classified | Transport | Trips (tourism) | Insurance and pension services,,630,0.0,9760.4,51.25,4,False
+1498,sdmx_data_1498.csv,international,1,11,63,2021-M01,2026-M3,Export of services | Import Services | Maintenance and repair services not elsewhere classified | Transport | Trips (tourism),,693,0.0,5270.6,81.3,3,False
+1501,sdmx_data_1501.csv,international,0,10,15,2010,2024,Export of services | Maintenance and repair services not elsewhere classified | Transport | Trips (tourism) | Insurance and pension services,,150,0.1,7571.7,80.2,3,False
+1502,sdmx_data_1502.csv,international,0,10,15,2010,2024,Import Services | Maintenance and repair services not elsewhere classified | Transport | Trips (tourism) | Insurance and pension services,,150,1.7,4678.5,74.0,3,False
+1503,sdmx_data_1503.csv,international,0,5,15,2010,2024,Telecommunication services | Computer software | Other computer services | Information agency services | Other information services,,75,0.0,177795.0,6206.4,5,False
+1504,sdmx_data_1504.csv,international,0,5,15,2010,2024,Telecommunication services | Computer software | Other computer services | Information agency services | Other information services,,75,0.0,261451.6,3165.4,5,False
+1506,sdmx_data_1506.csv,international,0,23,13,2010,2022,"Food and Beverage | Raw materials | Processed | Source products for industry, not elsewhere classified | Raw materials",,299,0.0,9838.6,809.2,4,False
+1561,sdmx_data_1561.csv,national_with_regions,0,15,25,2020-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,1052.2,591141.0,11172.4,5,False
+1569,sdmx_data_1569.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,2.9,1162.1,37.7,3,False
+1570,sdmx_data_1570.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,5355.6,10.3,3,False
+1576,sdmx_data_1576.csv,international,0,16,5,2022,2026,"Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal | Manufacturing of food products",,80,7e-05,0.88614,0.08841850000000001,-1,False
+1577,sdmx_data_1577.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,107.1,170.2,116.7,2,False
+1578,sdmx_data_1578.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,109.1,160.9,117.15,2,False
+1579,sdmx_data_1579.csv,international,0,15,124,2016-М01,2026-M04,H. TRANSPORT AND STORAGE | Land and pipeline transport | Intercity passenger rail | Goods train | Other passenger land transport,,1860,0.0,172.1,100.0,2,False
+1581,sdmx_data_1581.csv,international,1,16,160,2013-M01,2026-M04,"Composite index | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,2560,0.0,212.1,100.4,2,False
+1737,sdmx_data_1737.csv,national_with_regions,0,15,11,2010,2020,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Share of low-income population (%),165,0.4,34.3,13.5,1,False
+1872,sdmx_data_1872.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Number employed in public sector,240,62.9,2672.8,172.8,3,False
+1873,sdmx_data_1873.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Number employed in non-state sector,240,230.9,12261.1,822.6500000000001,4,False
+1905,sdmx_data_1905.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,15501.5,55.7,4,False
+1907,sdmx_data_1907.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,293.3,0.3,2,False
+1910,sdmx_data_1910.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,12697.0,0.0,4,True
+1913,sdmx_data_1913.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,20698.0,0.0,4,True
+223,sdmx_data_223.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Number of births,3536,0.0,961962.0,3736.0,6,True
+224,sdmx_data_224.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,463717.0,1800.0,5,True
+225,sdmx_data_225.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,498245.0,1933.0,5,True
+226,sdmx_data_226.csv,national_with_regions,0,222,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,Number of deaths,3552,0.0,177104.0,760.5,5,True
+227,sdmx_data_227.csv,national_with_regions,0,222,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,3552,0.0,79599.0,340.0,4,True
+228,sdmx_data_228.csv,national_with_regions,0,222,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,3552,0.0,97541.0,415.0,5,True
+229,sdmx_data_229.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Mortality rate,3536,0.0,30.7,4.6,1,False
+230,sdmx_data_230.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,49198.0,128.0,4,True
+232,sdmx_data_232.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,19402.0,48.0,4,True
+2358,sdmx_data_2358.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,67238.4,26.7,4,False
+236,sdmx_data_236.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Population density (per km2),3536,0.0,22343.7,257.75,4,False
+2364,sdmx_data_2364.csv,international,0,237,16,2009,2024,Cuba | Côte d’Ivoire | Papua New Guinea | Tuvalu | Chad,,3792,0.0,13825656.4,46.0,7,False
+2365,sdmx_data_2365.csv,international,0,11,15,2010,2024,Machines and transport equipment | Various finished products | Other goods | Services | Beverages and tobacco,,165,0.0,8192.6,983.9,3,False
+2366,sdmx_data_2366.csv,international,0,11,15,2010,2024,Machines and transport equipment | Various finished products | Other goods | Services | Beverages and tobacco,,165,0.0,14935.2,970.2,4,False
+2401,sdmx_data_2401.csv,national_with_regions,1,221,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,16575,0.0,81166.8,21.8,4,False
+2402,sdmx_data_2402.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,259654.3,125.8,5,False
+2403,sdmx_data_2403.csv,national_with_regions,1,15,64,2021-M01,2026-M04,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,960,112.1,313887.8,3965.5,5,False
+2404,sdmx_data_2404.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,1969.5,111.6,3,False
+2406,sdmx_data_2406.csv,national_with_regions,1,15,64,2021-M01,2026-M04,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,960,48.0,198.2,108.6,2,False
+2407,sdmx_data_2407.csv,national_with_regions,1,221,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,16575,0.0,33812.3,9.1,4,False
+2414,sdmx_data_2414.csv,national_with_regions,1,221,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,16575,0.0,47354.5,10.5,4,False
+2418,sdmx_data_2418.csv,international,1,224,63,2021-M01,2026-M03,Cuba | Côte d’Ivoire | Papua New Guinea | Tuvalu | Chad,,14112,0.0,19154432.6,99.0,7,False
+244,sdmx_data_244.csv,national_with_regions,0,221,13,2014,2026,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,2873,0.0,18979.0,83.6,4,False
+245,sdmx_data_245.csv,national_with_regions,0,221,17,2010,2026,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3757,0.0,19257.7,81.2,4,False
+246,sdmx_data_246.csv,national_with_regions,0,221,17,2010,2026,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,"Permanent population, total (thsd)",3757,0.0,38236.7,162.2,4,False
+247,sdmx_data_247.csv,national_with_regions,0,221,17,2010,2026,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,"Permanent population, rural (thsd)",3757,0.0,18765.0,80.2,4,False
+248,sdmx_data_248.csv,national_with_regions,0,221,17,2010,2026,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,"Permanent population, urban (thsd)",3757,0.0,19471.7,60.6,4,False
+2522,sdmx_data_2522.csv,international,0,13,16,2010,2025,Wholesale and retail trade; repair of motor vehicles and motorcycles | Transportation and storage | Accommodation and food services | Information and communication | Financial and insurance activities,,208,258.0,226955.8,7086.8,5,False
+2629,sdmx_data_2629.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,1590858.0,1559.0,6,True
+2630,sdmx_data_2630.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,5977821.0,24661.0,6,True
+2631,sdmx_data_2631.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,100.0,77.1,2,False
+2676,sdmx_data_2676.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Diesel fuel production (thsd tonnes),15,798.7,1484.9,1030.5,3,False
+2677,sdmx_data_2677.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Aviation kerosene production (thsd tonnes),15,118.0,377.3,184.9,2,False
+2678,sdmx_data_2678.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Aviation gasoline production (thsd tonnes),15,0.0,1.5,0.8,0,False
+2679,sdmx_data_2679.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Fuel oil (mazut) production (thsd tonnes),15,89.8,307.9,164.1,2,False
+2680,sdmx_data_2680.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Natural gas production (mln m3),15,41523.7,65958.5,56132.1,4,False
+2681,sdmx_data_2681.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Natural gas consumption (mln m3),15,41524.5,54571.9,47343.1,4,False
+2682,sdmx_data_2682.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Coal production (thsd tonnes),15,3488.0,8464.4,4090.0,3,False
+2683,sdmx_data_2683.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Coal consumption (thsd tonnes),15,2644.5,11868.2,5698.6,4,False
+2684,sdmx_data_2684.csv,national_with_regions,0,15,9,2016,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,"Electricity consumption by subscribers, by region (mln kWh)",135,915.6,65490.5,3945.1,4,False
+2685,sdmx_data_2685.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Electricity supply to enterprises (mln kWh),15,2243.3,7635.7,4970.9,3,False
+2686,sdmx_data_2686.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Electricity supply to housing (mln kWh),15,11195.7,17839.5,12779.8,4,False
+2687,sdmx_data_2687.csv,national_with_regions,0,15,9,2016,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,135,457.1,8879.1,1432.3,3,False
+2688,sdmx_data_2688.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,1.17,2.08,1.57,0,False
+2689,sdmx_data_2689.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,0.053,0.14,0.09,-1,False
+2690,sdmx_data_2690.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,1.03,1.88,1.43,0,False
+2691,sdmx_data_2691.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,0.03,0.07,0.04,-2,False
+2692,sdmx_data_2692.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,0.01,0.02,0.02,-2,False
+2693,sdmx_data_2693.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,610.6,134248.5,7558.6,5,False
+2695,sdmx_data_2695.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,74.8,207.7,112.8,2,False
+2696,sdmx_data_2696.csv,national_with_regions,1,15,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,1125,60.5,216.5,107.9,2,False
+2699,sdmx_data_2699.csv,national_with_regions,1,15,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,1125,223581.6,482443065.2,7625302.2,8,False
+2700,sdmx_data_2700.csv,national_with_regions,1,15,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,1125,83.7,150.7,108.2,2,False
+2704,sdmx_data_2704.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,410068.1,362.8,5,False
+2705,sdmx_data_2705.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,92.5,127.2,112.0,2,False
+274,sdmx_data_274.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,48.4,84.5,78.2,1,False
+275,sdmx_data_275.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,8946.9,614.0,3,False
+276,sdmx_data_276.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,3.7,96.9,54.0,2,False
+279,sdmx_data_279.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,179.1,3.8,2,False
+280,sdmx_data_280.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,11081.0,45.0,4,True
+2816,sdmx_data_2816.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,183.1,10738.1,770.1,4,False
+2821,sdmx_data_2821.csv,national_with_regions,1,15,75,2023-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,1125,223581.6,482443065.2,7625302.2,8,False
+2822,sdmx_data_2822.csv,national_with_regions,1,15,39,2023-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,585,83.7,150.7,108.3,2,False
+2826,sdmx_data_2826.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,8.0,183748.1,161.9,5,False
+2827,sdmx_data_2827.csv,national_with_regions,1,15,39,2023-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,585,6.5,237634.6,2863.4,5,False
+2828,sdmx_data_2828.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,74.3,170.1,111.2,2,False
+2829,sdmx_data_2829.csv,national_with_regions,1,15,39,2023-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,585,72.6,130.4,109.8,2,False
+283,sdmx_data_283.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,5.1,0.02,0,False
+2830,sdmx_data_2830.csv,national_with_regions,0,15,11,2014,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,165,109.3,112841.4,1417.2,5,False
+2831,sdmx_data_2831.csv,national_with_regions,0,15,11,2014,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,165,18.6,627.7,110.1,2,False
+2833,sdmx_data_2833.csv,national_single,0,1,9,2016,2024,Republic of Uzbekistan,,9,6.0,15211.5,1002.5,4,False
+2834,sdmx_data_2834.csv,national_with_regions,0,221,14,2012,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3094,0.0,448.99,0.52,2,False
+2835,sdmx_data_2835.csv,national_with_regions,0,15,15,2011,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,449.4,21039.2,1541.4,4,False
+284,sdmx_data_284.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,895.5,31.6,2,False
+285,sdmx_data_285.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,29.4,0.1,1,False
+286,sdmx_data_286.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,110.2,0.1,2,False
+287,sdmx_data_287.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,1085.0,4.0,3,True
+291,sdmx_data_291.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,1.8,0.0,0,False
+292,sdmx_data_292.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.84,100.0,99.99,2,False
+293,sdmx_data_293.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.3,2.1,1.4,0,False
+294,sdmx_data_294.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,452.0,9.6,2,False
+2943,sdmx_data_2943.csv,national_with_regions,0,15,14,2022-Q4,2025-Q4,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,538919.7,16829.15,5,False
+2944,sdmx_data_2944.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,109.7,104.0,2,False
+2945,sdmx_data_2945.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,508711.1,16216.55,5,False
+2946,sdmx_data_2946.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,109.7,104.0,2,False
+2947,sdmx_data_2947.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,149440.7,3268.0,5,False
+2948,sdmx_data_2948.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,317236.3,11685.599999999999,5,False
+2949,sdmx_data_2949.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,42034.1,845.25,4,False
+2950,sdmx_data_2950.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,41.5,20.6,1,False
+2951,sdmx_data_2951.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,93.3,71.2,1,False
+2952,sdmx_data_2952.csv,national_with_regions,0,15,14,2022-Q4,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,210,0.0,20.7,4.9,1,False
+2958,sdmx_data_2958.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,200.3,8.7,2,False
+2959,sdmx_data_2959.csv,international,0,16,10,2016,2025,"Composite index | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,160,0.0,229.0,113.15,2,False
+2960,sdmx_data_2960.csv,international,0,16,10,2016,2025,"Composite index | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,160,0.0,233.7,114.9,2,False
+2961,sdmx_data_2961.csv,international,0,4,16,2022-Q2,2026-Q1,"Agriculture, forestry and fisheries | Agricultural, hunting products and services in these areas | Forestry, wood products and related services | Fish and other fishery products; fishery products; fishing and related services",,64,97.5,115.9,102.6,2,False
+2962,sdmx_data_2962.csv,national_with_regions,1,15,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,1125,1010112.9,15464442.6,3800240.9,7,False
+298,sdmx_data_298.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.9,100.0,100.0,2,False
+299,sdmx_data_299.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,0.6,0.0,-1,False
+3003,sdmx_data_3003.csv,national_single,0,1,26,2000,2025,Republic of Uzbekistan,,26,103.65,128.2,107.7,2,False
+301,sdmx_data_301.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,56812.1,3219.3,4,False
+304,sdmx_data_304.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,8.5,35.8,14.0,1,False
+306,sdmx_data_306.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.82,100.0,99.98,2,False
+307,sdmx_data_307.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3536,0.0,177.0,1.0,2,True
+3075,sdmx_data_3075.csv,national_single,1,1,39,2023-M01,2026-M03,Republic of Uzbekistan,,39,10646603.2,543262946.5,154922150.9,8,False
+3076,sdmx_data_3076.csv,national_single,1,1,39,2023-M01,2026-M03,Republic of Uzbekistan,,39,103.3,116.5,111.4,2,False
+3078,sdmx_data_3078.csv,international,0,96,15,2010,2024,"Articles of clothing and clothing accessories, other than knitted or crocheted | Cotton | Cork and its products | Tobacco and industrial tobacco substitutes; products containing or not containing nicotine intended to be inhaled without burning; other products containing nicotine and intended for the intake of nicotine into the human body | Salt; sulphur; earths and stone; plastering materials, lime and cement",,1440,0.0,8334560.1,7966.15,6,False
+3079,sdmx_data_3079.csv,international,1,96,39,2023-M01,2026-M03,"Articles of clothing and clothing accessories, other than knitted or crocheted | Cotton | Cork and its products | Tobacco and industrial tobacco substitutes; products containing or not containing nicotine intended to be inhaled without burning; other products containing nicotine and intended for the intake of nicotine into the human body | Salt; sulphur; earths and stone; plastering materials, lime and cement",,3744,0.0,10536874.4,9166.1,7,False
+308,sdmx_data_308.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.6,15.4,2.3,1,False
+3080,sdmx_data_3080.csv,international,1,96,39,2023-M01,2026-M03,"Articles of clothing and clothing accessories, other than knitted or crocheted | Cotton | Cork and its products | Tobacco and industrial tobacco substitutes; products containing or not containing nicotine intended to be inhaled without burning; other products containing nicotine and intended for the intake of nicotine into the human body | Salt; sulphur; earths and stone; plastering materials, lime and cement",,3744,-537264.5,1932795.3,1990.75,6,False
+3082,sdmx_data_3082.csv,international,1,11,63,2021-M01,2026-M03,Machines and transport equipment | Various finished products | Other goods | Services | Beverages and tobacco,,693,0.0,10092.5,491.4,4,False
+3083,sdmx_data_3083.csv,international,0,76,15,2010,2024,"851762 Machines for the reception, conversion & transmission/regeneration of voice,images/other data, incl. switching & routing apparatus | 851829 Loudspeakers n.e.s. in 85.18, whether/not mounted in their enclosures | 854130 Thyristors, diacs & triacs (excl. photosensitive devices) | 852841 Cathode-ray tube monitors , of a kind solely/principally used in an automaticdata processing system of heading 84.71 | 852990 Other parts suitable for use solely/principally with the apparatus of headings85.25 to 85.28., other than aerials & aerial reflectors of all kinds",,1140,0.0,52033.2,0.0,4,False
+3086,sdmx_data_3086.csv,international,1,11,63,2021-M01,2026-M03,Machines and transport equipment | Various finished products | Other goods | Services | Beverages and tobacco,,693,0.0,15995.9,823.7,4,False
+3087,sdmx_data_3087.csv,international,0,96,15,2010,2024,"Articles of clothing and clothing accessories, other than knitted or crocheted | Cotton | Cork and its products | Tobacco and industrial tobacco substitutes; products containing or not containing nicotine intended to be inhaled without burning; other products containing nicotine and intended for the intake of nicotine into the human body | Salt; sulphur; earths and stone; plastering materials, lime and cement",,1440,0.0,6151626.7,30555.85,6,False
+3088,sdmx_data_3088.csv,international,1,96,39,2023-M01,2026-M03,"Articles of clothing and clothing accessories, other than knitted or crocheted | Cotton | Cork and its products | Tobacco and industrial tobacco substitutes; products containing or not containing nicotine intended to be inhaled without burning; other products containing nicotine and intended for the intake of nicotine into the human body | Salt; sulphur; earths and stone; plastering materials, lime and cement",,3744,0.0,7362874.2,33474.45,6,False
+3089,sdmx_data_3089.csv,international,1,96,39,2023-M01,2026-M03,"Articles of clothing and clothing accessories, other than knitted or crocheted | Cotton | Cork and its products | Tobacco and industrial tobacco substitutes; products containing or not containing nicotine intended to be inhaled without burning; other products containing nicotine and intended for the intake of nicotine into the human body | Salt; sulphur; earths and stone; plastering materials, lime and cement",,3744,-30310.8,810089.9,7272.7,5,False
+309,sdmx_data_309.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.9,100.0,100.0,2,False
+3090,sdmx_data_3090.csv,international,0,89,15,2010,2024,"851762 Machines for the reception, conversion & transmission/regeneration of voice,images/other data, incl. switching & routing apparatus | 851829 Loudspeakers n.e.s. in 85.18, whether/not mounted in their enclosures | 854130 Thyristors, diacs & triacs (excl. photosensitive devices) | 852841 Cathode-ray tube monitors , of a kind solely/principally used in an automaticdata processing system of heading 84.71 | 852990 Other parts suitable for use solely/principally with the apparatus of headings85.25 to 85.28., other than aerials & aerial reflectors of all kinds",,1335,0.0,203144.3,384.4,5,False
+3098,sdmx_data_3098.csv,national_single,0,1,8,2017,2024,Republic of Uzbekistan,,8,0.3,4.4,2.3499999999999996,0,False
+3099,sdmx_data_3099.csv,national_single,0,1,8,2017,2024,Republic of Uzbekistan,,8,3.4,26.2,9.149999999999999,1,False
+310,sdmx_data_310.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,573.9,9.0,2,False
+3100,sdmx_data_3100.csv,national_single,0,1,8,2017,2024,Republic of Uzbekistan,,8,0.0,7.7,4.25,0,False
+3101,sdmx_data_3101.csv,national_single,0,1,8,2017,2024,Republic of Uzbekistan,,8,62.1,86.1,74.3,1,False
+3102,sdmx_data_3102.csv,national_single,0,1,8,2017,2024,Republic of Uzbekistan,,8,0.2,12.3,5.7,1,False
+3103,sdmx_data_3103.csv,national_single,0,1,8,2017,2024,Republic of Uzbekistan,,8,0.6,1.4,1.05,0,False
+311,sdmx_data_311.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,40.4,1.6,1,False
+312,sdmx_data_312.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,93.5,2.5,1,False
+313,sdmx_data_313.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.03,1.3,0.2,0,False
+314,sdmx_data_314.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.9,100.0,100.0,2,False
+315,sdmx_data_315.csv,national_with_regions,0,15,6,2019,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,90,0.0,2.1,0.0,0,False
+316,sdmx_data_316.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.9,100.0,100.0,2,False
+3165,sdmx_data_3165.csv,international,0,6,15,2010,2024,Europe | Asia | North America | South America | Africa,,90,0.1,14425.3,44.55,4,False
+3166,sdmx_data_3166.csv,international,0,6,15,2010,2024,Europe | Asia | North America | South America | Africa,,90,1.7,23094.7,343.55,4,False
+3167,sdmx_data_3167.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,50807.7,84185.4,60180.8,4,False
+3168,sdmx_data_3168.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,1.8,2.2,1.9,0,False
+3169,sdmx_data_3169.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,15007.1,26151.6,19469.0,4,False
+317,sdmx_data_317.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.7,2.6,1.4,0,False
+3170,sdmx_data_3170.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,188.8,1566.0,373.4,3,False
+3171,sdmx_data_3171.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,6870.3,18053.9,9202.4,4,False
+3172,sdmx_data_3172.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,,15,1058.0,2115.0,1214.4,3,False
+3176,sdmx_data_3176.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,208.1,29756.7,1094.3000000000002,4,False
+3177,sdmx_data_3177.csv,national_single,0,1,10,2015,2024,Republic of Uzbekistan,,10,265.5,2382.0,687.55,3,False
+3178,sdmx_data_3178.csv,national_single,0,1,10,2015,2024,Republic of Uzbekistan,,10,466.3,2932.0,902.7,3,False
+3179,sdmx_data_3179.csv,national_single,0,1,10,2015,2024,Republic of Uzbekistan,,10,7793.7,28592.7,16798.85,4,False
+318,sdmx_data_318.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,7.5,3.8,0,False
+3180,sdmx_data_3180.csv,national_single,0,1,10,2015,2024,Republic of Uzbekistan,,10,18339.7,38406.0,24447.550000000003,4,False
+320,sdmx_data_320.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,3.1,0.04,0,False
+321,sdmx_data_321.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,Total income of population (bln UZS),16,62631.6,1134252.7,290155.4,6,False
+3215,sdmx_data_3215.csv,national_with_regions,1,15,27,2024-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,405,710.0,1050292.5,18238.2,6,False
+3216,sdmx_data_3216.csv,national_with_regions,1,15,27,2024-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,405,106.9,125.3,113.0,2,False
+3217,sdmx_data_3217.csv,international,1,14,27,2024-M01,2026-M03,Trade | Information and communication | Transport activities | of which: motor transport | Accommodation and food service activities,,378,567.7,226955.8,13219.45,5,False
+3218,sdmx_data_3218.csv,international,1,14,27,2024-M01,2026-M03,Trade | Information and communication | Transport activities | of which: motor transport | Accommodation and food service activities,,378,102.3,131.5,111.4,2,False
+322,sdmx_data_322.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,0.2,0.1,-1,False
+323,sdmx_data_323.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,4153.6,181.8,3,False
+324,sdmx_data_324.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,13555.1,615.0,4,False
+3247,sdmx_data_3247.csv,national_with_regions,1,15,27,2024-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,405,615.3,126343.7,6038.8,5,False
+3248,sdmx_data_3248.csv,national_with_regions,1,15,27,2024-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,405,105.4,121.5,110.7,2,False
+3249,sdmx_data_3249.csv,national_with_regions,0,15,9,2024-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,135,4.4,1434.5,36.1,3,False
+325,sdmx_data_325.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,26.8,72.0,51.1,1,False
+3250,sdmx_data_3250.csv,national_with_regions,0,15,9,2024-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,135,20.4,6989.0,192.8,3,False
+3253,sdmx_data_3253.csv,international,0,27,11,2016,2026,"Book publishing | Web portals | The post-production stage of the production of film-video films and television programs | Distribution of films, videos and television programs | Activities for the publication of phonograms and music recordings",,297,0.0,12204.0,212.0,4,True
+326,sdmx_data_326.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,2766.2,173.0,3,False
+3263,sdmx_data_3263.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,348.5,1601.0,762.4,3,False
+3264,sdmx_data_3264.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,17.9,107.9,51.6,2,False
+3265,sdmx_data_3265.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,15.4,61.8,31.4,1,False
+3266,sdmx_data_3266.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,2.3,205.2,14.4,2,False
+3267,sdmx_data_3267.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,19.1,84.02,41.0,1,False
+3268,sdmx_data_3268.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,6.1,28.4,13.1,1,False
+3269,sdmx_data_3269.csv,national_with_regions,0,15,9,2024-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,135,80.8,26110.3,851.3,4,False
+327,sdmx_data_327.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,8.5,3.9,0,False
+3270,sdmx_data_3270.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,7.1,28.8,14.3,1,False
+3271,sdmx_data_3271.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,40.6,2269.6,269.1,3,False
+3272,sdmx_data_3272.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,1544.3,7299.5,3389.4,3,False
+3273,sdmx_data_3273.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,2.7,10.5,5.3,1,False
+3274,sdmx_data_3274.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,0.09,0.7,0.3,-1,False
+3275,sdmx_data_3275.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,0.7,2.9,1.8,0,False
+3276,sdmx_data_3276.csv,national_single,0,1,8,2024-Q1,2025-Q4,Republic of Uzbekistan,,8,63.8,286.75,167.75,2,False
+3277,sdmx_data_3277.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,1.7,9.65,4.0,1,False
+3278,sdmx_data_3278.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,36.1,174.9,80.9,2,False
+3279,sdmx_data_3279.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,1.0,4.3,2.1,0,False
+328,sdmx_data_328.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,1229.5,48.3,3,False
+3280,sdmx_data_3280.csv,national_with_regions,0,15,9,2024-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,135,0.6,144.8,4.6,2,False
+3281,sdmx_data_3281.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,2.5,17.7,8.8,1,False
+3282,sdmx_data_3282.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,2.5,10.2,6.2,1,False
+3283,sdmx_data_3283.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,464.9,2090.5,1060.1,3,False
+3284,sdmx_data_3284.csv,national_single,0,1,9,2024-Q1,2026-Q1,Republic of Uzbekistan,,9,3.5,23.6,10.5,1,False
+329,sdmx_data_329.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Total income per capita by region,240,1498.9,73910.5,8771.15,4,False
+330,sdmx_data_330.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,3875.2,140.4,3,False
+331,sdmx_data_331.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,3.8,1.3,0,False
+332,sdmx_data_332.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,1726.4,76.5,3,False
+333,sdmx_data_333.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.001,0.5,0.02,-1,False
+334,sdmx_data_334.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,Growth rate of total income (%),16,112.7,137.2,121.2,2,False
+335,sdmx_data_335.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,276.4,8.4,2,False
+336,sdmx_data_336.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.01,25.9,2.0,1,False
+337,sdmx_data_337.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,976.1,32.3,3,False
+3377,sdmx_data_3377.csv,international,0,21,13,2013,2025,"Agriculture, forestry and fisheries | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,273,0.0,45407.0,407.0,4,True
+338,sdmx_data_338.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.2,16.7,2.2,1,False
+339,sdmx_data_339.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,2839.6,135.5,3,False
+340,sdmx_data_340.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.03,2.1,0.5,0,False
+341,sdmx_data_341.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,3271.4,147.2,3,False
+342,sdmx_data_342.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,33.9,89.9,67.6,1,False
+343,sdmx_data_343.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,1728.1,72.0,3,False
+3438,sdmx_data_3438.csv,national_single,0,1,4,2021,2024,Republic of Uzbekistan,,4,0.07,0.16,0.135,-1,False
+344,sdmx_data_344.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.16,1504.5,79.65,3,False
+345,sdmx_data_345.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.04,64.6,11.3,1,False
+346,sdmx_data_346.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,138.5,6.0,2,False
+347,sdmx_data_347.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,109.5,4.75,2,False
+349,sdmx_data_349.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,0.8,0.1,-1,False
+3495,sdmx_data_3495.csv,national_with_regions,0,15,5,2021,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Poverty rate (%),75,3.5,30.5,10.6,1,False
+350,sdmx_data_350.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,1279.8,47.3,3,False
+352,sdmx_data_352.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,70.4,85.1,78.6,1,False
+354,sdmx_data_354.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.1,95.3,5.1,2,False
+355,sdmx_data_355.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,3516.0,7068.0,6327.0,3,True
+357,sdmx_data_357.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,48.8,98.5,82.7,2,False
+359,sdmx_data_359.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,219.9,6.9,2,False
+360,sdmx_data_360.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,67.1,82.2,76.25,1,False
+363,sdmx_data_363.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,2062.0,4587.0,3931.0,3,True
+365,sdmx_data_365.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,1.8,3.3,2.2,0,False
+366,sdmx_data_366.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,2136.0,6731.0,5491.0,3,True
+369,sdmx_data_369.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.1,536.5,20.8,2,False
+370,sdmx_data_370.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,235.0,6.449999999999999,2,False
+372,sdmx_data_372.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,14.9,29.6,21.4,1,False
+373,sdmx_data_373.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,49.0,116.0,89.1,2,False
+374,sdmx_data_374.csv,national_with_regions,0,15,17,2010,2026-Q1*,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,4.1,73.0,36.6,1,False
+375,sdmx_data_375.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,111.6,3.3,2,False
+376,sdmx_data_376.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Thermal power capacity (MW),15,10758.2,16319.4,12276.5,4,False
+377,sdmx_data_377.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,79.3,2.5,1,False
+3771,sdmx_data_3771.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,125693.0,3603.5,5,True
+3772,sdmx_data_3772.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,113544.0,3427.0,5,True
+3773,sdmx_data_3773.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,133314.0,3449.5,5,True
+3774,sdmx_data_3774.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,126421.0,3511.0,5,True
+3775,sdmx_data_3775.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,118274.0,3505.0,5,True
+3776,sdmx_data_3776.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,130653.0,3526.5,5,True
+3777,sdmx_data_3777.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,134884.0,3548.0,5,True
+3778,sdmx_data_3778.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,131224.0,3440.0,5,True
+3779,sdmx_data_3779.csv,international,1,41,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6560,0.0,150000.0,3488.0,5,True
+3780,sdmx_data_3780.csv,international,1,41,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6560,0.0,134865.0,4660.0,5,True
+3781,sdmx_data_3781.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,121773.0,3839.0,5,True
+3782,sdmx_data_3782.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,129741.0,3699.5,5,True
+3783,sdmx_data_3783.csv,international,1,42,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6720,0.0,120749.0,3658.5,5,True
+3784,sdmx_data_3784.csv,international,1,41,160,2013-M01,2026-M04,Rice | Barley | Wheat | Corn | Bran,,6560,0.0,108000.0,3556.5,5,True
+379,sdmx_data_379.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,5.4,16.7,14.4,1,False
+380,sdmx_data_380.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Hydroelectric capacity (MW),15,1787.9,3831.9,1880.4,3,False
+382,sdmx_data_382.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,31.2,0.7,1,False
+383,sdmx_data_383.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,2.0,0.0,0,False
+385,sdmx_data_385.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,198.2,5.1,2,False
+386,sdmx_data_386.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,3.7,32.8,24.2,1,False
+390,sdmx_data_390.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,32.3,1.05,1,False
+394,sdmx_data_394.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,85.1,1.4,1,False
+395,sdmx_data_395.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,93.4,1217.0,866.2,3,False
+398,sdmx_data_398.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,82.7,4.25,1,False
+399,sdmx_data_399.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,37.4,30.5,1,False
+400,sdmx_data_400.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,22.0,0.3,1,False
+401,sdmx_data_401.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,15.4,0.2,1,False
+402,sdmx_data_402.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,3.2,90.3,37.3,1,False
+403,sdmx_data_403.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,1389.1,67597.0,7739.5,4,False
+404,sdmx_data_404.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,1387.1,412.7,3,False
+405,sdmx_data_405.csv,national_with_regions,0,15,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,1.3,0.0,0,False
+406,sdmx_data_406.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,5893.9,110.4,3,False
+407,sdmx_data_407.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,11.9,0.2,1,False
+408,sdmx_data_408.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,335.741,1311.9,862.5,3,False
+409,sdmx_data_409.csv,national_with_regions,0,15,8,2017,2023,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,120,0.0,11.4,0.4,1,False
+410,sdmx_data_410.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,Real total income volume,16,58229.4,1042415.8,254939.0,6,False
+412,sdmx_data_412.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,1843.2,83.7,3,False
+413,sdmx_data_413.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,2942.5,166.0,3,False
+415,sdmx_data_415.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,2137.6,126.4,3,False
+417,sdmx_data_417.csv,national_with_regions,0,15,10,2015,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,150,19.1,197.2,66.25,2,False
+420,sdmx_data_420.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,12.9,86.7,71.2,1,False
+422,sdmx_data_422.csv,national_with_regions,0,15,13,2012,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,195,0.5,173.2,38.5,2,False
+425,sdmx_data_425.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,207.4,10628.7,720.6,4,False
+430,sdmx_data_430.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,14.1,25390.3,266.4,4,False
+432,sdmx_data_432.csv,international,0,16,6,2019,2024,"Residential buildings | Non-residential buildings | Other facilities | Land improvement | Machinery and equipment, total",,96,0.8,241819.0,2056.3,5,False
+433,sdmx_data_433.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,22.7,6126.8,296.5,3,False
+434,sdmx_data_434.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,92.8,137.0,108.2,2,False
+435,sdmx_data_435.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,100.2,230926.89999999997,2492.2,5,False
+440,sdmx_data_440.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Electricity production by region (mln kWh),225,0.0,82739.7,658.1,4,False
+443,sdmx_data_443.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.8,127.9,110.15,2,False
+444,sdmx_data_444.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Thermal energy production by region (thsd Gcal),225,0.0,32488.2,267.1,4,False
+446,sdmx_data_446.csv,national_single,0,1,10,2015,2024,Republic of Uzbekistan,Solar power output (mln kWh),10,0.003,3965.2,0.5,3,False
+449,sdmx_data_449.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,2.0,3.3,2.8,0,False
+4500,sdmx_data_4500.csv,international,0,36,16,2025-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,53.38,182.16,100.33,2,False
+4501,sdmx_data_4501.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,40.32,186.41,100.2,2,False
+4502,sdmx_data_4502.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,0.0,187.01,100.17,2,False
+4503,sdmx_data_4503.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,53.33,184.1,100.2,2,False
+4504,sdmx_data_4504.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,53.94,185.32,100.16499999999999,2,False
+4505,sdmx_data_4505.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,52.88,179.6,100.235,2,False
+4506,sdmx_data_4506.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,52.06,189.28,100.26,2,False
+4507,sdmx_data_4507.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,56.81,182.42,100.14,2,False
+4508,sdmx_data_4508.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,47.25,177.97,100.235,2,False
+4509,sdmx_data_4509.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,52.88,184.09,100.18,2,False
+4510,sdmx_data_4510.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,0.0,176.33,100.155,2,False
+4511,sdmx_data_4511.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,52.8,186.05,100.2,2,False
+4512,sdmx_data_4512.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,52.97,187.78,100.215,2,False
+4513,sdmx_data_4513.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,46.8,188.81,100.19,2,False
+4514,sdmx_data_4514.csv,international,0,36,16,2025-М01,2026-M04,COMPOSITE INDEX | FOOD PRODUCTS | Round grain rice | First grade wheat flour | Beef (except boneless meat),,576,0.0,170.96,100.155,2,False
+454,sdmx_data_454.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,365.0,400503.2,6899.7,5,False
+456,sdmx_data_456.csv,national_with_regions,0,15,17,2010,2026-Q1*,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,192.3,383886.1,3677.2,5,False
+457,sdmx_data_457.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,5.0,7.9,6.0,0,False
+458,sdmx_data_458.csv,national_single,0,1,11,2015,2024,Republic of Uzbekistan,Wind power output (mln kWh),11,0.0,789.6,0.0,2,False
+4585,sdmx_data_4585.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,381.8,100.23,2,False
+4586,sdmx_data_4586.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4587,sdmx_data_4587.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4588,sdmx_data_4588.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4589,sdmx_data_4589.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4590,sdmx_data_4590.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4591,sdmx_data_4591.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4592,sdmx_data_4592.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4593,sdmx_data_4593.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4594,sdmx_data_4594.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4595,sdmx_data_4595.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4596,sdmx_data_4596.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,338.6,100.0,2,False
+4597,sdmx_data_4597.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4598,sdmx_data_4598.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,394.4,100.0,2,False
+4599,sdmx_data_4599.csv,international,0,540,28,2024-М01,2026-М04,COMPOSITE INDEX | FOOD PRODUCTS | Long-grain rice | Round grain rice | Chopped rice,,15120,0.0,338.6,100.0,2,False
+460,sdmx_data_460.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,9.4,12.5,10.649999999999999,1,False
+461,sdmx_data_461.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,0.0,495445.2,10217.5,5,False
+463,sdmx_data_463.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,16.7,20.0,19.1,1,False
+466,sdmx_data_466.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,270.6,595090.5,4993.2,5,False
+467,sdmx_data_467.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,58.3,64.2,61.75,1,False
+469,sdmx_data_469.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,9.3,12382.6,134.8,4,False
+470,sdmx_data_470.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,475.2,25.3,2,False
+472,sdmx_data_472.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,129.9,24364.0,947.6,4,False
+474,sdmx_data_474.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Oil production (thsd tonnes),15,698.7,2017.9,813.6,3,False
+476,sdmx_data_476.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,81.2,18935.3,774.8,4,False
+477,sdmx_data_477.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,23.9,0.1,1,False
+479,sdmx_data_479.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,5.5,1370.1,38.0,3,False
+482,sdmx_data_482.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,310.9,4.7,2,False
+486,sdmx_data_486.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,16.74,0.3,1,False
+487,sdmx_data_487.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,76.7,322.8,123.5,2,False
+490,sdmx_data_490.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,12443.8,735.7,4,False
+491,sdmx_data_491.csv,national_with_regions,0,15,17,2010,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,255,4.3,701.6,34.5,2,False
+493,sdmx_data_493.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,12422.1,732.3,4,False
+494,sdmx_data_494.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,8864.5,379.7,3,False
+496,sdmx_data_496.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,8809.6,375.4,3,False
+498,sdmx_data_498.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,5.3,30.7,10.4,1,False
+499,sdmx_data_499.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,16631.6,810.1,4,False
+500,sdmx_data_500.csv,national_with_regions,0,221,8,2017,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,"Average nominal wage, annual (UZS)",1768,0.0,9968083.9,1968021.4500000002,7,False
+501,sdmx_data_501.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,39864.0,2063.0,4,True
+505,sdmx_data_505.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,1358.7,9.0,3,False
+506,sdmx_data_506.csv,international,0,19,37,2017-Q1,2026-Q1,"Agriculture, forestry and fisheries | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",Avg monthly wage by economic activity (quarterly),703,605299.6,18595783.8,3085721.5,7,False
+507,sdmx_data_507.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,54.6,83.8,66.9,1,False
+508,sdmx_data_508.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,24.9,28.4,25.85,1,False
+509,sdmx_data_509.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,30066.0,1813.0,4,True
+510,sdmx_data_510.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Gas condensate production (thsd tonnes),15,1188.5,2145.2,1765.4,3,False
+512,sdmx_data_512.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,199431.0,5453.0,5,True
+514,sdmx_data_514.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,71.6,75.1,74.15,1,False
+515,sdmx_data_515.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Number of labour resources,3536,0.0,20602.6,90.9,4,False
+516,sdmx_data_516.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Gasoline (motor fuel) production (thsd tonnes),15,1018.7,1413.8,1147.0,3,False
+517,sdmx_data_517.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,707.6,1505.8,950.4,3,False
+518,sdmx_data_518.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,260.5,9.6,2,False
+519,sdmx_data_519.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,1.5,0.0,0,False
+521,sdmx_data_521.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Working-age population,240,418.5,20377.4,1505.2,4,False
+522,sdmx_data_522.csv,national_with_regions,0,221,37,2017-Q1,2026-Q1,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,"Average nominal wage, quarterly (UZS)",8177,0.0,14322478.0,2377216.6,7,False
+523,sdmx_data_523.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,20.9,25.0,24.15,1,False
+525,sdmx_data_525.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,41.5,74.0,63.7,1,False
+528,sdmx_data_528.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,24.2,27.6,26.200000000000003,1,False
+530,sdmx_data_530.csv,national_with_regions,0,15,7,2018,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,105,0.0,276.1,8.1,2,False
+532,sdmx_data_532.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,Economic activity level (%),240,59.0,90.5,72.65,1,False
+536,sdmx_data_536.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,15.0,27.5,22.9,1,False
+538,sdmx_data_538.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,15.5,19.6,16.65,1,False
+541,sdmx_data_541.csv,national_with_regions,0,15,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,375,395.8,139988.2,5100.4,5,False
+543,sdmx_data_543.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,132.0,179.0,154.5,2,True
+545,sdmx_data_545.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,99.0,124.0,102.5,2,True
+549,sdmx_data_549.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,19.0,67.0,34.5,1,True
+550,sdmx_data_550.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,3.0,16.5,5.8,1,False
+551,sdmx_data_551.csv,national_with_regions,0,15,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,240,1.9,225.2,6.4,2,False
+552,sdmx_data_552.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,880198.5,341.4,5,False
+554,sdmx_data_554.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Economically active population,3536,0.0,15678.8,69.0,4,False
+555,sdmx_data_555.csv,national_with_regions,0,15,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,225,0.0,70248.2,175.0,4,False
+558,sdmx_data_558.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,37.0,85.0,54.5,1,True
+559,sdmx_data_559.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,12.0,76.0,51.0,1,True
+560,sdmx_data_560.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,30.9,162.6,100.2,2,False
+561,sdmx_data_561.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,2776067.0,10917.5,6,True
+562,sdmx_data_562.csv,international,1,29,87,2019-M01,2026-M03,"Industrial production | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,2523,21.5,433.4,105.5,2,False
+563,sdmx_data_563.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.3,2.0,0.5,0,False
+565,sdmx_data_565.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,75.0,105.0,80.5,2,True
+566,sdmx_data_566.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Economically inactive population,3536,0.0,4987.3,19.7,3,False
+567,sdmx_data_567.csv,national_with_regions,0,221,16,2010,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,Number of employed population,3536,0.0,14933.9,64.4,4,False
+568,sdmx_data_568.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,145.0,359.0,259.5,2,True
+569,sdmx_data_569.csv,national_with_regions,0,221,15,2010,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,3315,0.0,1582.8,107.3,3,False
+571,sdmx_data_571.csv,international,0,29,15,2010,2024,"Industrial production | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,435,55.7,174.5,107.2,2,False
+573,sdmx_data_573.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,1.8,4.4,3.0,0,False
+579,sdmx_data_579.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,21.0,61.0,44.0,1,True
+581,sdmx_data_581.csv,national_with_regions,0,221,13,2010,2022,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,2873,0.0,155159.1,117.7,5,False
+585,sdmx_data_585.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,91.1,99.9,94.6,2,False
+588,sdmx_data_588.csv,national_single,0,1,15,2010,2024,Republic of Uzbekistan,Total installed power capacity (MW),15,12546.1,21501.4,14191.4,4,False
+589,sdmx_data_589.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,1432017.0,6308.0,6,True
+590,sdmx_data_590.csv,international,1,29,87,2019-M01,2026-M03,"Industrial production | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,2523,42.9,1101130.8,3865.7,6,False
+592,sdmx_data_592.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.004,0.3,0.1,-1,False
+594,sdmx_data_594.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.01,0.3,0.02,-1,False
+596,sdmx_data_596.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,60.5,99.3,83.55000000000001,2,False
+599,sdmx_data_599.csv,national_with_regions,0,15,26,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,390,55.0,6642.3,267.04999999999995,3,False
+600,sdmx_data_600.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,5337288.0,22790.0,6,True
+602,sdmx_data_602.csv,national_with_regions,0,221,13,2010,2022,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Amudarya district | Beruniy  district,,2873,0.0,2673.3,108.6,3,False
+603,sdmx_data_603.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,73.4,99.6,89.1,2,False
+604,sdmx_data_604.csv,international,0,29,15,2010,2024,"Industrial production | Mining and quarrying | Manufacturing industry | Electricity, gas, steam and air conditioning | Water supply; sewerage, waste collection and disposal",,435,70.6,880198.5,3402.0,5,False
+606,sdmx_data_606.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,97.7,99.9,99.1,2,False
+607,sdmx_data_607.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,1263075.0,5370.0,6,True
+611,sdmx_data_611.csv,international,0,4,13,2010,2022,Consumer products | Wine-vodka products and beer | Non-food products | Food products,,52,17.6,4443.9,657.4,3,False
+612,sdmx_data_612.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,89.4,99.8,97.05000000000001,2,False
+614,sdmx_data_614.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.8,6.8,2.1,0,False
+617,sdmx_data_617.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,1272031.0,5344.0,6,True
+618,sdmx_data_618.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,3375.4,6932.7,5169.9,3,False
+619,sdmx_data_619.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,,16,92.9,99.9,98.2,2,False
+622,sdmx_data_622.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,38.8,270.3,70.5,2,False
+623,sdmx_data_623.csv,international,0,4,13,2010,2022,Consumer products | Wine-vodka products and beer | Non-food products | Food products,,52,502.8,155159.1,20288.1,5,False
+624,sdmx_data_624.csv,national_single,0,1,16,2010,2025,Republic of Uzbekistan,Gini coefficient,16,0.262,0.295,0.2795,-1,False
+626,sdmx_data_626.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,3238978.0,14145.0,6,True
+630,sdmx_data_630.csv,national_with_regions,0,15,13,2010,2022,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,195,68.8,183.3,107.5,2,False
+632,sdmx_data_632.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,3218218.0,15207.0,6,True
+634,sdmx_data_634.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,6.2,22.9,14.9,1,False
+638,sdmx_data_638.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,3193796.0,14048.0,6,True
+643,sdmx_data_643.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,3015265.0,11820.5,6,True
+644,sdmx_data_644.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,53.0,76.4,64.5,1,False
+645,sdmx_data_645.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,1.2,92.4,14.9,1,False
+646,sdmx_data_646.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.3,77.1,0.8,1,False
+647,sdmx_data_647.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,4534340.0,19076.0,6,True
+648,sdmx_data_648.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,26.8,39.3,31.1,1,False
+650,sdmx_data_650.csv,national_with_regions,0,222,13,2013,2025,Republic of Uzbekistan | Republic of Karakalpakstan | Nukus city | Taxiatosh city | Amudarya district,,2886,0.0,3368814.0,14689.5,6,True
+666,sdmx_data_666.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,29.5,71.2,36.1,1,False
+668,sdmx_data_668.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,43.3,74.9,44.2,1,False
+670,sdmx_data_670.csv,national_with_regions,0,14,25,2000,2024,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,350,1361.0,42319.0,3626.5,4,True
+671,sdmx_data_671.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,1.5,32.6,2.2,1,False
+673,sdmx_data_673.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,13.1,14.3,13.9,1,False
+675,sdmx_data_675.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,13.0,14.2,13.8,1,False
+677,sdmx_data_677.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,0.2,0.1,-1,False
+679,sdmx_data_679.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,3.5,4.8,4.2,0,False
+682,sdmx_data_682.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,1.3,2.6,1.6,0,False
+683,sdmx_data_683.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,5.7,6.4,6.1,0,False
+685,sdmx_data_685.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,0.0,138.9,89.1,2,False
+686,sdmx_data_686.csv,national_single,0,1,25,2000,2024,Republic of Uzbekistan,,25,35.6,423.7,38.0,2,False
+964,sdmx_data_964.csv,national_with_regions,1,15,75,2020-M01,2026-M03,Republic of Uzbekistan | Republic of Karakalpakstan | Andijan region | Bukhara region | Jizzakh region,,1125,73353.5,543262946.5,3343616.5,8,False

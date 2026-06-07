@@ -1,0 +1,32 @@
+id,column,unit,title,source
+376,thermal_capacity_mw,MW,Thermal power capacity,https://stat.uz/uz/sdmx/data/376.csv
+380,hydro_capacity_mw,MW,Hydroelectric capacity,https://stat.uz/uz/sdmx/data/380.csv
+446,solar_output_mln_kwh,mln kWh,Solar power output,https://stat.uz/uz/sdmx/data/446.csv
+458,wind_output_mln_kwh,mln kWh,Wind power output,https://stat.uz/uz/sdmx/data/458.csv
+474,oil_production_kt,thsd t,Oil production,https://stat.uz/uz/sdmx/data/474.csv
+510,gas_condensate_production_kt,thsd t,Gas condensate production,https://stat.uz/uz/sdmx/data/510.csv
+516,gasoline_production_kt,thsd t,Gasoline (motor fuel) production,https://stat.uz/uz/sdmx/data/516.csv
+588,total_power_capacity_mw,MW,Total installed power capacity,https://stat.uz/uz/sdmx/data/588.csv
+2676,diesel_production_kt,thsd t,Diesel fuel production,https://stat.uz/uz/sdmx/data/2676.csv
+2677,aviakerosene_production_kt,thsd t,Aviation kerosene production,https://stat.uz/uz/sdmx/data/2677.csv
+2678,aviagasoline_production_kt,thsd t,Aviation gasoline production,https://stat.uz/uz/sdmx/data/2678.csv
+2679,fuel_oil_production_kt,thsd t,Fuel oil (mazut) production,https://stat.uz/uz/sdmx/data/2679.csv
+2680,nat_gas_production_mcm,mln m3,Natural gas production,https://stat.uz/uz/sdmx/data/2680.csv
+2681,nat_gas_consumption_mcm,mln m3,Natural gas consumption,https://stat.uz/uz/sdmx/data/2681.csv
+2682,coal_production_kt,thsd t,Coal production,https://stat.uz/uz/sdmx/data/2682.csv
+2683,coal_consumption_kt,thsd t,Coal consumption,https://stat.uz/uz/sdmx/data/2683.csv
+2685,elec_supply_enterprises_gwh,GWh,Electricity supply to enterprises,https://stat.uz/uz/sdmx/data/2685.csv
+2686,elec_supply_housing_gwh,GWh,Electricity supply to housing,https://stat.uz/uz/sdmx/data/2686.csv
+440,elec_production_gwh,GWh,Electricity production,https://stat.uz/uz/sdmx/data/440.csv
+444,thermal_energy_production_kkcal,thsd Gcal,Thermal energy production,https://stat.uz/uz/sdmx/data/444.csv
+2684,elec_consumption_subscribers_gwh,GWh,Electricity consumption by subscribers,https://stat.uz/uz/sdmx/data/2684.csv
+246,population_total,persons,Permanent population (total),https://stat.uz/uz/sdmx/data/246.csv
+247,population_rural,persons,Permanent population (rural),https://stat.uz/uz/sdmx/data/247.csv
+248,population_urban,persons,Permanent population (urban),https://stat.uz/uz/sdmx/data/248.csv
+236,population_density,per km2,Population density,https://stat.uz/uz/sdmx/data/236.csv
+500,avg_nominal_wage_uzs,UZS,Average nominal wage (annual),https://stat.uz/uz/sdmx/data/500.csv
+567,employed_persons,persons,Number of employed population,https://stat.uz/uz/sdmx/data/567.csv
+321,total_income_population_uzs,bln UZS,Total income of the population,https://stat.uz/uz/sdmx/data/321.csv
+624,gini_coefficient,index,Income inequality (Gini coefficient),https://stat.uz/uz/sdmx/data/624.csv
+3495,poverty_rate_pct,%,Poverty rate,https://stat.uz/uz/sdmx/data/3495.csv
+1737,low_income_share_pct,%,Share of low-income population,https://stat.uz/uz/sdmx/data/1737.csv

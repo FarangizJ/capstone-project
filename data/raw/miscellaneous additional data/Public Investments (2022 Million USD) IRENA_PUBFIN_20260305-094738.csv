@@ -1,0 +1,555 @@
+"Public Investments (2022 Million USD) by Country/area, Technology and Year"
+
+"Country/area","Technology","Year",Public Investments (2022 Million USD)
+"Uzbekistan","On-grid solar photovoltaic","2000",-
+"Uzbekistan","On-grid solar photovoltaic","2001",-
+"Uzbekistan","On-grid solar photovoltaic","2002",-
+"Uzbekistan","On-grid solar photovoltaic","2003",-
+"Uzbekistan","On-grid solar photovoltaic","2004",0.23
+"Uzbekistan","On-grid solar photovoltaic","2005",-
+"Uzbekistan","On-grid solar photovoltaic","2006",-
+"Uzbekistan","On-grid solar photovoltaic","2007",-
+"Uzbekistan","On-grid solar photovoltaic","2008",-
+"Uzbekistan","On-grid solar photovoltaic","2009",-
+"Uzbekistan","On-grid solar photovoltaic","2010",-
+"Uzbekistan","On-grid solar photovoltaic","2011",-
+"Uzbekistan","On-grid solar photovoltaic","2012",-
+"Uzbekistan","On-grid solar photovoltaic","2013",109.64
+"Uzbekistan","On-grid solar photovoltaic","2014",-
+"Uzbekistan","On-grid solar photovoltaic","2015",0.17
+"Uzbekistan","On-grid solar photovoltaic","2016",-
+"Uzbekistan","On-grid solar photovoltaic","2017",-
+"Uzbekistan","On-grid solar photovoltaic","2018",-
+"Uzbekistan","On-grid solar photovoltaic","2019",0.02
+"Uzbekistan","On-grid solar photovoltaic","2020",31.10
+"Uzbekistan","On-grid solar photovoltaic","2021",71.80
+"Uzbekistan","On-grid solar photovoltaic","2022",-
+"Uzbekistan","On-grid solar photovoltaic","2023",569.39
+"Uzbekistan","Off-grid solar photovoltaic","2000",-
+"Uzbekistan","Off-grid solar photovoltaic","2001",-
+"Uzbekistan","Off-grid solar photovoltaic","2002",-
+"Uzbekistan","Off-grid solar photovoltaic","2003",-
+"Uzbekistan","Off-grid solar photovoltaic","2004",-
+"Uzbekistan","Off-grid solar photovoltaic","2005",-
+"Uzbekistan","Off-grid solar photovoltaic","2006",-
+"Uzbekistan","Off-grid solar photovoltaic","2007",-
+"Uzbekistan","Off-grid solar photovoltaic","2008",-
+"Uzbekistan","Off-grid solar photovoltaic","2009",-
+"Uzbekistan","Off-grid solar photovoltaic","2010",-
+"Uzbekistan","Off-grid solar photovoltaic","2011",-
+"Uzbekistan","Off-grid solar photovoltaic","2012",-
+"Uzbekistan","Off-grid solar photovoltaic","2013",-
+"Uzbekistan","Off-grid solar photovoltaic","2014",-
+"Uzbekistan","Off-grid solar photovoltaic","2015",-
+"Uzbekistan","Off-grid solar photovoltaic","2016",-
+"Uzbekistan","Off-grid solar photovoltaic","2017",-
+"Uzbekistan","Off-grid solar photovoltaic","2018",-
+"Uzbekistan","Off-grid solar photovoltaic","2019",-
+"Uzbekistan","Off-grid solar photovoltaic","2020",-
+"Uzbekistan","Off-grid solar photovoltaic","2021",-
+"Uzbekistan","Off-grid solar photovoltaic","2022",-
+"Uzbekistan","Off-grid solar photovoltaic","2023",381.59
+"Uzbekistan","Solar thermal energy","2000",-
+"Uzbekistan","Solar thermal energy","2001",-
+"Uzbekistan","Solar thermal energy","2002",-
+"Uzbekistan","Solar thermal energy","2003",-
+"Uzbekistan","Solar thermal energy","2004",-
+"Uzbekistan","Solar thermal energy","2005",-
+"Uzbekistan","Solar thermal energy","2006",-
+"Uzbekistan","Solar thermal energy","2007",-
+"Uzbekistan","Solar thermal energy","2008",-
+"Uzbekistan","Solar thermal energy","2009",-
+"Uzbekistan","Solar thermal energy","2010",-
+"Uzbekistan","Solar thermal energy","2011",-
+"Uzbekistan","Solar thermal energy","2012",-
+"Uzbekistan","Solar thermal energy","2013",-
+"Uzbekistan","Solar thermal energy","2014",-
+"Uzbekistan","Solar thermal energy","2015",-
+"Uzbekistan","Solar thermal energy","2016",-
+"Uzbekistan","Solar thermal energy","2017",-
+"Uzbekistan","Solar thermal energy","2018",-
+"Uzbekistan","Solar thermal energy","2019",-
+"Uzbekistan","Solar thermal energy","2020",-
+"Uzbekistan","Solar thermal energy","2021",-
+"Uzbekistan","Solar thermal energy","2022",135.85
+"Uzbekistan","Solar thermal energy","2023",-
+"Uzbekistan","Concentrated solar power","2000",-
+"Uzbekistan","Concentrated solar power","2001",-
+"Uzbekistan","Concentrated solar power","2002",-
+"Uzbekistan","Concentrated solar power","2003",-
+"Uzbekistan","Concentrated solar power","2004",-
+"Uzbekistan","Concentrated solar power","2005",-
+"Uzbekistan","Concentrated solar power","2006",-
+"Uzbekistan","Concentrated solar power","2007",-
+"Uzbekistan","Concentrated solar power","2008",-
+"Uzbekistan","Concentrated solar power","2009",-
+"Uzbekistan","Concentrated solar power","2010",-
+"Uzbekistan","Concentrated solar power","2011",-
+"Uzbekistan","Concentrated solar power","2012",-
+"Uzbekistan","Concentrated solar power","2013",-
+"Uzbekistan","Concentrated solar power","2014",-
+"Uzbekistan","Concentrated solar power","2015",-
+"Uzbekistan","Concentrated solar power","2016",-
+"Uzbekistan","Concentrated solar power","2017",-
+"Uzbekistan","Concentrated solar power","2018",-
+"Uzbekistan","Concentrated solar power","2019",-
+"Uzbekistan","Concentrated solar power","2020",-
+"Uzbekistan","Concentrated solar power","2021",-
+"Uzbekistan","Concentrated solar power","2022",-
+"Uzbekistan","Concentrated solar power","2023",-
+"Uzbekistan","Onshore wind energy","2000",-
+"Uzbekistan","Onshore wind energy","2001",-
+"Uzbekistan","Onshore wind energy","2002",-
+"Uzbekistan","Onshore wind energy","2003",-
+"Uzbekistan","Onshore wind energy","2004",-
+"Uzbekistan","Onshore wind energy","2005",-
+"Uzbekistan","Onshore wind energy","2006",-
+"Uzbekistan","Onshore wind energy","2007",-
+"Uzbekistan","Onshore wind energy","2008",-
+"Uzbekistan","Onshore wind energy","2009",-
+"Uzbekistan","Onshore wind energy","2010",-
+"Uzbekistan","Onshore wind energy","2011",-
+"Uzbekistan","Onshore wind energy","2012",-
+"Uzbekistan","Onshore wind energy","2013",-
+"Uzbekistan","Onshore wind energy","2014",-
+"Uzbekistan","Onshore wind energy","2015",-
+"Uzbekistan","Onshore wind energy","2016",-
+"Uzbekistan","Onshore wind energy","2017",-
+"Uzbekistan","Onshore wind energy","2018",-
+"Uzbekistan","Onshore wind energy","2019",-
+"Uzbekistan","Onshore wind energy","2020",-
+"Uzbekistan","Onshore wind energy","2021",-
+"Uzbekistan","Onshore wind energy","2022",582.39
+"Uzbekistan","Onshore wind energy","2023",245.64
+"Uzbekistan","Offshore wind energy","2000",-
+"Uzbekistan","Offshore wind energy","2001",-
+"Uzbekistan","Offshore wind energy","2002",-
+"Uzbekistan","Offshore wind energy","2003",-
+"Uzbekistan","Offshore wind energy","2004",-
+"Uzbekistan","Offshore wind energy","2005",-
+"Uzbekistan","Offshore wind energy","2006",-
+"Uzbekistan","Offshore wind energy","2007",-
+"Uzbekistan","Offshore wind energy","2008",-
+"Uzbekistan","Offshore wind energy","2009",-
+"Uzbekistan","Offshore wind energy","2010",-
+"Uzbekistan","Offshore wind energy","2011",-
+"Uzbekistan","Offshore wind energy","2012",-
+"Uzbekistan","Offshore wind energy","2013",-
+"Uzbekistan","Offshore wind energy","2014",-
+"Uzbekistan","Offshore wind energy","2015",-
+"Uzbekistan","Offshore wind energy","2016",-
+"Uzbekistan","Offshore wind energy","2017",-
+"Uzbekistan","Offshore wind energy","2018",-
+"Uzbekistan","Offshore wind energy","2019",-
+"Uzbekistan","Offshore wind energy","2020",-
+"Uzbekistan","Offshore wind energy","2021",-
+"Uzbekistan","Offshore wind energy","2022",-
+"Uzbekistan","Offshore wind energy","2023",-
+"Uzbekistan","Renewable hydropower","2000",-
+"Uzbekistan","Renewable hydropower","2001",-
+"Uzbekistan","Renewable hydropower","2002",-
+"Uzbekistan","Renewable hydropower","2003",-
+"Uzbekistan","Renewable hydropower","2004",-
+"Uzbekistan","Renewable hydropower","2005",-
+"Uzbekistan","Renewable hydropower","2006",-
+"Uzbekistan","Renewable hydropower","2007",28.01
+"Uzbekistan","Renewable hydropower","2008",-
+"Uzbekistan","Renewable hydropower","2009",-
+"Uzbekistan","Renewable hydropower","2010",225.40
+"Uzbekistan","Renewable hydropower","2011",-
+"Uzbekistan","Renewable hydropower","2012",100.92
+"Uzbekistan","Renewable hydropower","2013",99.67
+"Uzbekistan","Renewable hydropower","2014",-
+"Uzbekistan","Renewable hydropower","2015",-
+"Uzbekistan","Renewable hydropower","2016",0.55
+"Uzbekistan","Renewable hydropower","2017",65.88
+"Uzbekistan","Renewable hydropower","2018",12.89
+"Uzbekistan","Renewable hydropower","2019",29.19
+"Uzbekistan","Renewable hydropower","2020",123.23
+"Uzbekistan","Renewable hydropower","2021",0.05
+"Uzbekistan","Renewable hydropower","2022",-
+"Uzbekistan","Renewable hydropower","2023",-
+"Uzbekistan","Pumped storage","2000",-
+"Uzbekistan","Pumped storage","2001",-
+"Uzbekistan","Pumped storage","2002",-
+"Uzbekistan","Pumped storage","2003",-
+"Uzbekistan","Pumped storage","2004",-
+"Uzbekistan","Pumped storage","2005",-
+"Uzbekistan","Pumped storage","2006",-
+"Uzbekistan","Pumped storage","2007",-
+"Uzbekistan","Pumped storage","2008",-
+"Uzbekistan","Pumped storage","2009",-
+"Uzbekistan","Pumped storage","2010",-
+"Uzbekistan","Pumped storage","2011",-
+"Uzbekistan","Pumped storage","2012",-
+"Uzbekistan","Pumped storage","2013",-
+"Uzbekistan","Pumped storage","2014",-
+"Uzbekistan","Pumped storage","2015",-
+"Uzbekistan","Pumped storage","2016",-
+"Uzbekistan","Pumped storage","2017",-
+"Uzbekistan","Pumped storage","2018",-
+"Uzbekistan","Pumped storage","2019",-
+"Uzbekistan","Pumped storage","2020",-
+"Uzbekistan","Pumped storage","2021",-
+"Uzbekistan","Pumped storage","2022",-
+"Uzbekistan","Pumped storage","2023",-
+"Uzbekistan","Marine energy","2000",-
+"Uzbekistan","Marine energy","2001",-
+"Uzbekistan","Marine energy","2002",-
+"Uzbekistan","Marine energy","2003",-
+"Uzbekistan","Marine energy","2004",-
+"Uzbekistan","Marine energy","2005",-
+"Uzbekistan","Marine energy","2006",-
+"Uzbekistan","Marine energy","2007",-
+"Uzbekistan","Marine energy","2008",-
+"Uzbekistan","Marine energy","2009",-
+"Uzbekistan","Marine energy","2010",-
+"Uzbekistan","Marine energy","2011",-
+"Uzbekistan","Marine energy","2012",-
+"Uzbekistan","Marine energy","2013",-
+"Uzbekistan","Marine energy","2014",-
+"Uzbekistan","Marine energy","2015",-
+"Uzbekistan","Marine energy","2016",-
+"Uzbekistan","Marine energy","2017",-
+"Uzbekistan","Marine energy","2018",-
+"Uzbekistan","Marine energy","2019",-
+"Uzbekistan","Marine energy","2020",-
+"Uzbekistan","Marine energy","2021",-
+"Uzbekistan","Marine energy","2022",-
+"Uzbekistan","Marine energy","2023",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2000",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2001",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2002",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2003",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2004",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2005",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2006",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2007",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2008",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2009",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2010",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2011",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2012",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2013",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2014",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2015",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2016",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2017",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2018",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2019",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2020",4.91
+"Uzbekistan","Other primary solid biofuels n.e.s.","2021",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2022",-
+"Uzbekistan","Other primary solid biofuels n.e.s.","2023",-
+"Uzbekistan","Renewable municipal waste","2000",-
+"Uzbekistan","Renewable municipal waste","2001",-
+"Uzbekistan","Renewable municipal waste","2002",-
+"Uzbekistan","Renewable municipal waste","2003",-
+"Uzbekistan","Renewable municipal waste","2004",-
+"Uzbekistan","Renewable municipal waste","2005",-
+"Uzbekistan","Renewable municipal waste","2006",-
+"Uzbekistan","Renewable municipal waste","2007",-
+"Uzbekistan","Renewable municipal waste","2008",-
+"Uzbekistan","Renewable municipal waste","2009",-
+"Uzbekistan","Renewable municipal waste","2010",-
+"Uzbekistan","Renewable municipal waste","2011",-
+"Uzbekistan","Renewable municipal waste","2012",-
+"Uzbekistan","Renewable municipal waste","2013",-
+"Uzbekistan","Renewable municipal waste","2014",-
+"Uzbekistan","Renewable municipal waste","2015",-
+"Uzbekistan","Renewable municipal waste","2016",-
+"Uzbekistan","Renewable municipal waste","2017",-
+"Uzbekistan","Renewable municipal waste","2018",-
+"Uzbekistan","Renewable municipal waste","2019",-
+"Uzbekistan","Renewable municipal waste","2020",-
+"Uzbekistan","Renewable municipal waste","2021",-
+"Uzbekistan","Renewable municipal waste","2022",-
+"Uzbekistan","Renewable municipal waste","2023",-
+"Uzbekistan","Biodiesel","2000",-
+"Uzbekistan","Biodiesel","2001",-
+"Uzbekistan","Biodiesel","2002",-
+"Uzbekistan","Biodiesel","2003",-
+"Uzbekistan","Biodiesel","2004",-
+"Uzbekistan","Biodiesel","2005",-
+"Uzbekistan","Biodiesel","2006",-
+"Uzbekistan","Biodiesel","2007",-
+"Uzbekistan","Biodiesel","2008",-
+"Uzbekistan","Biodiesel","2009",-
+"Uzbekistan","Biodiesel","2010",-
+"Uzbekistan","Biodiesel","2011",-
+"Uzbekistan","Biodiesel","2012",-
+"Uzbekistan","Biodiesel","2013",-
+"Uzbekistan","Biodiesel","2014",-
+"Uzbekistan","Biodiesel","2015",-
+"Uzbekistan","Biodiesel","2016",-
+"Uzbekistan","Biodiesel","2017",-
+"Uzbekistan","Biodiesel","2018",-
+"Uzbekistan","Biodiesel","2019",-
+"Uzbekistan","Biodiesel","2020",-
+"Uzbekistan","Biodiesel","2021",-
+"Uzbekistan","Biodiesel","2022",-
+"Uzbekistan","Biodiesel","2023",-
+"Uzbekistan","Liquid biofuels","2000",-
+"Uzbekistan","Liquid biofuels","2001",-
+"Uzbekistan","Liquid biofuels","2002",-
+"Uzbekistan","Liquid biofuels","2003",-
+"Uzbekistan","Liquid biofuels","2004",-
+"Uzbekistan","Liquid biofuels","2005",-
+"Uzbekistan","Liquid biofuels","2006",-
+"Uzbekistan","Liquid biofuels","2007",-
+"Uzbekistan","Liquid biofuels","2008",-
+"Uzbekistan","Liquid biofuels","2009",-
+"Uzbekistan","Liquid biofuels","2010",-
+"Uzbekistan","Liquid biofuels","2011",-
+"Uzbekistan","Liquid biofuels","2012",-
+"Uzbekistan","Liquid biofuels","2013",-
+"Uzbekistan","Liquid biofuels","2014",-
+"Uzbekistan","Liquid biofuels","2015",-
+"Uzbekistan","Liquid biofuels","2016",-
+"Uzbekistan","Liquid biofuels","2017",-
+"Uzbekistan","Liquid biofuels","2018",-
+"Uzbekistan","Liquid biofuels","2019",-
+"Uzbekistan","Liquid biofuels","2020",-
+"Uzbekistan","Liquid biofuels","2021",-
+"Uzbekistan","Liquid biofuels","2022",-
+"Uzbekistan","Liquid biofuels","2023",-
+"Uzbekistan","Biogasoline","2000",-
+"Uzbekistan","Biogasoline","2001",-
+"Uzbekistan","Biogasoline","2002",-
+"Uzbekistan","Biogasoline","2003",-
+"Uzbekistan","Biogasoline","2004",-
+"Uzbekistan","Biogasoline","2005",-
+"Uzbekistan","Biogasoline","2006",-
+"Uzbekistan","Biogasoline","2007",-
+"Uzbekistan","Biogasoline","2008",-
+"Uzbekistan","Biogasoline","2009",-
+"Uzbekistan","Biogasoline","2010",-
+"Uzbekistan","Biogasoline","2011",-
+"Uzbekistan","Biogasoline","2012",-
+"Uzbekistan","Biogasoline","2013",-
+"Uzbekistan","Biogasoline","2014",-
+"Uzbekistan","Biogasoline","2015",-
+"Uzbekistan","Biogasoline","2016",-
+"Uzbekistan","Biogasoline","2017",-
+"Uzbekistan","Biogasoline","2018",-
+"Uzbekistan","Biogasoline","2019",-
+"Uzbekistan","Biogasoline","2020",-
+"Uzbekistan","Biogasoline","2021",-
+"Uzbekistan","Biogasoline","2022",-
+"Uzbekistan","Biogasoline","2023",-
+"Uzbekistan","Biogas","2000",-
+"Uzbekistan","Biogas","2001",-
+"Uzbekistan","Biogas","2002",-
+"Uzbekistan","Biogas","2003",-
+"Uzbekistan","Biogas","2004",-
+"Uzbekistan","Biogas","2005",-
+"Uzbekistan","Biogas","2006",-
+"Uzbekistan","Biogas","2007",-
+"Uzbekistan","Biogas","2008",-
+"Uzbekistan","Biogas","2009",-
+"Uzbekistan","Biogas","2010",-
+"Uzbekistan","Biogas","2011",-
+"Uzbekistan","Biogas","2012",-
+"Uzbekistan","Biogas","2013",-
+"Uzbekistan","Biogas","2014",-
+"Uzbekistan","Biogas","2015",-
+"Uzbekistan","Biogas","2016",-
+"Uzbekistan","Biogas","2017",-
+"Uzbekistan","Biogas","2018",-
+"Uzbekistan","Biogas","2019",-
+"Uzbekistan","Biogas","2020",-
+"Uzbekistan","Biogas","2021",-
+"Uzbekistan","Biogas","2022",-
+"Uzbekistan","Biogas","2023",-
+"Uzbekistan","Geothermal energy","2000",-
+"Uzbekistan","Geothermal energy","2001",-
+"Uzbekistan","Geothermal energy","2002",-
+"Uzbekistan","Geothermal energy","2003",-
+"Uzbekistan","Geothermal energy","2004",-
+"Uzbekistan","Geothermal energy","2005",-
+"Uzbekistan","Geothermal energy","2006",-
+"Uzbekistan","Geothermal energy","2007",-
+"Uzbekistan","Geothermal energy","2008",-
+"Uzbekistan","Geothermal energy","2009",-
+"Uzbekistan","Geothermal energy","2010",-
+"Uzbekistan","Geothermal energy","2011",-
+"Uzbekistan","Geothermal energy","2012",-
+"Uzbekistan","Geothermal energy","2013",-
+"Uzbekistan","Geothermal energy","2014",-
+"Uzbekistan","Geothermal energy","2015",-
+"Uzbekistan","Geothermal energy","2016",-
+"Uzbekistan","Geothermal energy","2017",-
+"Uzbekistan","Geothermal energy","2018",-
+"Uzbekistan","Geothermal energy","2019",-
+"Uzbekistan","Geothermal energy","2020",-
+"Uzbekistan","Geothermal energy","2021",-
+"Uzbekistan","Geothermal energy","2022",-
+"Uzbekistan","Geothermal energy","2023",-
+"Uzbekistan","Multiple renewables","2000",-
+"Uzbekistan","Multiple renewables","2001",-
+"Uzbekistan","Multiple renewables","2002",-
+"Uzbekistan","Multiple renewables","2003",-
+"Uzbekistan","Multiple renewables","2004",-
+"Uzbekistan","Multiple renewables","2005",-
+"Uzbekistan","Multiple renewables","2006",-
+"Uzbekistan","Multiple renewables","2007",-
+"Uzbekistan","Multiple renewables","2008",-
+"Uzbekistan","Multiple renewables","2009",-
+"Uzbekistan","Multiple renewables","2010",-
+"Uzbekistan","Multiple renewables","2011",-
+"Uzbekistan","Multiple renewables","2012",-
+"Uzbekistan","Multiple renewables","2013",-
+"Uzbekistan","Multiple renewables","2014",-
+"Uzbekistan","Multiple renewables","2015",0.10
+"Uzbekistan","Multiple renewables","2016",0.17
+"Uzbekistan","Multiple renewables","2017",0.16
+"Uzbekistan","Multiple renewables","2018",0.95
+"Uzbekistan","Multiple renewables","2019",-
+"Uzbekistan","Multiple renewables","2020",57.25
+"Uzbekistan","Multiple renewables","2021",23.67
+"Uzbekistan","Multiple renewables","2022",47.13
+"Uzbekistan","Multiple renewables","2023",0.03
+"Uzbekistan","Coal and peat","2000",-
+"Uzbekistan","Coal and peat","2001",-
+"Uzbekistan","Coal and peat","2002",-
+"Uzbekistan","Coal and peat","2003",-
+"Uzbekistan","Coal and peat","2004",-
+"Uzbekistan","Coal and peat","2005",-
+"Uzbekistan","Coal and peat","2006",-
+"Uzbekistan","Coal and peat","2007",-
+"Uzbekistan","Coal and peat","2008",-
+"Uzbekistan","Coal and peat","2009",-
+"Uzbekistan","Coal and peat","2010",-
+"Uzbekistan","Coal and peat","2011",-
+"Uzbekistan","Coal and peat","2012",382.89
+"Uzbekistan","Coal and peat","2013",-
+"Uzbekistan","Coal and peat","2014",-
+"Uzbekistan","Coal and peat","2015",-
+"Uzbekistan","Coal and peat","2016",-
+"Uzbekistan","Coal and peat","2017",-
+"Uzbekistan","Coal and peat","2018",91.37
+"Uzbekistan","Coal and peat","2019",-
+"Uzbekistan","Coal and peat","2020",-
+"Uzbekistan","Coal and peat","2021",-
+"Uzbekistan","Coal and peat","2022",-
+"Uzbekistan","Coal and peat","2023",-
+"Uzbekistan","Oil","2000",-
+"Uzbekistan","Oil","2001",-
+"Uzbekistan","Oil","2002",-
+"Uzbekistan","Oil","2003",-
+"Uzbekistan","Oil","2004",-
+"Uzbekistan","Oil","2005",-
+"Uzbekistan","Oil","2006",-
+"Uzbekistan","Oil","2007",-
+"Uzbekistan","Oil","2008",-
+"Uzbekistan","Oil","2009",-
+"Uzbekistan","Oil","2010",-
+"Uzbekistan","Oil","2011",-
+"Uzbekistan","Oil","2012",-
+"Uzbekistan","Oil","2013",-
+"Uzbekistan","Oil","2014",-
+"Uzbekistan","Oil","2015",-
+"Uzbekistan","Oil","2016",-
+"Uzbekistan","Oil","2017",-
+"Uzbekistan","Oil","2018",-
+"Uzbekistan","Oil","2019",-
+"Uzbekistan","Oil","2020",-
+"Uzbekistan","Oil","2021",-
+"Uzbekistan","Oil","2022",-
+"Uzbekistan","Oil","2023",-
+"Uzbekistan","Natural gas","2000",-
+"Uzbekistan","Natural gas","2001",-
+"Uzbekistan","Natural gas","2002",178.94
+"Uzbekistan","Natural gas","2003",-
+"Uzbekistan","Natural gas","2004",-
+"Uzbekistan","Natural gas","2005",-
+"Uzbekistan","Natural gas","2006",-
+"Uzbekistan","Natural gas","2007",-
+"Uzbekistan","Natural gas","2008",-
+"Uzbekistan","Natural gas","2009",-
+"Uzbekistan","Natural gas","2010",214.97
+"Uzbekistan","Natural gas","2011",-
+"Uzbekistan","Natural gas","2012",-
+"Uzbekistan","Natural gas","2013",281.02
+"Uzbekistan","Natural gas","2014",569.24
+"Uzbekistan","Natural gas","2015",93.12
+"Uzbekistan","Natural gas","2016",-
+"Uzbekistan","Natural gas","2017",-
+"Uzbekistan","Natural gas","2018",-
+"Uzbekistan","Natural gas","2019",1521.23
+"Uzbekistan","Natural gas","2020",95.80
+"Uzbekistan","Natural gas","2021",307.11
+"Uzbekistan","Natural gas","2022",15.52
+"Uzbekistan","Natural gas","2023",392.91
+"Uzbekistan","Fossil fuels n.e.s.","2000",-
+"Uzbekistan","Fossil fuels n.e.s.","2001",-
+"Uzbekistan","Fossil fuels n.e.s.","2002",0.35
+"Uzbekistan","Fossil fuels n.e.s.","2003",-
+"Uzbekistan","Fossil fuels n.e.s.","2004",0.00
+"Uzbekistan","Fossil fuels n.e.s.","2005",-
+"Uzbekistan","Fossil fuels n.e.s.","2006",-
+"Uzbekistan","Fossil fuels n.e.s.","2007",-
+"Uzbekistan","Fossil fuels n.e.s.","2008",-
+"Uzbekistan","Fossil fuels n.e.s.","2009",4.20
+"Uzbekistan","Fossil fuels n.e.s.","2010",-
+"Uzbekistan","Fossil fuels n.e.s.","2011",-
+"Uzbekistan","Fossil fuels n.e.s.","2012",-
+"Uzbekistan","Fossil fuels n.e.s.","2013",-
+"Uzbekistan","Fossil fuels n.e.s.","2014",118.44
+"Uzbekistan","Fossil fuels n.e.s.","2015",-
+"Uzbekistan","Fossil fuels n.e.s.","2016",-
+"Uzbekistan","Fossil fuels n.e.s.","2017",-
+"Uzbekistan","Fossil fuels n.e.s.","2018",0.81
+"Uzbekistan","Fossil fuels n.e.s.","2019",-
+"Uzbekistan","Fossil fuels n.e.s.","2020",0.13
+"Uzbekistan","Fossil fuels n.e.s.","2021",24.25
+"Uzbekistan","Fossil fuels n.e.s.","2022",151.92
+"Uzbekistan","Fossil fuels n.e.s.","2023",-
+"Uzbekistan","Nuclear","2000",0.29
+"Uzbekistan","Nuclear","2001",1.27
+"Uzbekistan","Nuclear","2002",5.47
+"Uzbekistan","Nuclear","2003",-
+"Uzbekistan","Nuclear","2004",8.41
+"Uzbekistan","Nuclear","2005",-
+"Uzbekistan","Nuclear","2006",-
+"Uzbekistan","Nuclear","2007",1.33
+"Uzbekistan","Nuclear","2008",3.27
+"Uzbekistan","Nuclear","2009",5.76
+"Uzbekistan","Nuclear","2010",17.95
+"Uzbekistan","Nuclear","2011",-
+"Uzbekistan","Nuclear","2012",-
+"Uzbekistan","Nuclear","2013",-
+"Uzbekistan","Nuclear","2014",-
+"Uzbekistan","Nuclear","2015",1.72
+"Uzbekistan","Nuclear","2016",-
+"Uzbekistan","Nuclear","2017",-
+"Uzbekistan","Nuclear","2018",-
+"Uzbekistan","Nuclear","2019",0.00
+"Uzbekistan","Nuclear","2020",0.24
+"Uzbekistan","Nuclear","2021",-
+"Uzbekistan","Nuclear","2022",-
+"Uzbekistan","Nuclear","2023",-
+"Uzbekistan","Non-renewable municipal waste","2000",-
+"Uzbekistan","Non-renewable municipal waste","2001",-
+"Uzbekistan","Non-renewable municipal waste","2002",-
+"Uzbekistan","Non-renewable municipal waste","2003",-
+"Uzbekistan","Non-renewable municipal waste","2004",-
+"Uzbekistan","Non-renewable municipal waste","2005",-
+"Uzbekistan","Non-renewable municipal waste","2006",-
+"Uzbekistan","Non-renewable municipal waste","2007",-
+"Uzbekistan","Non-renewable municipal waste","2008",-
+"Uzbekistan","Non-renewable municipal waste","2009",-
+"Uzbekistan","Non-renewable municipal waste","2010",-
+"Uzbekistan","Non-renewable municipal waste","2011",-
+"Uzbekistan","Non-renewable municipal waste","2012",-
+"Uzbekistan","Non-renewable municipal waste","2013",-
+"Uzbekistan","Non-renewable municipal waste","2014",-
+"Uzbekistan","Non-renewable municipal waste","2015",-
+"Uzbekistan","Non-renewable municipal waste","2016",-
+"Uzbekistan","Non-renewable municipal waste","2017",-
+"Uzbekistan","Non-renewable municipal waste","2018",-
+"Uzbekistan","Non-renewable municipal waste","2019",-
+"Uzbekistan","Non-renewable municipal waste","2020",-
+"Uzbekistan","Non-renewable municipal waste","2021",-
+"Uzbekistan","Non-renewable municipal waste","2022",-
+"Uzbekistan","Non-renewable municipal waste","2023",-

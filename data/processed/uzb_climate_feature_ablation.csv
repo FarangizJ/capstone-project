@@ -1,0 +1,4 @@
+variant,n_train,n_test,mape_test%,r2_test,mean_sd_test_twh
+no climate,28,5,4.392,0.411,3.526
++ HDD/CDD,28,5,4.117,0.471,3.59
++ Tmean only,28,5,4.6,0.377,3.487

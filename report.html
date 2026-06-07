@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uzbekistan Power Sector Transition Tracker</title>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<style>
+  :root {
+    --blue:    #1e3a5f;
+    --teal:    #0d9488;
+    --amber:   #d97706;
+    --red:     #dc2626;
+    --green:   #16a34a;
+    --sky:     #0284c7;
+    --gray50:  #f8fafc;
+    --gray100: #f1f5f9;
+    --gray200: #e2e8f0;
+    --gray600: #475569;
+    --gray900: #0f172a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--gray50);
+    color: var(--gray900);
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--blue);
+    display: flex; align-items: center; gap: 0;
+    padding: 0 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.35);
+  }
+  nav .brand { color: #fff; font-weight: 700; font-size: 1rem; padding: 1rem 0; flex: 1; }
+  nav a {
+    color: #cbd5e1; text-decoration: none; font-size: .82rem;
+    padding: .9rem .9rem; display: inline-block;
+    transition: color .2s, background .2s;
+    white-space: nowrap;
+  }
+  nav a:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--blue) 0%, #0d2a4a 60%, #0a1e35 100%);
+    color: #fff; padding: 5rem 2rem 4rem;
+    text-align: center;
+  }
+  .hero h1 { font-size: clamp(1.6rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: .6rem; }
+  .hero .sub { color: #94a3b8; font-size: 1rem; margin-bottom: .4rem; }
+  .hero .meta { color: #64748b; font-size: .85rem; margin-bottom: 2.5rem; }
+  .hero .tag {
+    display: inline-block; background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 999px; padding: .25rem .9rem; font-size: .78rem;
+    margin: .2rem;
+  }
+
+  .kpi-row {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 1rem; margin-top: 2.5rem;
+  }
+  .kpi {
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px; padding: 1.1rem 1.6rem;
+    min-width: 150px;
+  }
+  .kpi .val { font-size: 1.9rem; font-weight: 800; }
+  .kpi .lbl { color: #94a3b8; font-size: .75rem; margin-top: .15rem; }
+  .kpi.good .val  { color: #4ade80; }
+  .kpi.warn .val  { color: #fbbf24; }
+  .kpi.bad  .val  { color: #f87171; }
+
+  /* ── SECTIONS ── */
+  section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+  section + section { border-top: 1px solid var(--gray200); }
+  h2 {
+    font-size: 1.5rem; font-weight: 700; color: var(--blue);
+    margin-bottom: .4rem;
+    display: flex; align-items: center; gap: .6rem;
+  }
+  h2 .num {
+    background: var(--blue); color: #fff;
+    border-radius: 50%; width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: .8rem; flex-shrink: 0;
+  }
+  .section-intro { color: var(--gray600); margin-bottom: 2rem; max-width: 750px; }
+
+  /* ── CHART CARDS ── */
+  .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+  }
+  .chart-grid.single { grid-template-columns: 1fr; }
+  .chart-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.08);
+    padding: 1.4rem 1.4rem .6rem;
+    overflow: hidden;
+  }
+  .chart-card h3 { font-size: .95rem; color: var(--gray600); margin-bottom: .8rem; font-weight: 600; }
+  .chart-card .insight {
+    margin-top: .6rem; padding: .7rem 1rem;
+    background: var(--gray100); border-radius: 8px;
+    font-size: .82rem; color: var(--gray600);
+    border-left: 3px solid var(--teal);
+  }
+
+  /* ── SCENARIO CONTROLS ── */
+  .scenario-controls {
+    display: flex; flex-wrap: wrap; gap: .7rem;
+    margin-bottom: 1.5rem; align-items: center;
+  }
+  .sc-btn {
+    padding: .45rem 1.1rem; border-radius: 999px;
+    border: 2px solid; cursor: pointer;
+    font-weight: 600; font-size: .82rem;
+    transition: all .2s;
+  }
+  .sc-btn.baseline  { border-color: var(--sky);   color: var(--sky);   }
+  .sc-btn.accel     { border-color: var(--green);  color: var(--green); }
+  .sc-btn.delayed   { border-color: var(--red);    color: var(--red);   }
+  .sc-btn.active.baseline  { background: var(--sky);   color: #fff; }
+  .sc-btn.active.accel     { background: var(--green);  color: #fff; }
+  .sc-btn.active.delayed   { background: var(--red);    color: #fff; }
+
+  /* ── MODEL METRICS TABLE ── */
+  .metrics-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  .metrics-table th {
+    background: var(--blue); color: #fff;
+    padding: .65rem 1rem; text-align: left;
+    font-weight: 600;
+  }
+  .metrics-table td { padding: .6rem 1rem; border-bottom: 1px solid var(--gray200); }
+  .metrics-table tr:last-child td { border-bottom: none; }
+  .metrics-table tr:hover td { background: var(--gray100); }
+  .badge {
+    display: inline-block; padding: .15rem .55rem;
+    border-radius: 999px; font-size: .75rem; font-weight: 700;
+  }
+  .badge.good { background: #dcfce7; color: #15803d; }
+  .badge.ok   { background: #fef9c3; color: #854d0e; }
+  .badge.weak { background: #fee2e2; color: #b91c1c; }
+
+  /* ── ALERT BOX ── */
+  .alert {
+    background: #fef3c7; border: 1px solid #fcd34d;
+    border-left: 4px solid var(--amber);
+    border-radius: 8px; padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem; font-size: .88rem; color: #78350f;
+  }
+  .alert strong { display: block; margin-bottom: .25rem; }
+
+  /* ── DATA QUALITY BARS ── */
+  .quality-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .9rem; }
+  .q-card {
+    background: #fff; border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  }
+  .q-card .q-label { font-size: .8rem; color: var(--gray600); margin-bottom: .4rem; }
+  .q-card .q-bar-bg { background: var(--gray200); border-radius: 999px; height: 8px; }
+  .q-card .q-bar { height: 8px; border-radius: 999px; }
+  .q-card .q-pct { font-size: .75rem; margin-top: .3rem; color: var(--gray600); }
+
+  /* ── FINDINGS ── */
+  .findings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .finding {
+    background: #fff; border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,.07);
+    border-top: 4px solid var(--teal);
+  }
+  .finding.warn { border-top-color: var(--amber); }
+  .finding.danger { border-top-color: var(--red); }
+  .finding h4 { font-size: .95rem; margin-bottom: .5rem; }
+  .finding p  { font-size: .84rem; color: var(--gray600); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--blue); color: #94a3b8;
+    text-align: center; padding: 2rem;
+    font-size: .8rem; margin-top: 2rem;
+  }
+  footer strong { color: #e2e8f0; }
+
+  @media (max-width: 600px) {
+    nav a { padding: .7rem .5rem; font-size: .74rem; }
+    .chart-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <div class="brand">Uzbekistan Energy Tracker</div>
+  <a href="#overview">Overview</a>
+  <a href="#trends">Trends</a>
+  <a href="#models">Models</a>
+  <a href="#scenarios">Scenarios</a>
+  <a href="#findings">Findings</a>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <h1>Uzbekistan Power Sector<br>Transition Tracker</h1>
+  <p class="sub">Capstone Project &mdash; ILF Consulting Engineers Austria</p>
+  <p class="meta">Author: Farangiz Jurakhonova &nbsp;|&nbsp; Data: IEA, IRENA, World Bank &nbsp;|&nbsp; Period: 1990&ndash;2040</p>
+  <div>
+    <span class="tag">Time-Series Forecasting</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Energy Policy</span>
+    <span class="tag">Central Asia</span>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi bad">
+      <div class="val">~90%</div>
+      <div class="lbl">Fossil Share (2023)</div>
+    </div>
+    <div class="kpi warn">
+      <div class="val">10.2%</div>
+      <div class="lbl">RE Penetration (2023)</div>
+    </div>
+    <div class="kpi warn">
+      <div class="val">74.3 TWh</div>
+      <div class="lbl">Total Generation (2023)</div>
+    </div>
+    <div class="kpi bad">
+      <div class="val">97.8</div>
+      <div class="lbl">CO&sub2; Intensity gCO&sub2;/kWh (2023)</div>
+    </div>
+    <div class="kpi good">
+      <div class="val">3.2%</div>
+      <div class="lbl">Best Demand Forecast MAPE</div>
+    </div>
+    <div class="kpi warn">
+      <div class="val">3 Scenarios</div>
+      <div class="lbl">Policy Pathways to 2040</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     SECTION 1 — DATA OVERVIEW & QUALITY
+══════════════════════════════════════════════════ -->
+<section id="overview">
+  <h2><span class="num">1</span> Data Overview &amp; Quality</h2>
+  <p class="section-intro">
+    The master dataset covers 34 confirmed years (1990&ndash;2023) plus 3 preliminary rows (2024&ndash;2026).
+    Data is drawn from IEA, IRENA, and World Bank — all tier-1 sources. Key completeness issues are
+    concentrated in solar/wind (only measurable post-2017) and capacity data.
+  </p>
+
+  <div class="quality-grid" id="qgrid"></div>
+
+  <div style="margin-top:1.5rem">
+    <div class="chart-card">
+      <h3>Dataset Coverage — Confirmed vs. Preliminary by Year</h3>
+      <div id="chart-coverage" style="height:180px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SECTION 2 — HISTORICAL TRENDS
+══════════════════════════════════════════════════ -->
+<section id="trends">
+  <h2><span class="num">2</span> Historical Trends (1990&ndash;2023)</h2>
+  <p class="section-intro">
+    Uzbekistan's power sector is dominated by natural gas. Hydropower is the only significant renewable source.
+    Solar and wind generation only began appearing in the data from 2021. RE penetration has not improved
+    structurally since the 1990s.
+  </p>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Electricity Generation by Source (TWh)</h3>
+      <div id="chart-gen-stack" style="height:340px"></div>
+      <div class="insight">Natural gas has dominated since independence. Coal grew sharply post-2018.
+        Solar/wind is only visible from 2021 onward.</div>
+    </div>
+    <div class="chart-card">
+      <h3>RE Penetration vs. Fossil Share (%)</h3>
+      <div id="chart-reshare" style="height:340px"></div>
+      <div class="insight">RE peaked at 18.7% in 2005 (high-hydro year) then structurally declined.
+        By 2020 it fell to 7.5% — the lowest since independence.</div>
+    </div>
+  </div>
+
+  <div class="chart-grid" style="margin-top:1.5rem">
+    <div class="chart-card">
+      <h3>CO&sub2; Intensity of Power Generation (gCO&sub2;/kWh)</h3>
+      <div id="chart-co2" style="height:300px"></div>
+      <div class="insight">CO&sub2; intensity fluctuates with hydro availability. The 2018&ndash;2020 dip
+        reflects a methodological shift, not a structural improvement.</div>
+    </div>
+    <div class="chart-card">
+      <h3>Electricity Demand vs. GDP Growth</h3>
+      <div id="chart-demand-gdp" style="height:300px"></div>
+      <div class="insight">Demand contracted after independence (1991&ndash;2005) as GDP collapsed,
+        then rebounded. The 2021 spike reflects post-COVID rebound and data revision.</div>
+    </div>
+  </div>
+
+  <div class="chart-grid single" style="margin-top:1.5rem">
+    <div class="chart-card">
+      <h3>Generation Mix — Share by Source (%)</h3>
+      <div id="chart-mix-pct" style="height:320px"></div>
+      <div class="insight">
+        Gas share remains 75&ndash;85% across the entire period. Coal share nearly doubled 2018&ndash;2023.
+        Hydro fluctuates seasonally. Solar/wind share is barely visible (&lt;1%).
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SECTION 3 — MODEL PERFORMANCE
+══════════════════════════════════════════════════ -->
+<section id="models">
+  <h2><span class="num">3</span> Model Performance</h2>
+  <p class="section-intro">
+    Four forecasting targets were modelled using both statistical (ARIMA) and machine learning (Ridge, Lasso, Gradient Boosting)
+    approaches. The merged notebook selected the best model per target based on test MAPE and cross-validated MAPE.
+  </p>
+
+  <div class="alert">
+    <strong>Important caveat — CO&sub2; Intensity model</strong>
+    The best CO&sub2; intensity model (Ridge) has R&sup2; = &minus;0.48, meaning it performs worse than predicting
+    the historical mean. CO&sub2; intensity forecasts should be treated as directional estimates only, not point predictions.
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Best Model per Target — MAPE (%)</h3>
+      <div id="chart-mape" style="height:280px"></div>
+    </div>
+    <div class="chart-card">
+      <h3>Best Model per Target — R&sup2;</h3>
+      <div id="chart-r2" style="height:280px"></div>
+    </div>
+  </div>
+
+  <div class="chart-card" style="margin-top:1.5rem">
+    <h3>Full Model Comparison Table</h3>
+    <table class="metrics-table">
+      <thead>
+        <tr>
+          <th>Target</th><th>Best Model</th><th>MAPE (%)</th><th>CV MAPE (%)</th><th>R&sup2;</th><th>Reliability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Electricity Demand</td><td>Ridge Regression</td>
+          <td>3.2</td><td>6.2</td><td>0.82</td>
+          <td><span class="badge good">Strong</span></td>
+        </tr>
+        <tr>
+          <td>Fossil Generation</td><td>ARIMA(1,0,3)</td>
+          <td>3.0</td><td>&mdash;</td><td>0.69</td>
+          <td><span class="badge good">Good</span></td>
+        </tr>
+        <tr>
+          <td>RE Penetration</td><td>Lasso Regression</td>
+          <td>10.1</td><td>2.6</td><td>0.48</td>
+          <td><span class="badge ok">Moderate</span></td>
+        </tr>
+        <tr>
+          <td>CO&sub2; Intensity</td><td>Ridge Regression</td>
+          <td>8.2</td><td>8.3</td><td>&minus;0.48</td>
+          <td><span class="badge weak">Weak &mdash; use caution</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="insight" style="margin-top:.8rem">
+      NB03 baseline ARIMA models for demand (MAPE=21%) and RE penetration (MAPE=34%) were significantly improved
+      by the NB04 ML models through proper differencing, feature engineering, and regularisation.
+    </div>
+  </div>
+
+  <div class="chart-grid single" style="margin-top:1.5rem">
+    <div class="chart-card">
+      <h3>NB03 vs. NB04 — MAPE Improvement per Target</h3>
+      <div id="chart-improvement" style="height:280px"></div>
+      <div class="insight">
+        Demand MAPE improved from 21% to 3.2% — an 85% reduction. RE penetration improved from 34% to 10%.
+        Fossil generation was already well-modelled by ARIMA in NB03.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SECTION 4 — SCENARIO FORECASTS
+══════════════════════════════════════════════════ -->
+<section id="scenarios">
+  <h2><span class="num">4</span> Scenario Forecasts (2024&ndash;2040)</h2>
+  <p class="section-intro">
+    Three policy scenarios were modelled. Toggle scenarios on/off using the buttons below.
+    All forecasts start from the last confirmed data point (2023) and extend to 2040.
+  </p>
+
+  <div class="scenario-controls">
+    <strong style="font-size:.85rem;color:var(--gray600)">Toggle scenarios:</strong>
+    <button class="sc-btn baseline active" onclick="toggleScenario('baseline',this)">Baseline</button>
+    <button class="sc-btn accel active"    onclick="toggleScenario('accel',this)">Accelerated Transition</button>
+    <button class="sc-btn delayed active"  onclick="toggleScenario('delayed',this)">Delayed Transition</button>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Electricity Demand Forecast (TWh)</h3>
+      <div id="sc-demand" style="height:320px"></div>
+      <div class="insight">All scenarios show strong demand growth driven by population (+35M) and
+        GDP expansion. Accelerated transition adds efficiency investments, slightly raising demand.</div>
+    </div>
+    <div class="chart-card">
+      <h3>Renewable Energy Penetration Forecast (%)</h3>
+      <div id="sc-re" style="height:320px"></div>
+      <div class="insight">Baseline RE stays flat at ~11.7% through 2040 — essentially no progress.
+        Accelerated reaches 28.7% by 2040. Delayed falls to 3.2% as fossil capacity expands faster.</div>
+    </div>
+  </div>
+
+  <div class="chart-grid" style="margin-top:1.5rem">
+    <div class="chart-card">
+      <h3>Fossil Generation Forecast (TWh)</h3>
+      <div id="sc-fossil" style="height:320px"></div>
+      <div class="insight">Fossil generation grows under all scenarios due to rising demand.
+        The gap between Accelerated and Delayed by 2040 is ~21 TWh — equivalent to ~3 large gas plants.</div>
+    </div>
+    <div class="chart-card">
+      <h3>CO&sub2; Intensity Forecast (gCO&sub2;/kWh) &mdash; Directional</h3>
+      <div id="sc-co2" style="height:320px"></div>
+      <div class="insight">Shown as directional estimate only (R&sup2;=&minus;0.48). Accelerated scenario
+        indicates a ~40% reduction in CO&sub2; intensity by 2040 if RE targets are met.</div>
+    </div>
+  </div>
+
+  <!-- 2030 Snapshot -->
+  <div class="chart-card" style="margin-top:1.5rem">
+    <h3>2030 Scenario Snapshot — Key Indicators</h3>
+    <div id="sc-snapshot" style="height:340px"></div>
+    <div class="insight">
+      By 2030: Accelerated scenario delivers 7% more RE, ~6 gCO&sub2;/kWh lower emissions intensity,
+      and +3.1 TWh higher demand (efficiency-investment effect) compared to Baseline.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SECTION 5 — KEY FINDINGS
+══════════════════════════════════════════════════ -->
+<section id="findings">
+  <h2><span class="num">5</span> Key Findings &amp; Recommendations</h2>
+  <p class="section-intro">
+    Summary of the most important conclusions from the data analysis and modelling exercise.
+  </p>
+
+  <div class="findings-grid">
+    <div class="finding danger">
+      <h4>Structural Fossil Lock-in</h4>
+      <p>Uzbekistan is ~90% fossil-dependent as of 2023. RE penetration has not improved since the 1990s
+         — the 2005 peak of 18.7% was driven by hydro, not by new capacity. There is no structural transition underway.</p>
+    </div>
+    <div class="finding warn">
+      <h4>Demand Growing Fast</h4>
+      <p>Electricity demand grew from 39 TWh (2005) to 74 TWh (2023) — nearly doubling in 18 years.
+         Ridge regression forecasts demand reaching 100&ndash;123 TWh by 2030, with MAPE=3.2%.</p>
+    </div>
+    <div class="finding">
+      <h4>Only Accelerated Scenario Breaks the Trend</h4>
+      <p>The Baseline scenario keeps RE flat at 11.7% through 2040. Only the Accelerated scenario — requiring
+         sustained policy intervention — achieves RE above 25% by 2035.</p>
+    </div>
+    <div class="finding warn">
+      <h4>Solar/Wind Data Gap</h4>
+      <p>Solar data is 81% missing historically; wind is 92% missing. This limits RE modelling accuracy.
+         Post-2021 data suggests rapid ramp-up is starting but remains small (&lt;1% share).</p>
+    </div>
+    <div class="finding">
+      <h4>Demand Model is Reliable</h4>
+      <p>The Ridge regression demand model achieves R&sup2;=0.82 and MAPE=3.2% — robust enough
+         for planning purposes. The ARIMA fossil generation model (MAPE=3.0%) is equally solid.</p>
+    </div>
+    <div class="finding danger">
+      <h4>CO&sub2; Intensity Model Unreliable</h4>
+      <p>R&sup2;=&minus;0.48 means the model is worse than predicting the mean. Use the CO&sub2; scenario
+         results as directional estimates only — wide confidence intervals should be communicated to stakeholders.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Uzbekistan Power Sector Transition Tracker</strong><br>
+  Capstone Project &mdash; Farangiz Jurakhonova &mdash; ILF Consulting Engineers Austria<br>
+  Data sources: IEA, IRENA, World Bank &nbsp;|&nbsp; Period: 1990&ndash;2040 &nbsp;|&nbsp; Built with Plotly.js
+</footer>
+
+<!-- ═══════════════════════════════════════ DATA + CHARTS ═══════════════════════════════════════ -->
+<script>
+/* ── RAW DATA ── */
+const hist = [{"year":1990,"re":11.80,"fossil":88.20,"gen":56.33,"gas":43.03,"hydro":6.65,"coal":4.16,"solar":null,"co2":97.42,"demand":48.88,"gdp":32.11,"pop":20464956},{"year":1991,"re":11.13,"fossil":88.87,"gen":54.17,"gas":39.31,"hydro":6.03,"coal":4.00,"solar":null,"co2":101.27,"demand":48.71,"gdp":31.95,"pop":20962910},{"year":1992,"re":12.34,"fossil":87.66,"gen":50.91,"gas":38.64,"hydro":6.28,"coal":2.49,"solar":null,"co2":109.77,"demand":45.65,"gdp":28.37,"pop":21485090},{"year":1993,"re":14.97,"fossil":85.03,"gen":49.15,"gas":36.77,"hydro":7.36,"coal":3.19,"solar":null,"co2":111.68,"demand":44.28,"gdp":27.72,"pop":21987955},{"year":1994,"re":14.97,"fossil":85.03,"gen":47.80,"gas":35.12,"hydro":7.16,"coal":3.97,"solar":null,"co2":100.09,"demand":43.06,"gdp":26.28,"pop":22463291},{"year":1995,"re":13.04,"fossil":86.96,"gen":47.45,"gas":34.30,"hydro":6.19,"coal":1.64,"solar":null,"co2":88.32,"demand":42.02,"gdp":26.04,"pop":22917589},{"year":1996,"re":14.37,"fossil":85.63,"gen":45.42,"gas":32.00,"hydro":6.53,"coal":1.83,"solar":null,"co2":90.69,"demand":42.45,"gdp":26.49,"pop":23351981},{"year":1997,"re":12.54,"fossil":87.46,"gen":46.05,"gas":32.91,"hydro":5.78,"coal":1.88,"solar":null,"co2":93.79,"demand":42.98,"gdp":27.86,"pop":23758960},{"year":1998,"re":12.61,"fossil":87.39,"gen":45.94,"gas":32.80,"hydro":5.79,"coal":1.88,"solar":null,"co2":98.78,"demand":41.96,"gdp":29.06,"pop":24134929},{"year":1999,"re":15.56,"fossil":84.44,"gen":45.37,"gas":31.61,"hydro":7.06,"coal":1.85,"solar":null,"co2":95.39,"demand":42.37,"gdp":30.31,"pop":24476008},{"year":2000,"re":7.53,"fossil":92.47,"gen":46.86,"gas":36.71,"hydro":3.53,"coal":1.91,"solar":null,"co2":100.00,"demand":43.81,"gdp":31.47,"pop":24787054},{"year":2001,"re":9.08,"fossil":90.92,"gen":47.96,"gas":36.89,"hydro":4.36,"coal":1.96,"solar":null,"co2":97.33,"demand":41.09,"gdp":32.78,"pop":25090283},{"year":2002,"re":12.20,"fossil":87.80,"gen":49.40,"gas":36.71,"hydro":6.02,"coal":2.02,"solar":null,"co2":95.28,"demand":41.21,"gdp":34.09,"pop":25399980},{"year":2003,"re":16.76,"fossil":83.24,"gen":48.74,"gas":34.40,"hydro":8.17,"coal":1.99,"solar":null,"co2":91.03,"demand":40.15,"gdp":35.53,"pop":25711259},{"year":2004,"re":12.27,"fossil":87.73,"gen":49.70,"gas":37.67,"hydro":6.10,"coal":2.03,"solar":null,"co2":96.74,"demand":40.35,"gdp":38.17,"pop":26029350},{"year":2005,"re":18.73,"fossil":81.27,"gen":47.67,"gas":33.63,"hydro":8.93,"coal":1.95,"solar":null,"co2":92.53,"demand":39.33,"gdp":40.83,"pop":26356975},{"year":2006,"re":9.52,"fossil":90.48,"gen":49.37,"gas":39.77,"hydro":4.70,"coal":2.02,"solar":null,"co2":98.77,"demand":42.33,"gdp":43.87,"pop":26699043},{"year":2007,"re":9.52,"fossil":90.48,"gen":49.01,"gas":40.30,"hydro":4.67,"coal":2.00,"solar":null,"co2":98.10,"demand":43.44,"gdp":48.03,"pop":27076008},{"year":2008,"re":8.94,"fossil":91.06,"gen":50.22,"gas":42.20,"hydro":4.49,"coal":2.05,"solar":null,"co2":93.11,"demand":42.92,"gdp":52.36,"pop":27494774},{"year":2009,"re":12.94,"fossil":87.06,"gen":50.10,"gas":40.54,"hydro":6.48,"coal":2.05,"solar":null,"co2":90.51,"demand":42.39,"gdp":56.58,"pop":27939328},{"year":2010,"re":15.76,"fossil":84.24,"gen":51.98,"gas":40.90,"hydro":8.19,"coal":2.12,"solar":null,"co2":88.19,"demand":41.82,"gdp":60.88,"pop":28385506},{"year":2011,"re":10.80,"fossil":89.20,"gen":52.80,"gas":44.40,"hydro":5.70,"coal":2.16,"solar":null,"co2":93.91,"demand":43.26,"gdp":65.46,"pop":28823196},{"year":2012,"re":12.54,"fossil":87.46,"gen":53.06,"gas":43.80,"hydro":6.65,"coal":2.22,"solar":null,"co2":95.28,"demand":43.72,"gdp":70.11,"pop":29261903},{"year":2013,"re":10.43,"fossil":89.57,"gen":54.68,"gas":46.40,"hydro":5.70,"coal":2.29,"solar":null,"co2":98.76,"demand":44.63,"gdp":75.22,"pop":29724065},{"year":2014,"re":10.89,"fossil":89.11,"gen":55.76,"gas":47.02,"hydro":6.08,"coal":2.47,"solar":null,"co2":98.76,"demand":45.79,"gdp":80.39,"pop":30222994},{"year":2015,"re":11.89,"fossil":88.11,"gen":57.41,"gas":48.28,"hydro":6.83,"coal":2.16,"solar":null,"co2":97.24,"demand":47.10,"gdp":86.20,"pop":30749346},{"year":2016,"re":11.68,"fossil":88.32,"gen":58.72,"gas":49.51,"hydro":6.86,"coal":2.20,"solar":null,"co2":98.55,"demand":48.12,"gdp":91.31,"pop":31284568},{"year":2017,"re":13.04,"fossil":86.96,"gen":60.82,"gas":50.49,"hydro":7.93,"coal":2.25,"solar":0.00,"co2":98.90,"demand":50.35,"gdp":95.32,"pop":31819178},{"year":2018,"re":9.38,"fossil":90.62,"gen":62.89,"gas":54.22,"hydro":5.90,"coal":2.35,"solar":0.00,"co2":77.66,"demand":57.68,"gdp":100.62,"pop":32373490},{"year":2019,"re":10.19,"fossil":89.81,"gen":63.53,"gas":52.56,"hydro":6.46,"coal":3.82,"solar":0.00,"co2":80.42,"demand":60.14,"gdp":107.44,"pop":32964701},{"year":2020,"re":7.52,"fossil":92.48,"gen":66.50,"gas":55.84,"hydro":5.00,"coal":5.20,"solar":0.00,"co2":80.33,"demand":59.05,"gdp":109.12,"pop":33586372},{"year":2021,"re":7.04,"fossil":92.96,"gen":71.36,"gas":60.06,"hydro":4.97,"coal":4.96,"solar":0.05,"co2":95.63,"demand":72.56,"gdp":117.89,"pop":34243696},{"year":2022,"re":9.32,"fossil":90.68,"gen":74.27,"gas":61.03,"hydro":6.48,"coal":5.64,"solar":0.44,"co2":90.67,"demand":73.16,"gdp":124.97,"pop":34938955},{"year":2023,"re":10.18,"fossil":89.82,"gen":74.33,"gas":56.38,"hydro":6.94,"coal":8.27,"solar":0.62,"co2":97.75,"demand":73.42,"gdp":132.83,"pop":35652307}];
+
+const baseline = [{"year":2024,"demand":79.15,"re":11.76,"fossil":69.84,"co2":94.02},{"year":2025,"demand":81.84,"re":11.66,"fossil":72.30,"co2":93.11},{"year":2026,"demand":84.85,"re":11.82,"fossil":74.82,"co2":88.95},{"year":2027,"demand":89.11,"re":11.72,"fossil":78.67,"co2":90.94},{"year":2028,"demand":92.75,"re":11.72,"fossil":81.88,"co2":90.94},{"year":2029,"demand":96.63,"re":11.72,"fossil":85.30,"co2":90.94},{"year":2030,"demand":100.88,"re":11.72,"fossil":89.05,"co2":90.94},{"year":2031,"demand":105.08,"re":11.72,"fossil":92.76,"co2":90.94},{"year":2032,"demand":109.47,"re":11.72,"fossil":96.64,"co2":90.94},{"year":2033,"demand":114.05,"re":11.72,"fossil":100.68,"co2":90.94},{"year":2034,"demand":118.73,"re":11.72,"fossil":104.81,"co2":90.94},{"year":2035,"demand":123.58,"re":11.72,"fossil":109.09,"co2":90.94},{"year":2040,"demand":150.40,"re":11.72,"fossil":132.76,"co2":90.94}];
+
+const accel = [{"year":2024,"demand":79.68,"re":12.76,"fossil":69.51,"co2":92.02},{"year":2025,"demand":82.54,"re":13.66,"fossil":71.26,"co2":89.11},{"year":2026,"demand":85.76,"re":14.82,"fossil":73.05,"co2":82.95},{"year":2027,"demand":90.35,"re":15.72,"fossil":76.14,"co2":82.94},{"year":2028,"demand":94.24,"re":16.72,"fossil":78.48,"co2":80.94},{"year":2029,"demand":98.40,"re":17.72,"fossil":80.96,"co2":78.94},{"year":2030,"demand":102.97,"re":18.72,"fossil":83.69,"co2":76.94},{"year":2031,"demand":107.51,"re":19.72,"fossil":86.30,"co2":74.94},{"year":2032,"demand":112.26,"re":20.72,"fossil":88.99,"co2":72.94},{"year":2033,"demand":117.22,"re":21.72,"fossil":91.76,"co2":70.94},{"year":2034,"demand":122.33,"re":22.72,"fossil":94.53,"co2":68.94},{"year":2035,"demand":127.64,"re":23.72,"fossil":97.36,"co2":66.94},{"year":2040,"demand":157.39,"re":28.72,"fossil":112.18,"co2":56.94}];
+
+const delayed = [{"year":2024,"demand":78.09,"re":11.26,"fossil":69.30,"co2":95.02},{"year":2025,"demand":80.46,"re":10.66,"fossil":71.88,"co2":95.11},{"year":2026,"demand":83.08,"re":10.32,"fossil":74.50,"co2":91.95},{"year":2027,"demand":86.72,"re":9.72,"fossil":78.28,"co2":94.94},{"year":2028,"demand":89.89,"re":9.22,"fossil":81.60,"co2":95.94},{"year":2029,"demand":93.25,"re":8.72,"fossil":85.11,"co2":96.94},{"year":2030,"demand":96.90,"re":8.22,"fossil":88.93,"co2":97.94},{"year":2031,"demand":100.52,"re":7.72,"fossil":92.76,"co2":98.94},{"year":2032,"demand":104.28,"re":7.22,"fossil":96.74,"co2":99.94},{"year":2033,"demand":108.17,"re":6.72,"fossil":100.89,"co2":100.94},{"year":2034,"demand":112.13,"re":6.22,"fossil":105.15,"co2":101.94},{"year":2035,"demand":116.20,"re":5.72,"fossil":109.54,"co2":102.94},{"year":2040,"demand":138.15,"re":3.22,"fossil":133.70,"co2":107.94}];
+
+const years    = hist.map(d=>d.year);
+const scYears  = baseline.map(d=>d.year);
+
+/* ── COLOURS ── */
+const C = {
+  gas:     '#2563eb', hydro: '#0d9488', coal: '#78716c',
+  solar:   '#f59e0b', fossil:'#ef4444', re:   '#22c55e',
+  co2:     '#8b5cf6', demand:'#1e3a5f', gdp:  '#0d9488',
+  base:    '#0284c7', accel: '#16a34a', delay:'#dc2626'
+};
+
+/* ── CHART CONFIG ── */
+const LAY = (extra={}) => Object.assign({
+  margin:{t:10,r:10,b:40,l:50},
+  paper_bgcolor:'rgba(0,0,0,0)',
+  plot_bgcolor:'rgba(0,0,0,0)',
+  font:{family:'Segoe UI, system-ui, sans-serif', size:11},
+  legend:{orientation:'h', y:-0.18, font:{size:10}},
+  xaxis:{showgrid:false, zeroline:false},
+  yaxis:{gridcolor:'#e2e8f0', zeroline:false}
+}, extra);
+
+const CFG = {responsive:true, displayModeBar:false};
+
+/* ─────────────────────────────────────────
+   DATA QUALITY BARS
+───────────────────────────────────────── */
+const qualityItems = [
+  {label:'RE Penetration (%)',          pct:91,  color:'#22c55e'},
+  {label:'Fossil Share (%)',            pct:91,  color:'#22c55e'},
+  {label:'CO₂ Intensity (gCO₂/kWh)',   pct:91,  color:'#22c55e'},
+  {label:'Electricity Demand (TWh)',    pct:91,  color:'#22c55e'},
+  {label:'GDP (const. 2015 USD)',       pct:94,  color:'#22c55e'},
+  {label:'Total Generation (TWh)',      pct:91,  color:'#22c55e'},
+  {label:'Capacity (MW)',               pct:41,  color:'#f59e0b'},
+  {label:'Solar Generation (TWh)',      pct:19,  color:'#ef4444'},
+  {label:'Wind Generation (TWh)',       pct:8,   color:'#ef4444'},
+];
+const qgrid = document.getElementById('qgrid');
+qualityItems.forEach(q=>{
+  qgrid.innerHTML += `<div class="q-card">
+    <div class="q-label">${q.label}</div>
+    <div class="q-bar-bg"><div class="q-bar" style="width:${q.pct}%;background:${q.color}"></div></div>
+    <div class="q-pct">${q.pct}% complete (1990–2023)</div>
+  </div>`;
+});
+
+/* ─────────────────────────────────────────
+   COVERAGE GANTT
+───────────────────────────────────────── */
+Plotly.newPlot('chart-coverage', [
+  {x:years.filter((y,i)=>hist[i].co2!==null), y:years.filter((y,i)=>hist[i].co2!==null).map(()=>'Confirmed'),
+   type:'bar', orientation:'v', marker:{color:'#22c55e',opacity:.8}, name:'Confirmed',
+   hovertemplate:'%{x}: Confirmed<extra></extra>'},
+  {x:[2024,2025,2026], y:[2024,2025,2026].map(()=>'Preliminary'),
+   type:'bar', orientation:'v', marker:{color:'#f59e0b',opacity:.8}, name:'Preliminary (empty)',
+   hovertemplate:'%{x}: Preliminary<extra></extra>'}
+], {
+  ...LAY({yaxis:{visible:false}, height:180,
+    barmode:'group', legend:{orientation:'h',y:-0.35}}),
+  xaxis:{range:[1989,2027], showgrid:false}
+}, CFG);
+
+/* ─────────────────────────────────────────
+   GEN STACKED BAR
+───────────────────────────────────────── */
+Plotly.newPlot('chart-gen-stack',[
+  {x:years, y:hist.map(d=>d.gas),   name:'Natural Gas', type:'bar', marker:{color:C.gas}},
+  {x:years, y:hist.map(d=>d.coal),  name:'Coal',        type:'bar', marker:{color:C.coal}},
+  {x:years, y:hist.map(d=>d.hydro), name:'Hydro',       type:'bar', marker:{color:C.hydro}},
+  {x:years, y:hist.map(d=>d.solar||0), name:'Solar/Wind', type:'bar', marker:{color:C.solar}},
+],{
+  ...LAY({barmode:'stack', yaxis:{...LAY().yaxis,title:'TWh'}}),
+  legend:{orientation:'h',y:-0.22,font:{size:10}}
+},CFG);
+
+/* ─────────────────────────────────────────
+   RE vs FOSSIL SHARE
+───────────────────────────────────────── */
+Plotly.newPlot('chart-reshare',[
+  {x:years, y:hist.map(d=>d.re),
+   name:'RE Share', mode:'lines+markers',
+   line:{color:C.re,width:2.5}, marker:{size:4},
+   fill:'tozeroy', fillcolor:'rgba(34,197,94,.1)'},
+  {x:years, y:hist.map(d=>d.fossil),
+   name:'Fossil Share', mode:'lines',
+   line:{color:C.fossil,width:2,dash:'dot'},
+   yaxis:'y2'}
+],{
+  ...LAY({
+    yaxis:{title:'RE Share (%)', range:[0,25], gridcolor:'#e2e8f0', zeroline:false},
+    yaxis2:{title:'Fossil Share (%)', overlaying:'y', side:'right', range:[75,100], zeroline:false, showgrid:false},
+    legend:{orientation:'h',y:-0.22,font:{size:10}}
+  }),
+  shapes:[{type:'line',x0:2005,x1:2005,y0:0,y1:22,line:{dash:'dot',color:'#94a3b8',width:1}}],
+  annotations:[{x:2005,y:21,text:'Peak 18.7% (2005)',showarrow:false,font:{size:9,color:'#64748b'},xanchor:'right'}]
+},CFG);
+
+/* ─────────────────────────────────────────
+   CO2 INTENSITY
+───────────────────────────────────────── */
+Plotly.newPlot('chart-co2',[
+  {x:years, y:hist.map(d=>d.co2),
+   name:'CO₂ Intensity', mode:'lines+markers',
+   line:{color:C.co2,width:2.5},
+   marker:{size:4}, fill:'tozeroy',
+   fillcolor:'rgba(139,92,246,.08)',
+   hovertemplate:'%{x}: %{y:.1f} gCO₂/kWh<extra></extra>'}
+],{
+  ...LAY({yaxis:{title:'gCO₂/kWh', range:[70,120], gridcolor:'#e2e8f0'}}),
+  shapes:[{type:'line',x0:1990,x1:2023,y0:95.08,y1:95.08,line:{dash:'dot',color:'#94a3b8',width:1}}],
+  annotations:[{x:1993,y:93,text:'Historical mean: 95.1',showarrow:false,font:{size:9,color:'#64748b'}}]
+},CFG);
+
+/* ─────────────────────────────────────────
+   DEMAND vs GDP
+───────────────────────────────────────── */
+Plotly.newPlot('chart-demand-gdp',[
+  {x:years, y:hist.map(d=>d.demand),
+   name:'Demand (TWh)', mode:'lines+markers',
+   line:{color:C.demand,width:2.5}, marker:{size:4}},
+  {x:years, y:hist.map(d=>d.gdp),
+   name:'GDP (bn USD 2015)', mode:'lines',
+   line:{color:C.gdp,width:2,dash:'dash'},
+   yaxis:'y2'}
+],{
+  ...LAY({
+    yaxis:{title:'Demand (TWh)', gridcolor:'#e2e8f0', zeroline:false},
+    yaxis2:{title:'GDP (bn USD)', overlaying:'y', side:'right', zeroline:false, showgrid:false},
+    legend:{orientation:'h',y:-0.22,font:{size:10}}
+  })
+},CFG);
+
+/* ─────────────────────────────────────────
+   MIX AREA % (100% stacked)
+───────────────────────────────────────── */
+const totals = hist.map(d=>d.gas+(d.coal||0)+(d.hydro||0)+(d.solar||0));
+Plotly.newPlot('chart-mix-pct',[
+  {x:years, y:hist.map((d,i)=>d.gas/totals[i]*100),   name:'Gas',   stackgroup:'s', fillcolor:'rgba(37,99,235,.8)', line:{width:0}},
+  {x:years, y:hist.map((d,i)=>d.coal/totals[i]*100),  name:'Coal',  stackgroup:'s', fillcolor:'rgba(120,113,108,.8)', line:{width:0}},
+  {x:years, y:hist.map((d,i)=>d.hydro/totals[i]*100), name:'Hydro', stackgroup:'s', fillcolor:'rgba(13,148,136,.8)', line:{width:0}},
+  {x:years, y:hist.map((d,i)=>(d.solar||0)/totals[i]*100), name:'Solar/Wind', stackgroup:'s', fillcolor:'rgba(245,158,11,.8)', line:{width:0}},
+],{
+  ...LAY({yaxis:{title:'Share (%)', range:[0,100.5], gridcolor:'#e2e8f0'}}),
+  legend:{orientation:'h',y:-0.18,font:{size:10}}
+},CFG);
+
+/* ─────────────────────────────────────────
+   MODEL MAPE BAR
+───────────────────────────────────────── */
+Plotly.newPlot('chart-mape',[{
+  x:['Demand','Fossil Gen','RE Penetration','CO₂ Intensity'],
+  y:[3.18,2.96,10.07,8.18],
+  type:'bar',
+  marker:{color:['#16a34a','#0d9488','#d97706','#ef4444']},
+  text:['3.2%','3.0%','10.1%','8.2%'],
+  textposition:'outside',
+  hovertemplate:'%{x}: MAPE = %{y:.1f}%<extra></extra>'
+}],{
+  ...LAY({yaxis:{title:'MAPE (%)', gridcolor:'#e2e8f0'}}),
+  shapes:[{type:'line',x0:-0.5,x1:3.5,y0:10,y1:10,line:{dash:'dot',color:'#94a3b8',width:1}}],
+  annotations:[{x:3.5,y:10.5,text:'10% threshold',showarrow:false,font:{size:9,color:'#64748b'},xanchor:'right'}]
+},CFG);
+
+/* ─────────────────────────────────────────
+   MODEL R2 BAR
+───────────────────────────────────────── */
+Plotly.newPlot('chart-r2',[{
+  x:['Demand','Fossil Gen','RE Penetration','CO₂ Intensity'],
+  y:[0.82,0.69,0.48,-0.48],
+  type:'bar',
+  marker:{color:['#16a34a','#0d9488','#d97706','#ef4444']},
+  text:['0.82','0.69','0.48','−0.48'],
+  textposition:'outside',
+  hovertemplate:'%{x}: R² = %{y:.2f}<extra></extra>'
+}],{
+  ...LAY({yaxis:{title:'R²', range:[-0.75,1.0], gridcolor:'#e2e8f0',
+    zeroline:true, zerolinecolor:'#94a3b8'}}),
+  shapes:[{type:'line',x0:-0.5,x1:3.5,y0:0.6,y1:0.6,line:{dash:'dot',color:'#94a3b8',width:1}}],
+  annotations:[{x:3.5,y:0.63,text:'Good fit threshold',showarrow:false,font:{size:9,color:'#64748b'},xanchor:'right'}]
+},CFG);
+
+/* ─────────────────────────────────────────
+   NB03 vs NB04 IMPROVEMENT
+───────────────────────────────────────── */
+Plotly.newPlot('chart-improvement',[
+  {x:['Demand','RE Penetration','CO₂ Intensity','Fossil Gen'],
+   y:[21.07,34.11,9.96,2.96],
+   name:'NB03 (ARIMA/OLS baseline)',
+   type:'bar', marker:{color:'#94a3b8'}},
+  {x:['Demand','RE Penetration','CO₂ Intensity','Fossil Gen'],
+   y:[3.18,10.07,8.18,2.96],
+   name:'NB04 Best Model',
+   type:'bar', marker:{color:'#0d9488'}}
+],{
+  ...LAY({barmode:'group', yaxis:{title:'MAPE (%)', gridcolor:'#e2e8f0'}}),
+  legend:{orientation:'h',y:-0.18,font:{size:10}}
+},CFG);
+
+/* ─────────────────────────────────────────
+   SCENARIO CHARTS STATE
+───────────────────────────────────────── */
+let activeScenarios = {baseline:true, accel:true, delayed:true};
+
+function scTrace(data, key, name, color, dash='solid', visible=true) {
+  return {
+    x:data.map(d=>d.year), y:data.map(d=>d[key]),
+    name, mode:'lines',
+    line:{color,width:2.2,dash},
+    hovertemplate:`${name}: %{y:.1f}<extra></extra>`,
+    visible: visible ? true : 'legendonly'
+  };
+}
+
+function histTrace(key, name, color) {
+  return {
+    x: years, y: hist.map(d=>d[key]),
+    name:'Historical', mode:'lines+markers',
+    line:{color:'#475569',width:1.5,dash:'dot'},
+    marker:{size:3,color:'#475569'},
+    hovertemplate:'Historical %{x}: %{y:.1f}<extra></extra>'
+  };
+}
+
+function drawScenarioCharts() {
+  const bv = activeScenarios.baseline  ? true : 'legendonly';
+  const av = activeScenarios.accel     ? true : 'legendonly';
+  const dv = activeScenarios.delayed   ? true : 'legendonly';
+
+  const scLay = (ytitle) => ({
+    ...LAY({yaxis:{title:ytitle, gridcolor:'#e2e8f0', zeroline:false}}),
+    legend:{orientation:'h',y:-0.22,font:{size:10}},
+    shapes:[{type:'line',x0:2023.5,x1:2023.5,y0:0,y1:1,
+      xref:'x',yref:'paper',line:{dash:'dot',color:'#94a3b8',width:1}}],
+    annotations:[{x:2023.5,y:1,yref:'paper',text:'Forecast →',
+      showarrow:false,font:{size:9,color:'#64748b'},xanchor:'left'}]
+  });
+
+  Plotly.newPlot('sc-demand',[
+    histTrace('demand','Historical','#475569'),
+    {...scTrace(baseline,'demand','Baseline',C.base,'solid',bv)},
+    {...scTrace(accel,   'demand','Accelerated',C.accel,'dash',av)},
+    {...scTrace(delayed, 'demand','Delayed',C.delay,'dot',dv)},
+  ], scLay('Demand (TWh)'), CFG);
+
+  Plotly.newPlot('sc-re',[
+    histTrace('re','Historical','#475569'),
+    {...scTrace(baseline,'re','Baseline',C.base,'solid',bv)},
+    {...scTrace(accel,   're','Accelerated',C.accel,'dash',av)},
+    {...scTrace(delayed, 're','Delayed',C.delay,'dot',dv)},
+  ], scLay('RE Share (%)'), CFG);
+
+  Plotly.newPlot('sc-fossil',[
+    histTrace('gen','Historical (Total Gen)','#475569'),
+    {...scTrace(baseline,'fossil','Baseline Fossil',C.base,'solid',bv)},
+    {...scTrace(accel,   'fossil','Accelerated Fossil',C.accel,'dash',av)},
+    {...scTrace(delayed, 'fossil','Delayed Fossil',C.delay,'dot',dv)},
+  ], scLay('Fossil Gen (TWh)'), CFG);
+
+  Plotly.newPlot('sc-co2',[
+    histTrace('co2','Historical','#475569'),
+    {...scTrace(baseline,'co2','Baseline',C.base,'solid',bv)},
+    {...scTrace(accel,   'co2','Accelerated',C.accel,'dash',av)},
+    {...scTrace(delayed, 'co2','Delayed',C.delay,'dot',dv)},
+  ], {
+    ...scLay('gCO₂/kWh'),
+    annotations:[
+      {x:2023.5,y:1,yref:'paper',text:'Forecast →',showarrow:false,font:{size:9,color:'#64748b'},xanchor:'left'},
+      {x:2026,y:85,text:'⚠ Directional only',showarrow:false,
+       font:{size:9,color:'#92400e'},bgcolor:'#fef3c7',
+       bordercolor:'#fcd34d',borderwidth:1,borderpad:3}
+    ]
+  }, CFG);
+}
+
+drawScenarioCharts();
+
+/* ─────────────────────────────────────────
+   2030 SNAPSHOT GROUPED BAR
+───────────────────────────────────────── */
+const snap2030 = {
+  baseline: baseline.find(d=>d.year===2030),
+  accel:    accel.find(d=>d.year===2030),
+  delayed:  delayed.find(d=>d.year===2030)
+};
+
+Plotly.newPlot('sc-snapshot',[
+  {x:['Demand (TWh)','RE Share (%)','Fossil Gen (TWh)','CO₂ Intensity (g/kWh)'],
+   y:[snap2030.baseline.demand, snap2030.baseline.re, snap2030.baseline.fossil, snap2030.baseline.co2],
+   name:'Baseline', type:'bar', marker:{color:C.base}},
+  {x:['Demand (TWh)','RE Share (%)','Fossil Gen (TWh)','CO₂ Intensity (g/kWh)'],
+   y:[snap2030.accel.demand, snap2030.accel.re, snap2030.accel.fossil, snap2030.accel.co2],
+   name:'Accelerated', type:'bar', marker:{color:C.accel}},
+  {x:['Demand (TWh)','RE Share (%)','Fossil Gen (TWh)','CO₂ Intensity (g/kWh)'],
+   y:[snap2030.delayed.demand, snap2030.delayed.re, snap2030.delayed.fossil, snap2030.delayed.co2],
+   name:'Delayed', type:'bar', marker:{color:C.delay}},
+],{
+  ...LAY({barmode:'group', yaxis:{title:'Value', gridcolor:'#e2e8f0'}}),
+  legend:{orientation:'h',y:-0.18,font:{size:10}}
+},CFG);
+
+/* ─────────────────────────────────────────
+   SCENARIO TOGGLE
+───────────────────────────────────────── */
+function toggleScenario(sc, btn) {
+  activeScenarios[sc] = !activeScenarios[sc];
+  btn.classList.toggle('active');
+  drawScenarioCharts();
+}
+
+/* ─────────────────────────────────────────
+   SMOOTH SCROLL
+───────────────────────────────────────── */
+document.querySelectorAll('nav a').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    document.querySelector(a.getAttribute('href'))
+      .scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>

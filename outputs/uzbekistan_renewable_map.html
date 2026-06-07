@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e942370b78174ec38a0838a005d43aec {
+                #map_266336dc928b6bd3f9a597dcb44f1ceb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,23 +54,24 @@
 <body>
     
     
-<div style="position:fixed;bottom:30px;left:30px;width:200px;background:white;
-            border:2px solid #333;border-radius:6px;padding:10px;font-size:12px;z-index:1000">
+<div style="position:fixed;bottom:30px;left:30px;width:220px;background:white;
+            border:2px solid #333;border-radius:6px;padding:10px;font-size:12px;
+            z-index:1000;font-family:sans-serif">
 <b>Dominant RE technology</b><br>
-<span style="color:#facc15;">●</span> Solar<br>
-<span style="color:#10b981;">●</span> Wind<br>
-<span style="color:#0891b2;">●</span> Hydro<br>
-<em>Bubble size ∝ total capacity (MW)</em>
+<span style="color:#d99a1c;">●</span> Solar PV<br>
+<span style="color:#1f8f7a;">●</span> Wind<br>
+<span style="color:#2c6e9e;">●</span> Hydropower<br>
+<em>Bubble size ∝ total installed + planned MW</em>
 </div>
     
-            <div class="folium-map" id="map_e942370b78174ec38a0838a005d43aec" ></div>
+            <div class="folium-map" id="map_266336dc928b6bd3f9a597dcb44f1ceb" ></div>
         
 </body>
 <script>
     
     
-            var map_e942370b78174ec38a0838a005d43aec = L.map(
-                "map_e942370b78174ec38a0838a005d43aec",
+            var map_266336dc928b6bd3f9a597dcb44f1ceb = L.map(
+                "map_266336dc928b6bd3f9a597dcb44f1ceb",
                 {
                     center: [41.5, 64.5],
                     crs: L.CRS.EPSG3857,
@@ -87,7 +88,7 @@
 
         
     
-            var tile_layer_607ae283692f0ee9147c732f46607c28 = L.tileLayer(
+            var tile_layer_e6d0ee4057c26029e4c4c5afb80276b6 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -104,33 +105,33 @@
             );
         
     
-            tile_layer_607ae283692f0ee9147c732f46607c28.addTo(map_e942370b78174ec38a0838a005d43aec);
+            tile_layer_e6d0ee4057c26029e4c4c5afb80276b6.addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-            var circle_marker_ae3274eae0a1dd741f649d77d7516ba2 = L.circleMarker(
+            var circle_marker_fa6bba87c162f834816919ca78d0c673 = L.circleMarker(
                 [43.7, 59.0],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#10b981", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.5, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f8f7a", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.5, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_534de93e123b766b66ff77b42b65a094 = L.popup({
+        var popup_75eafb27f1e9a3ffa0db53bdc41bf9eb = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_51ae9fab667e34a311884d445b84d2c3 = $(`<div id="html_51ae9fab667e34a311884d445b84d2c3" style="width: 100.0%; height: 100.0%;">     <b>Karakalpakstan</b><br>     Solar GHI: 1700 kWh/m²/yr<br>     Wind tech. potential: 4.4 TWh/yr<br>     Installed: solar 1,100 MW · wind 1,600 MW · hydro 0 MW<br>     Key projects: 4 wind farms 1.6 GW (2026, ACWA); 500 MW solar (Total Eren)     </div>`)[0];
-                popup_534de93e123b766b66ff77b42b65a094.setContent(html_51ae9fab667e34a311884d445b84d2c3);
+                var html_dafb4e761b9a3890f7cc7dc4e2655f94 = $(`<div id="html_dafb4e761b9a3890f7cc7dc4e2655f94" style="width: 100.0%; height: 100.0%;"><b>Karakalpakstan</b><br>Solar GHI: 1700 kWh/m²/yr<br>Wind tech. potential: 4.4 TWh/yr<br>Installed: solar 1,100 MW · wind 1,600 MW · hydro 0 MW<br>Key projects: 4 wind farms 1.6 GW (2026, ACWA); 500 MW solar (Total Eren)</div>`)[0];
+                popup_75eafb27f1e9a3ffa0db53bdc41bf9eb.setContent(html_dafb4e761b9a3890f7cc7dc4e2655f94);
             
         
 
-        circle_marker_ae3274eae0a1dd741f649d77d7516ba2.bindPopup(popup_534de93e123b766b66ff77b42b65a094)
+        circle_marker_fa6bba87c162f834816919ca78d0c673.bindPopup(popup_75eafb27f1e9a3ffa0db53bdc41bf9eb)
         ;
 
         
     
     
-            circle_marker_ae3274eae0a1dd741f649d77d7516ba2.bindTooltip(
+            circle_marker_fa6bba87c162f834816919ca78d0c673.bindTooltip(
                 `<div>
                      Karakalpakstan (2,700 MW)
                  </div>`,
@@ -140,30 +141,30 @@
             );
         
     
-            var circle_marker_02502eed3cb40bb27704aa8a1dd2045f = L.circleMarker(
+            var circle_marker_fced283cd65880d8b2de74b464ba6e4b = L.circleMarker(
                 [39.8, 64.4],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.166666666666668, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.166666666666668, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_7f8ea0bae464eae76eefd5af83dea3c7 = L.popup({
+        var popup_ec54aa39b870a7c580eaa0c56252f5da = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_5146df6f8ca14a43c07243fc827d67ca = $(`<div id="html_5146df6f8ca14a43c07243fc827d67ca" style="width: 100.0%; height: 100.0%;">     <b>Bukhara</b><br>     Solar GHI: 1830 kWh/m²/yr<br>     Wind tech. potential: 1.0 TWh/yr<br>     Installed: solar 1,300 MW · wind 1,000 MW · hydro 0 MW<br>     Key projects: 2 wind 500 MW each Peshku/Gijduvan (2025); 250 MW solar     </div>`)[0];
-                popup_7f8ea0bae464eae76eefd5af83dea3c7.setContent(html_5146df6f8ca14a43c07243fc827d67ca);
+                var html_b2d41bb9f020aef93d8d75933fdcca95 = $(`<div id="html_b2d41bb9f020aef93d8d75933fdcca95" style="width: 100.0%; height: 100.0%;"><b>Bukhara</b><br>Solar GHI: 1830 kWh/m²/yr<br>Wind tech. potential: 1.0 TWh/yr<br>Installed: solar 1,300 MW · wind 1,000 MW · hydro 0 MW<br>Key projects: 2 wind 500 MW each Peshku/Gijduvan (2025); 250 MW solar</div>`)[0];
+                popup_ec54aa39b870a7c580eaa0c56252f5da.setContent(html_b2d41bb9f020aef93d8d75933fdcca95);
             
         
 
-        circle_marker_02502eed3cb40bb27704aa8a1dd2045f.bindPopup(popup_7f8ea0bae464eae76eefd5af83dea3c7)
+        circle_marker_fced283cd65880d8b2de74b464ba6e4b.bindPopup(popup_ec54aa39b870a7c580eaa0c56252f5da)
         ;
 
         
     
     
-            circle_marker_02502eed3cb40bb27704aa8a1dd2045f.bindTooltip(
+            circle_marker_fced283cd65880d8b2de74b464ba6e4b.bindTooltip(
                 `<div>
                      Bukhara (2,300 MW)
                  </div>`,
@@ -173,30 +174,30 @@
             );
         
     
-            var circle_marker_31a99351cabe7d734f0f70cec733441b = L.circleMarker(
+            var circle_marker_45542b129792e1b1fba0556f292c2670 = L.circleMarker(
                 [40.1, 65.4],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.166666666666666, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.166666666666666, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_b7c75bb938c8d639d1c450205705e9e4 = L.popup({
+        var popup_1958bbdba84c94276f33cf6b8748ccd4 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_736b89eb2db2e2abb45b61a944e9da37 = $(`<div id="html_736b89eb2db2e2abb45b61a944e9da37" style="width: 100.0%; height: 100.0%;">     <b>Navoi</b><br>     Solar GHI: 1850 kWh/m²/yr<br>     Wind tech. potential: 2.9 TWh/yr<br>     Installed: solar 800 MW · wind 300 MW · hydro 0 MW<br>     Key projects: Tomdi solar 100 MW; Zarafshan wind 500 MW (PRC investment)     </div>`)[0];
-                popup_b7c75bb938c8d639d1c450205705e9e4.setContent(html_736b89eb2db2e2abb45b61a944e9da37);
+                var html_d614c88f41644899924ca258f5ca3f3c = $(`<div id="html_d614c88f41644899924ca258f5ca3f3c" style="width: 100.0%; height: 100.0%;"><b>Navoi</b><br>Solar GHI: 1850 kWh/m²/yr<br>Wind tech. potential: 2.9 TWh/yr<br>Installed: solar 800 MW · wind 300 MW · hydro 0 MW<br>Key projects: Tomdi solar 100 MW; Zarafshan wind 500 MW (PRC investment)</div>`)[0];
+                popup_1958bbdba84c94276f33cf6b8748ccd4.setContent(html_d614c88f41644899924ca258f5ca3f3c);
             
         
 
-        circle_marker_31a99351cabe7d734f0f70cec733441b.bindPopup(popup_b7c75bb938c8d639d1c450205705e9e4)
+        circle_marker_45542b129792e1b1fba0556f292c2670.bindPopup(popup_1958bbdba84c94276f33cf6b8748ccd4)
         ;
 
         
     
     
-            circle_marker_31a99351cabe7d734f0f70cec733441b.bindTooltip(
+            circle_marker_45542b129792e1b1fba0556f292c2670.bindTooltip(
                 `<div>
                      Navoi (1,100 MW)
                  </div>`,
@@ -206,30 +207,30 @@
             );
         
     
-            var circle_marker_bdedb44a48f183474ce456c6e8ac061f = L.circleMarker(
+            var circle_marker_0a4865bff4f92e0a5e56dd47f84409dd = L.circleMarker(
                 [38.9, 65.8],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_4112d5abe5aba095f8b089f11b6c08db = L.popup({
+        var popup_ce456f2acfda1597be827722d136423c = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_42f13a421607fa40d444bb7fa6e16a8e = $(`<div id="html_42f13a421607fa40d444bb7fa6e16a8e" style="width: 100.0%; height: 100.0%;">     <b>Kashkadarya</b><br>     Solar GHI: 1830 kWh/m²/yr<br>     Wind tech. potential: 0.5 TWh/yr<br>     Installed: solar 900 MW · wind 100 MW · hydro 80 MW<br>     Key projects: Guzar 300 MW solar + 75 MWh BESS (Masdar, 2026 FC)     </div>`)[0];
-                popup_4112d5abe5aba095f8b089f11b6c08db.setContent(html_42f13a421607fa40d444bb7fa6e16a8e);
+                var html_6ba2ecf8f6efdbb0cfa7c0bf521326ae = $(`<div id="html_6ba2ecf8f6efdbb0cfa7c0bf521326ae" style="width: 100.0%; height: 100.0%;"><b>Kashkadarya</b><br>Solar GHI: 1830 kWh/m²/yr<br>Wind tech. potential: 0.5 TWh/yr<br>Installed: solar 900 MW · wind 100 MW · hydro 80 MW<br>Key projects: Guzar 300 MW solar + 75 MWh BESS (Masdar, 2026 FC)</div>`)[0];
+                popup_ce456f2acfda1597be827722d136423c.setContent(html_6ba2ecf8f6efdbb0cfa7c0bf521326ae);
             
         
 
-        circle_marker_bdedb44a48f183474ce456c6e8ac061f.bindPopup(popup_4112d5abe5aba095f8b089f11b6c08db)
+        circle_marker_0a4865bff4f92e0a5e56dd47f84409dd.bindPopup(popup_ce456f2acfda1597be827722d136423c)
         ;
 
         
     
     
-            circle_marker_bdedb44a48f183474ce456c6e8ac061f.bindTooltip(
+            circle_marker_0a4865bff4f92e0a5e56dd47f84409dd.bindTooltip(
                 `<div>
                      Kashkadarya (1,080 MW)
                  </div>`,
@@ -239,30 +240,30 @@
             );
         
     
-            var circle_marker_692b0864cdb6df87562f8fc988217379 = L.circleMarker(
+            var circle_marker_af937f115996a50e1e4066cb31ddd615 = L.circleMarker(
                 [37.9, 67.4],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_074c907f471211de4c9f68b7cec25da6 = L.popup({
+        var popup_2b1b1fece0664b242e16ca3c22d7bb9e = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_39928656935e3f0b8bf959eaacf34e01 = $(`<div id="html_39928656935e3f0b8bf959eaacf34e01" style="width: 100.0%; height: 100.0%;">     <b>Surkhandarya</b><br>     Solar GHI: 1820 kWh/m²/yr<br>     Wind tech. potential: 0.2 TWh/yr<br>     Installed: solar 500 MW · wind 0 MW · hydro 200 MW<br>     Key projects: Sherabad 200 MW solar (2023)     </div>`)[0];
-                popup_074c907f471211de4c9f68b7cec25da6.setContent(html_39928656935e3f0b8bf959eaacf34e01);
+                var html_8ccdb4391ccdac3f6927af4bcbb24295 = $(`<div id="html_8ccdb4391ccdac3f6927af4bcbb24295" style="width: 100.0%; height: 100.0%;"><b>Surkhandarya</b><br>Solar GHI: 1820 kWh/m²/yr<br>Wind tech. potential: 0.2 TWh/yr<br>Installed: solar 500 MW · wind 0 MW · hydro 200 MW<br>Key projects: Sherabad 200 MW solar (2023)</div>`)[0];
+                popup_2b1b1fece0664b242e16ca3c22d7bb9e.setContent(html_8ccdb4391ccdac3f6927af4bcbb24295);
             
         
 
-        circle_marker_692b0864cdb6df87562f8fc988217379.bindPopup(popup_074c907f471211de4c9f68b7cec25da6)
+        circle_marker_af937f115996a50e1e4066cb31ddd615.bindPopup(popup_2b1b1fece0664b242e16ca3c22d7bb9e)
         ;
 
         
     
     
-            circle_marker_692b0864cdb6df87562f8fc988217379.bindTooltip(
+            circle_marker_af937f115996a50e1e4066cb31ddd615.bindTooltip(
                 `<div>
                      Surkhandarya (700 MW)
                  </div>`,
@@ -272,30 +273,30 @@
             );
         
     
-            var circle_marker_e4556d864137bb44a4b820e30e41f3e4 = L.circleMarker(
+            var circle_marker_2ef88102f3fa9b9f89cc4c8a3560d594 = L.circleMarker(
                 [39.7, 66.9],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333333333333334, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333333333333334, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_4f8e2aa323fe0ed89b88d4d4360e1ba3 = L.popup({
+        var popup_1c074e859bb83f5518a73369b91e7e1c = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_cbf9d7f85db557e69dfb480b6ecd2ad4 = $(`<div id="html_cbf9d7f85db557e69dfb480b6ecd2ad4" style="width: 100.0%; height: 100.0%;">     <b>Samarkand</b><br>     Solar GHI: 1750 kWh/m²/yr<br>     Wind tech. potential: 0.3 TWh/yr<br>     Installed: solar 1,000 MW · wind 0 MW · hydro 120 MW<br>     Key projects: 2× 500 MW solar + 334 MW BESS (ACWA, planned)     </div>`)[0];
-                popup_4f8e2aa323fe0ed89b88d4d4360e1ba3.setContent(html_cbf9d7f85db557e69dfb480b6ecd2ad4);
+                var html_3fc592c3d21f934fa2c85cf53bafb008 = $(`<div id="html_3fc592c3d21f934fa2c85cf53bafb008" style="width: 100.0%; height: 100.0%;"><b>Samarkand</b><br>Solar GHI: 1750 kWh/m²/yr<br>Wind tech. potential: 0.3 TWh/yr<br>Installed: solar 1,000 MW · wind 0 MW · hydro 120 MW<br>Key projects: 2× 500 MW solar + 334 MW BESS (ACWA, planned)</div>`)[0];
+                popup_1c074e859bb83f5518a73369b91e7e1c.setContent(html_3fc592c3d21f934fa2c85cf53bafb008);
             
         
 
-        circle_marker_e4556d864137bb44a4b820e30e41f3e4.bindPopup(popup_4f8e2aa323fe0ed89b88d4d4360e1ba3)
+        circle_marker_2ef88102f3fa9b9f89cc4c8a3560d594.bindPopup(popup_1c074e859bb83f5518a73369b91e7e1c)
         ;
 
         
     
     
-            circle_marker_e4556d864137bb44a4b820e30e41f3e4.bindTooltip(
+            circle_marker_2ef88102f3fa9b9f89cc4c8a3560d594.bindTooltip(
                 `<div>
                      Samarkand (1,120 MW)
                  </div>`,
@@ -305,30 +306,30 @@
             );
         
     
-            var circle_marker_fdd4ef62c975f2a72708add82cda8436 = L.circleMarker(
+            var circle_marker_116a8fba24929f580f1767f34bced129 = L.circleMarker(
                 [40.1, 67.8],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_a858a249137c3f90958fe5c58662dd06 = L.popup({
+        var popup_e6bdfe4344f341a3e70e05f3b9ff67b3 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_72d28c64852d3c609ef615466d3240fb = $(`<div id="html_72d28c64852d3c609ef615466d3240fb" style="width: 100.0%; height: 100.0%;">     <b>Jizzakh</b><br>     Solar GHI: 1740 kWh/m²/yr<br>     Wind tech. potential: 0.4 TWh/yr<br>     Installed: solar 600 MW · wind 0 MW · hydro 50 MW<br>     Key projects: Gallaorol solar 100 MW (2024); SMR construction site     </div>`)[0];
-                popup_a858a249137c3f90958fe5c58662dd06.setContent(html_72d28c64852d3c609ef615466d3240fb);
+                var html_bb7465d48e2262eaa0e526eb80abde6b = $(`<div id="html_bb7465d48e2262eaa0e526eb80abde6b" style="width: 100.0%; height: 100.0%;"><b>Jizzakh</b><br>Solar GHI: 1740 kWh/m²/yr<br>Wind tech. potential: 0.4 TWh/yr<br>Installed: solar 600 MW · wind 0 MW · hydro 50 MW<br>Key projects: Gallaorol solar 100 MW (2024); SMR Jizzakh (Plan B)</div>`)[0];
+                popup_e6bdfe4344f341a3e70e05f3b9ff67b3.setContent(html_bb7465d48e2262eaa0e526eb80abde6b);
             
         
 
-        circle_marker_fdd4ef62c975f2a72708add82cda8436.bindPopup(popup_a858a249137c3f90958fe5c58662dd06)
+        circle_marker_116a8fba24929f580f1767f34bced129.bindPopup(popup_e6bdfe4344f341a3e70e05f3b9ff67b3)
         ;
 
         
     
     
-            circle_marker_fdd4ef62c975f2a72708add82cda8436.bindTooltip(
+            circle_marker_116a8fba24929f580f1767f34bced129.bindTooltip(
                 `<div>
                      Jizzakh (650 MW)
                  </div>`,
@@ -338,32 +339,65 @@
             );
         
     
-            var circle_marker_9a97d26b23e73e29fa002e38dc87aa06 = L.circleMarker(
+            var circle_marker_c14f67437c68c3272d7bff2f3ecadcb3 = L.circleMarker(
+                [40.4, 68.6],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
+        
+    
+        var popup_55c5815f28d354a39ec185f002ff64ad = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_08c8c51b70ae887683f2a151ea8dcd44 = $(`<div id="html_08c8c51b70ae887683f2a151ea8dcd44" style="width: 100.0%; height: 100.0%;"><b>Syrdarya</b><br>Solar GHI: 1700 kWh/m²/yr<br>Wind tech. potential: 0.2 TWh/yr<br>Installed: solar 200 MW · wind 0 MW · hydro 0 MW<br>Key projects: Syrdarya TES (legacy thermal)</div>`)[0];
+                popup_55c5815f28d354a39ec185f002ff64ad.setContent(html_08c8c51b70ae887683f2a151ea8dcd44);
+            
+        
+
+        circle_marker_c14f67437c68c3272d7bff2f3ecadcb3.bindPopup(popup_55c5815f28d354a39ec185f002ff64ad)
+        ;
+
+        
+    
+    
+            circle_marker_c14f67437c68c3272d7bff2f3ecadcb3.bindTooltip(
+                `<div>
+                     Syrdarya (200 MW)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1e4da58f869929a685cfeeead9ca11e = L.circleMarker(
                 [41.3, 69.3],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0891b2", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.833333333333334, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c6e9e", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_6a55e4d25b81a32f94780e33b76023d4 = L.popup({
+        var popup_5205c0b9c9d5a286660cf87fe40ea59a = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_673ee983aa14d1bf6c540d8b084a91c1 = $(`<div id="html_673ee983aa14d1bf6c540d8b084a91c1" style="width: 100.0%; height: 100.0%;">     <b>Tashkent</b><br>     Solar GHI: 1640 kWh/m²/yr<br>     Wind tech. potential: 0.2 TWh/yr<br>     Installed: solar 400 MW · wind 0 MW · hydro 900 MW<br>     Key projects: Y. Chirchik solar 100 MW; Charvak hydro upgrade     </div>`)[0];
-                popup_6a55e4d25b81a32f94780e33b76023d4.setContent(html_673ee983aa14d1bf6c540d8b084a91c1);
+                var html_0ed7e70febb98311f2ee0167e13317a5 = $(`<div id="html_0ed7e70febb98311f2ee0167e13317a5" style="width: 100.0%; height: 100.0%;"><b>Tashkent (incl. city)</b><br>Solar GHI: 1620 kWh/m²/yr<br>Wind tech. potential: 0.5 TWh/yr<br>Installed: solar 150 MW · wind 0 MW · hydro 700 MW<br>Key projects: Charvak HPP 700 MW; new urban CCGT 1.5 GW (planned)</div>`)[0];
+                popup_5205c0b9c9d5a286660cf87fe40ea59a.setContent(html_0ed7e70febb98311f2ee0167e13317a5);
             
         
 
-        circle_marker_9a97d26b23e73e29fa002e38dc87aa06.bindPopup(popup_6a55e4d25b81a32f94780e33b76023d4)
+        circle_marker_c1e4da58f869929a685cfeeead9ca11e.bindPopup(popup_5205c0b9c9d5a286660cf87fe40ea59a)
         ;
 
         
     
     
-            circle_marker_9a97d26b23e73e29fa002e38dc87aa06.bindTooltip(
+            circle_marker_c1e4da58f869929a685cfeeead9ca11e.bindTooltip(
                 `<div>
-                     Tashkent (1,300 MW)
+                     Tashkent (incl. city) (850 MW)
                  </div>`,
                 {
   "sticky": true,
@@ -371,65 +405,32 @@
             );
         
     
-            var circle_marker_a8a4dadc6204baf2842e339edfbb6e9f = L.circleMarker(
-                [41.0, 71.7],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0891b2", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
-        
-    
-        var popup_483e81edf8c5597df9a0eb165c255131 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_cbffe30398d66dcc314387560cfb55a1 = $(`<div id="html_cbffe30398d66dcc314387560cfb55a1" style="width: 100.0%; height: 100.0%;">     <b>Namangan</b><br>     Solar GHI: 1620 kWh/m²/yr<br>     Wind tech. potential: 0.1 TWh/yr<br>     Installed: solar 200 MW · wind 0 MW · hydro 350 MW<br>     Key projects: Solar 200 MW (2024); hydro modernisation     </div>`)[0];
-                popup_483e81edf8c5597df9a0eb165c255131.setContent(html_cbffe30398d66dcc314387560cfb55a1);
-            
-        
-
-        circle_marker_a8a4dadc6204baf2842e339edfbb6e9f.bindPopup(popup_483e81edf8c5597df9a0eb165c255131)
-        ;
-
-        
-    
-    
-            circle_marker_a8a4dadc6204baf2842e339edfbb6e9f.bindTooltip(
-                `<div>
-                     Namangan (550 MW)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var circle_marker_f4cefb1d2ef7d80792530f4588cb29e0 = L.circleMarker(
+            var circle_marker_214d29f1cd4a745ea5bee1a7e7a9ae08 = L.circleMarker(
                 [40.4, 71.8],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0891b2", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c6e9e", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_4489feab1bef24b4f2f23695e77547f5 = L.popup({
+        var popup_cc40c1788dc45b68303955496c163939 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_f5b5885c058f218cad4d33f5255ab1a3 = $(`<div id="html_f5b5885c058f218cad4d33f5255ab1a3" style="width: 100.0%; height: 100.0%;">     <b>Fergana</b><br>     Solar GHI: 1620 kWh/m²/yr<br>     Wind tech. potential: 0.1 TWh/yr<br>     Installed: solar 150 MW · wind 0 MW · hydro 200 MW<br>     Key projects: Industrial PV portfolio     </div>`)[0];
-                popup_4489feab1bef24b4f2f23695e77547f5.setContent(html_f5b5885c058f218cad4d33f5255ab1a3);
+                var html_a0b1a248bdeabf768a3bec21c6f7f84a = $(`<div id="html_a0b1a248bdeabf768a3bec21c6f7f84a" style="width: 100.0%; height: 100.0%;"><b>Fergana</b><br>Solar GHI: 1580 kWh/m²/yr<br>Wind tech. potential: 0.3 TWh/yr<br>Installed: solar 100 MW · wind 0 MW · hydro 200 MW<br>Key projects: Fergana hydro cascade modernisation</div>`)[0];
+                popup_cc40c1788dc45b68303955496c163939.setContent(html_a0b1a248bdeabf768a3bec21c6f7f84a);
             
         
 
-        circle_marker_f4cefb1d2ef7d80792530f4588cb29e0.bindPopup(popup_4489feab1bef24b4f2f23695e77547f5)
+        circle_marker_214d29f1cd4a745ea5bee1a7e7a9ae08.bindPopup(popup_cc40c1788dc45b68303955496c163939)
         ;
 
         
     
     
-            circle_marker_f4cefb1d2ef7d80792530f4588cb29e0.bindTooltip(
+            circle_marker_214d29f1cd4a745ea5bee1a7e7a9ae08.bindTooltip(
                 `<div>
-                     Fergana (350 MW)
+                     Fergana (300 MW)
                  </div>`,
                 {
   "sticky": true,
@@ -437,32 +438,32 @@
             );
         
     
-            var circle_marker_7233533518a8a121ea7ec270c675233f = L.circleMarker(
+            var circle_marker_791ae13dc4f83de73cde8c7e677bfcdb = L.circleMarker(
                 [40.8, 72.3],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c6e9e", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_afcebcd7a68c911ec6f7c336013c9b73 = L.popup({
+        var popup_e5886798f35f0b1f8eb68fb8cac47865 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_31f096ecd491ee886c6e829957b16a57 = $(`<div id="html_31f096ecd491ee886c6e829957b16a57" style="width: 100.0%; height: 100.0%;">     <b>Andijan</b><br>     Solar GHI: 1630 kWh/m²/yr<br>     Wind tech. potential: 0.1 TWh/yr<br>     Installed: solar 100 MW · wind 0 MW · hydro 30 MW<br>     Key projects: Pilot rooftop programs     </div>`)[0];
-                popup_afcebcd7a68c911ec6f7c336013c9b73.setContent(html_31f096ecd491ee886c6e829957b16a57);
+                var html_7ccf751c5b3375f4e7e0e0b16144bf0b = $(`<div id="html_7ccf751c5b3375f4e7e0e0b16144bf0b" style="width: 100.0%; height: 100.0%;"><b>Andijan</b><br>Solar GHI: 1580 kWh/m²/yr<br>Wind tech. potential: 0.3 TWh/yr<br>Installed: solar 100 MW · wind 0 MW · hydro 150 MW<br>Key projects: Andijan-1 HPP 140 MW (Karadarya)</div>`)[0];
+                popup_e5886798f35f0b1f8eb68fb8cac47865.setContent(html_7ccf751c5b3375f4e7e0e0b16144bf0b);
             
         
 
-        circle_marker_7233533518a8a121ea7ec270c675233f.bindPopup(popup_afcebcd7a68c911ec6f7c336013c9b73)
+        circle_marker_791ae13dc4f83de73cde8c7e677bfcdb.bindPopup(popup_e5886798f35f0b1f8eb68fb8cac47865)
         ;
 
         
     
     
-            circle_marker_7233533518a8a121ea7ec270c675233f.bindTooltip(
+            circle_marker_791ae13dc4f83de73cde8c7e677bfcdb.bindTooltip(
                 `<div>
-                     Andijan (130 MW)
+                     Andijan (250 MW)
                  </div>`,
                 {
   "sticky": true,
@@ -470,32 +471,32 @@
             );
         
     
-            var circle_marker_83cf87cfb37522c85d7f7f0d618527c4 = L.circleMarker(
-                [41.5, 60.6],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+            var circle_marker_12aa7cd8cbe2d7395642774c81169dfe = L.circleMarker(
+                [40.9, 71.6],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_6117a269f7ef2c8b88734b349fbb9bb3 = L.popup({
+        var popup_ecb5241fb4783792d2c3d312c77ae3bf = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_97b37468398fddbfef1237e8426207c2 = $(`<div id="html_97b37468398fddbfef1237e8426207c2" style="width: 100.0%; height: 100.0%;">     <b>Khorezm</b><br>     Solar GHI: 1720 kWh/m²/yr<br>     Wind tech. potential: 0.7 TWh/yr<br>     Installed: solar 150 MW · wind 100 MW · hydro 0 MW<br>     Key projects: Tuyamuyun hybrid hydro+solar pilot     </div>`)[0];
-                popup_6117a269f7ef2c8b88734b349fbb9bb3.setContent(html_97b37468398fddbfef1237e8426207c2);
+                var html_2fa3ed0f8c305b1449a333ce6a5aea25 = $(`<div id="html_2fa3ed0f8c305b1449a333ce6a5aea25" style="width: 100.0%; height: 100.0%;"><b>Namangan</b><br>Solar GHI: 1600 kWh/m²/yr<br>Wind tech. potential: 0.3 TWh/yr<br>Installed: solar 100 MW · wind 0 MW · hydro 0 MW<br>Key projects: Solar parks under development</div>`)[0];
+                popup_ecb5241fb4783792d2c3d312c77ae3bf.setContent(html_2fa3ed0f8c305b1449a333ce6a5aea25);
             
         
 
-        circle_marker_83cf87cfb37522c85d7f7f0d618527c4.bindPopup(popup_6117a269f7ef2c8b88734b349fbb9bb3)
+        circle_marker_12aa7cd8cbe2d7395642774c81169dfe.bindPopup(popup_ecb5241fb4783792d2c3d312c77ae3bf)
         ;
 
         
     
     
-            circle_marker_83cf87cfb37522c85d7f7f0d618527c4.bindTooltip(
+            circle_marker_12aa7cd8cbe2d7395642774c81169dfe.bindTooltip(
                 `<div>
-                     Khorezm (250 MW)
+                     Namangan (100 MW)
                  </div>`,
                 {
   "sticky": true,
@@ -503,32 +504,32 @@
             );
         
     
-            var circle_marker_2f369f0a22f201bd9b877682f9914fb9 = L.circleMarker(
-                [40.5, 68.7],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#facc15", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
-            ).addTo(map_e942370b78174ec38a0838a005d43aec);
+            var circle_marker_757170baf0f597d67439ebafcd557a24 = L.circleMarker(
+                [41.5, 60.4],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d99a1c", "fillOpacity": 0.78, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1}
+            ).addTo(map_266336dc928b6bd3f9a597dcb44f1ceb);
         
     
-        var popup_c95a0a072f3922895642e7c4b1225a0c = L.popup({
+        var popup_ab59645eb43fb8f161a7905b4b6e5d54 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_71c5a16edbc26faf1c2cfa9fc4deb86e = $(`<div id="html_71c5a16edbc26faf1c2cfa9fc4deb86e" style="width: 100.0%; height: 100.0%;">     <b>Syrdarya</b><br>     Solar GHI: 1700 kWh/m²/yr<br>     Wind tech. potential: 0.1 TWh/yr<br>     Installed: solar 80 MW · wind 0 MW · hydro 0 MW<br>     Key projects: Small distributed PV     </div>`)[0];
-                popup_c95a0a072f3922895642e7c4b1225a0c.setContent(html_71c5a16edbc26faf1c2cfa9fc4deb86e);
+                var html_4ea80bd22d809fc1ba3b7db0364789c3 = $(`<div id="html_4ea80bd22d809fc1ba3b7db0364789c3" style="width: 100.0%; height: 100.0%;"><b>Khorezm</b><br>Solar GHI: 1730 kWh/m²/yr<br>Wind tech. potential: 0.8 TWh/yr<br>Installed: solar 100 MW · wind 100 MW · hydro 0 MW<br>Key projects: Khorezm 100 MW solar (planned)</div>`)[0];
+                popup_ab59645eb43fb8f161a7905b4b6e5d54.setContent(html_4ea80bd22d809fc1ba3b7db0364789c3);
             
         
 
-        circle_marker_2f369f0a22f201bd9b877682f9914fb9.bindPopup(popup_c95a0a072f3922895642e7c4b1225a0c)
+        circle_marker_757170baf0f597d67439ebafcd557a24.bindPopup(popup_ab59645eb43fb8f161a7905b4b6e5d54)
         ;
 
         
     
     
-            circle_marker_2f369f0a22f201bd9b877682f9914fb9.bindTooltip(
+            circle_marker_757170baf0f597d67439ebafcd557a24.bindTooltip(
                 `<div>
-                     Syrdarya (80 MW)
+                     Khorezm (200 MW)
                  </div>`,
                 {
   "sticky": true,

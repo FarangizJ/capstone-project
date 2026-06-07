@@ -1,0 +1,7 @@
+model,spec,test_mape%,test_rmse_twh,test_r2,Lewis
+Naïve last-value,Yhat=Y_T,13.908,11.976,-2.287,good
+Linear trend,Y = α + β·t,30.646,22.144,-10.237,acceptable
+First-differenced OLS,Δln Y = α + β·Δln X (ex-ante),12.43,10.883,-1.714,good
+"ARIMA(1, 1, 0)",AICc-selected,9.221,7.432,-0.266,excellent
+Prophet,"g(t) only — annual, cps=0.05",18.628,14.058,-3.529,good
+Ridge α=1 (ex-ante),"OLS+L2, CV-α, forecast X",9.709,8.502,-0.656,excellent

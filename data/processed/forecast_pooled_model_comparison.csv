@@ -1,0 +1,4 @@
+pooled model,UZB test MAPE%
+Ridge CV-α + FE,4.576
+BayesianRidge + FE,4.62
+XGBoost (depth 2),13.358

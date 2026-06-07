@@ -1,0 +1,17 @@
+﻿Code,Klassifikator,Klassifikator_ru,Klassifikator_en,Klassifikator_uzc,2022,2023,2024,2025,2026
+B,Tog`-kon sаnoаti vа ochiq konlаrni ishlаsh,Горнодобывающая промышленность и разработка карьеров,Mining and quarrying,Тоғ-кон саноати ва очиқ конларни ишлаш,0.09334,0.11599,0.09857,0.12865,0.088217
+C,Ishlab chiqarish sanoati,Обрабатывающая промышленность,Manufacturing industry,Ишлаб чиқариш саноати,0.81444,0.77622,0.75183,0.72141,0.832015
+D,"Elektr, gаz, bug` bilаn tа'minlаsh vа hаvoni konditsiyalаsh","Электроснабжение, подача газа, пара и кондиционирование воздуха","Electricity, gas, steam and air conditioning","Электр, газ, буғ билан таъминлаш ва ҳавони кондициялаш",0.08519,0.09798,0.14232,0.14398,0.073028
+E,"Suv bilаn tа'minlаsh; kаnаlizаtsiya tizimi, chiqindilаrni yig`ish vа utilizаtsiya qilish","Водоснабжение; канализация, сбор и утилизация отходов","Water supply; sewerage, waste collection and disposal","Сув билан таъминлаш; канализация тизими, чиқиндиларни йиғиш ва утилизация қилиш",0.00703,0.00981,0.00728,0.00596,0.00674
+10,Oziq-ovqat mahsulotlari ishlab chiqarish,Производство пищевых продуктов,Manufacturing of food products,Озиқ-овқат маҳсулотлари ишлаб чиқариш,0.16408,0.1526,0.09894,0.11474,0.121516
+11,Ichimliklar ishlab chiqarish,Производство напитков,Manufacture of beverages,Ичимликлар ишлаб чиқариш,0.02845,0.03186,0.0351,0.03305,0.028686
+13,To'qimachilik mahsulotlari ishlab chiqarish,Производство текстильных изделий,Manufacture of textiles,Тўқимачилик маҳсулотлари ишлаб чиқариш,0.17709,0.16076,0.12156,0.12042,0.117131
+19,Koks va neftni qayta ishlash mahsulotlari ishlab  chiqarish,Производство химической продукции,Manufacture of chemical products,Кокс ва нефтни қайта ишлаш маҳсулотлари ишлаб  чиқариш,0.04684,0.05096,0.05905,0.06433,0.047587
+20,Kimyo mahsulotlari ishlab chiqarish,Производство кокса и продуктов нефтепереработки,Manufacture of coke and refined petroleum products,Кимё маҳсулотлари ишлаб чиқариш,0.06665,0.07764,0.06649,0.05189,0.049628
+23,Boshqa nometall mineral mahsulotlar ishlab chiqarish,Производство прочей неметаллической минеральной продукции,Manufacture of other non-metallic mineral products,Бошқа нометалл минерал маҳсулотлар ишлаб чиқариш,0.06756,0.06603,0.04701,0.04932,0.051967
+24,Metallurgiya sanoati,Металлургическая промышленность,Metallurgical industry,Металлургия саноати,0.08862,0.11916,0.26408,0.23968,0.242963
+25,Mashina va uskunalardan tashqari tayyor metall buyumlar ishlab chiqarish,"Производство готовых металлических изделий, кроме машин и оборудования","Manufacture of fabricated metal products, except machinery and equipment",Машина ва ускуналардан ташқари тайёр металл буюмлар ишлаб чиқариш,0.03367,0.0361,0.02914,0.02477,0.024398
+27,Elektr uskunalar ishlab chiqarish,Производство электрического оборудования,Manufacture of electrical equipment,Электр ускуналар ишлаб чиқариш,0.03128,0.03438,0.0296,0.02782,0.026405
+29,"Avtotransport vositalari, treylerlar va yarim pritseplar ishlab chiqarish","Производство автотранспортных средств, трейлеров и полуприцепов","Manufacture of motor vehicles, trailers and semi-trailers","Автотранспорт воситалари, трейлерлар ва ярим прицеплар ишлаб чиқариш",0.12946,0.09672,0.11605,0.12913,0.126806
+6,Xom neft va tabiiy gazni qazib olish,Добыча сырой нефти и природного газа,Extraction of crude petroleum and natural gas,Хом нефт ва табиий газни қазиб олиш,0.88614,0.85067,0.59402,0.57483,0.589479
+7,Metall rudalarni qazib olish,Добыча металлических руд,Mining of metal ores,Металл рудаларни қазиб олиш,0.00041,7e-05,0.313,0.30683,0.26231

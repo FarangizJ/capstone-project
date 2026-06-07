@@ -1,0 +1,627 @@
+"Heat generation (TJ) by Country/area, Technology, Grid connection and Year"
+
+"Country/area","Technology","Grid connection","Year",Heat generation (TJ)
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2000",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2001",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2002",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2003",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2004",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2005",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2006",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2007",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2008",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2009",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2010",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2011",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2012",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2013",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2014",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2015",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2016",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2017",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2018",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2019",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2020",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2021",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2022",-
+"Uzbekistan","Solar thermal energy","Heat (Commercial)","2023",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Solar thermal energy","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2000",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2001",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2002",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2003",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2004",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2005",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2006",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2007",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2008",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2009",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2010",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2011",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2012",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2013",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2014",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2015",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2016",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2017",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2018",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2019",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2020",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2021",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2022",-
+"Uzbekistan","Solid biofuels","Heat (Commercial)","2023",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Solid biofuels","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2000",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2001",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2002",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2003",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2004",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2005",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2006",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2007",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2008",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2009",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2010",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2011",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2012",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2013",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2014",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2015",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2016",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2017",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2018",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2019",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2020",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2021",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2022",-
+"Uzbekistan","Renewable municipal waste","Heat (Commercial)","2023",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Renewable municipal waste","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2000",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2001",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2002",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2003",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2004",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2005",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2006",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2007",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2008",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2009",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2010",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2011",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2012",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2013",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2014",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2015",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2016",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2017",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2018",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2019",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2020",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2021",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2022",-
+"Uzbekistan","Liquid biofuels","Heat (Commercial)","2023",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Liquid biofuels","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Biogas","Heat (Commercial)","2000",-
+"Uzbekistan","Biogas","Heat (Commercial)","2001",-
+"Uzbekistan","Biogas","Heat (Commercial)","2002",-
+"Uzbekistan","Biogas","Heat (Commercial)","2003",-
+"Uzbekistan","Biogas","Heat (Commercial)","2004",-
+"Uzbekistan","Biogas","Heat (Commercial)","2005",-
+"Uzbekistan","Biogas","Heat (Commercial)","2006",-
+"Uzbekistan","Biogas","Heat (Commercial)","2007",-
+"Uzbekistan","Biogas","Heat (Commercial)","2008",-
+"Uzbekistan","Biogas","Heat (Commercial)","2009",-
+"Uzbekistan","Biogas","Heat (Commercial)","2010",-
+"Uzbekistan","Biogas","Heat (Commercial)","2011",-
+"Uzbekistan","Biogas","Heat (Commercial)","2012",-
+"Uzbekistan","Biogas","Heat (Commercial)","2013",-
+"Uzbekistan","Biogas","Heat (Commercial)","2014",-
+"Uzbekistan","Biogas","Heat (Commercial)","2015",-
+"Uzbekistan","Biogas","Heat (Commercial)","2016",-
+"Uzbekistan","Biogas","Heat (Commercial)","2017",-
+"Uzbekistan","Biogas","Heat (Commercial)","2018",-
+"Uzbekistan","Biogas","Heat (Commercial)","2019",-
+"Uzbekistan","Biogas","Heat (Commercial)","2020",-
+"Uzbekistan","Biogas","Heat (Commercial)","2021",-
+"Uzbekistan","Biogas","Heat (Commercial)","2022",-
+"Uzbekistan","Biogas","Heat (Commercial)","2023",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Biogas","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2000",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2001",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2002",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2003",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2004",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2005",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2006",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2007",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2008",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2009",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2010",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2011",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2012",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2013",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2014",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2015",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2016",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2017",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2018",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2019",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2020",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2021",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2022",-
+"Uzbekistan","Geothermal energy","Heat (Commercial)","2023",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Geothermal energy","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2000",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2001",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2002",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2003",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2004",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2005",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2006",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2007",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2008",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2009",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2010",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2011",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2012",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2013",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2014",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2015",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2016",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2017",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2018",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2019",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2020",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2021",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2022",-
+"Uzbekistan","Other renewable energy","Heat (Commercial)","2023",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Other renewable energy","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Coal and peat","Heat (Commercial)","2000",46.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2001",47.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2002",48.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2003",48.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2004",49.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2005",48.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2006",50.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2007",48.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2008",48.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2009",49.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2010",51.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2011",51.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2012",51.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2013",53.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2014",53.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2015",53.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2016",53.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2017",53.000
+"Uzbekistan","Coal and peat","Heat (Commercial)","2018",-
+"Uzbekistan","Coal and peat","Heat (Commercial)","2019",-
+"Uzbekistan","Coal and peat","Heat (Commercial)","2020",-
+"Uzbekistan","Coal and peat","Heat (Commercial)","2021",-
+"Uzbekistan","Coal and peat","Heat (Commercial)","2022",-
+"Uzbekistan","Coal and peat","Heat (Commercial)","2023",-
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2000",4210.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2001",4267.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2002",4429.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2003",4437.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2004",4491.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2005",4419.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2006",4574.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2007",4397.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2008",4437.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2009",4487.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2010",4645.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2011",4707.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2012",4767.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2013",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2014",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2015",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2016",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2017",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2018",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2019",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2020",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2021",4868.000
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Coal and peat","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Oil","Heat (Commercial)","2000",2275.000
+"Uzbekistan","Oil","Heat (Commercial)","2001",2275.000
+"Uzbekistan","Oil","Heat (Commercial)","2002",2243.000
+"Uzbekistan","Oil","Heat (Commercial)","2003",2048.000
+"Uzbekistan","Oil","Heat (Commercial)","2004",1899.000
+"Uzbekistan","Oil","Heat (Commercial)","2005",1575.000
+"Uzbekistan","Oil","Heat (Commercial)","2006",1441.000
+"Uzbekistan","Oil","Heat (Commercial)","2007",988.000
+"Uzbekistan","Oil","Heat (Commercial)","2008",703.000
+"Uzbekistan","Oil","Heat (Commercial)","2009",501.000
+"Uzbekistan","Oil","Heat (Commercial)","2010",366.000
+"Uzbekistan","Oil","Heat (Commercial)","2011",261.000
+"Uzbekistan","Oil","Heat (Commercial)","2012",185.000
+"Uzbekistan","Oil","Heat (Commercial)","2013",135.000
+"Uzbekistan","Oil","Heat (Commercial)","2014",135.000
+"Uzbekistan","Oil","Heat (Commercial)","2015",135.000
+"Uzbekistan","Oil","Heat (Commercial)","2016",135.000
+"Uzbekistan","Oil","Heat (Commercial)","2017",135.000
+"Uzbekistan","Oil","Heat (Commercial)","2018",-
+"Uzbekistan","Oil","Heat (Commercial)","2019",-
+"Uzbekistan","Oil","Heat (Commercial)","2020",-
+"Uzbekistan","Oil","Heat (Commercial)","2021",-
+"Uzbekistan","Oil","Heat (Commercial)","2022",-
+"Uzbekistan","Oil","Heat (Commercial)","2023",-
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2000",8214.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2001",8214.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2002",8096.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2003",7393.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2004",6854.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2005",5686.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2006",5204.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2007",3565.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2008",2537.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2009",1809.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2010",1320.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2011",943.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2012",666.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2013",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2014",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2015",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2016",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2017",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2018",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2019",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2020",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2021",142.000
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Oil","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Natural gas","Heat (Commercial)","2000",49072.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2001",49332.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2002",50988.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2003",47458.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2004",45073.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2005",43718.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2006",45672.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2007",46225.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2008",47872.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2009",41982.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2010",41385.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2011",46020.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2012",47030.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2013",49951.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2014",49951.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2015",49951.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2016",49951.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2017",44576.000
+"Uzbekistan","Natural gas","Heat (Commercial)","2018",-
+"Uzbekistan","Natural gas","Heat (Commercial)","2019",-
+"Uzbekistan","Natural gas","Heat (Commercial)","2020",-
+"Uzbekistan","Natural gas","Heat (Commercial)","2021",-
+"Uzbekistan","Natural gas","Heat (Commercial)","2022",-
+"Uzbekistan","Natural gas","Heat (Commercial)","2023",-
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2000",42746.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2001",43406.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2002",45368.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2003",44194.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2004",43564.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2005",43916.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2006",45653.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2007",47907.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2008",43006.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2009",46708.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2010",47278.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2011",49166.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2012",48034.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2013",41500.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2014",41500.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2015",41500.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2016",64798.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2017",64798.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2018",64798.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2019",64798.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2020",64798.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2021",64798.000
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Natural gas","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2000",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2001",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2002",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2003",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2004",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2005",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2006",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2007",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2008",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2009",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2010",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2011",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2012",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2013",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2014",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2015",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2016",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2017",-
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2018",121513.000
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2019",133840.000
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2020",118458.000
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2021",112322.000
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2022",109328.000
+"Uzbekistan","Fossil fuels n.e.s.","Heat (Commercial)","2023",102074.000
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Fossil fuels n.e.s.","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2000",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2001",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2002",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2003",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2004",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2005",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2006",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2007",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2008",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2009",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2010",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2011",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2012",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2013",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2014",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2015",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2016",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2017",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2018",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2019",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2020",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2021",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2022",-
+"Uzbekistan","Nuclear","Heat (Commercial)","2023",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Nuclear","Combined Heat and Power (CHP)","2023",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2000",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2001",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2002",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2003",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2004",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2005",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2006",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2007",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2008",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2009",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2010",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2011",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2012",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2013",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2014",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2015",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2016",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2017",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2018",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2019",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2020",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2021",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2022",-
+"Uzbekistan","Other non-renewable energy","Heat (Commercial)","2023",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2000",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2001",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2002",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2003",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2004",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2005",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2006",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2007",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2008",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2009",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2010",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2011",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2012",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2013",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2014",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2015",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2016",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2017",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2018",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2019",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2020",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2021",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2022",-
+"Uzbekistan","Other non-renewable energy","Combined Heat and Power (CHP)","2023",-

@@ -1,0 +1,17 @@
+file,produced_by,source
+master_dataset.csv,NB01 §7 + §14 OWID merge,IEA + StatSUZ + IRENA + WB + OWID
+master_dataset_core.csv,NB01 §12,Subset of master_dataset.csv
+owid_energy_uzb.csv,NB01 §14,Our World In Data energy panel
+imf_weo_uzb.csv,NB01 §15,IMF DataMapper API
+wb_sectoral_uzb.csv,NB01 §16,World Bank WDI (live)
+tariff_history_uzb.csv,NB01 §17,IEA market-design + Gazeta.uz
+climate_tashkent_annual.csv,NB01 §18,Open-Meteo ERA5
+uzstat_clean/uzb_energy_national.csv,NB01 §19 → uzstat_clean.py,StatSUZ SDMX
+uzstat_clean/uzb_electricity_oblast.csv,NB01 §19 → uzstat_clean.py,StatSUZ SDMX
+uzstat_clean/uzb_macro_national.csv,NB01 §19 → uzstat_clean.py,StatSUZ SDMX
+uzstat_clean/central_asia_panel.csv,NB01 §19 → central_asia_panel.py,OWID + World Bank wbdata
+uzstat_clean/climate_central_asia.csv,NB01 §18 → climate_central_asia.py,Open-Meteo ERA5 (30 cities)
+uzstat_clean/uzstat_full_manifest.csv,NB01 §19 → uzstat_full_extract.py,StatSUZ SDMX manifest
+uzstat_clean/uzstat_id_registry.csv,NB01 §19 → uzstat_clean.py,stat.uz section pages
+uzstat_clean/SHORTLIST_for_analysis.csv,NB01 §19 → uzstat_shortlist.py,Curated by relevance
+demand_drivers_panel_v2.csv,NB01 §20,Merged driver panel for NB04–NB07

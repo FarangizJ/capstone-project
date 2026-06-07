@@ -8,11 +8,12 @@
 __pycache__/
 *.pyc
 
-# data (raw data should not be pushed)
-data/raw/
-
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Claude worktrees & local config
+# Claude local session data
 .claude/
+
+# Backups and duplicate deliverables
+*.prev
+paper/Uzbekistan_Power_Sector_2040_Executive_Summary (3).docx

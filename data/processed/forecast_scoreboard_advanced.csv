@@ -1,0 +1,7 @@
+model,basis,n_train,exante_mape%,exante_r2,conditional_mape% [ref]
+"Ridge CV-alpha (UZB, minimal)",ex-ante,28,9.709,-0.656,4.616
+"Ridge CV-alpha (UZB, extended + UzStat)",ex-ante,28,8.965,-0.371,4.044
+"BayesianRidge (UZB, minimal)",ex-ante,28,9.028,-0.393,4.392
+"BayesianRidge (UZB, extended)",ex-ante,28,10.138,-0.838,4.304
+Pooled Ridge CV-alpha (4 CA + FE),ex-ante (UZB slice),72,6.08,0.099,4.576
+Pooled BayesianRidge (4 CA + FE),ex-ante (UZB slice),72,6.201,0.063,4.62

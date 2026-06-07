@@ -1,0 +1,3 @@
+source,url,variables
+OWID energy dataset (Ember + EI compiled),https://github.com/owid/energy-data/raw/master/owid-energy-data.csv,"electricity_demand, electricity_generation, fossil/renewables/coal/gas/hydro/solar/wind, energy_per_capita"
+World Bank WDI via wbdata,https://databank.worldbank.org/source/world-development-indicators,"gdp_const2015_usd,gdp_pc_const2015_usd,industry_va_const2015_usd,mfg_va_const2015_usd,services_va_const2015_usd,agri_va_const2015_usd,population_total,urban_pop_pct,td_losses_pct,co2_kt"

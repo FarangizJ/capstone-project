@@ -5,10 +5,10 @@ Navoi,40.1,65.4,1850,2.9,800,300,0,Tomdi solar 100 MW; Zarafshan wind 500 MW (PR
 Kashkadarya,38.9,65.8,1830,0.5,900,100,80,"Guzar 300 MW solar + 75 MWh BESS (Masdar, 2026 FC)",1080,solar
 Surkhandarya,37.9,67.4,1820,0.2,500,0,200,Sherabad 200 MW solar (2023),700,solar
 Samarkand,39.7,66.9,1750,0.3,1000,0,120,"2× 500 MW solar + 334 MW BESS (ACWA, planned)",1120,solar
-Jizzakh,40.1,67.8,1740,0.4,600,0,50,Gallaorol solar 100 MW (2024); SMR construction site,650,solar
-Tashkent,41.3,69.3,1640,0.2,400,0,900,Y. Chirchik solar 100 MW; Charvak hydro upgrade,1300,hydro
-Namangan,41.0,71.7,1620,0.1,200,0,350,Solar 200 MW (2024); hydro modernisation,550,hydro
-Fergana,40.4,71.8,1620,0.1,150,0,200,Industrial PV portfolio,350,hydro
-Andijan,40.8,72.3,1630,0.1,100,0,30,Pilot rooftop programs,130,solar
-Khorezm,41.5,60.6,1720,0.7,150,100,0,Tuyamuyun hybrid hydro+solar pilot,250,solar
-Syrdarya,40.5,68.7,1700,0.1,80,0,0,Small distributed PV,80,solar
+Jizzakh,40.1,67.8,1740,0.4,600,0,50,Gallaorol solar 100 MW (2024); SMR Jizzakh (Plan B),650,solar
+Syrdarya,40.4,68.6,1700,0.2,200,0,0,Syrdarya TES (legacy thermal),200,solar
+Tashkent (incl. city),41.3,69.3,1620,0.5,150,0,700,Charvak HPP 700 MW; new urban CCGT 1.5 GW (planned),850,hydro
+Fergana,40.4,71.8,1580,0.3,100,0,200,Fergana hydro cascade modernisation,300,hydro
+Andijan,40.8,72.3,1580,0.3,100,0,150,Andijan-1 HPP 140 MW (Karadarya),250,hydro
+Namangan,40.9,71.6,1600,0.3,100,0,0,Solar parks under development,100,solar
+Khorezm,41.5,60.4,1730,0.8,100,100,0,Khorezm 100 MW solar (planned),200,solar

@@ -1,0 +1,17 @@
+﻿Code,Klassifikator,Klassifikator_ru,Klassifikator_en,Klassifikator_uzc,2019,2020,2021,2022,2023,2024
+F11,Turar-joy binolari,Жилые дома,Residential buildings,Турар-жой бинолари,20621.9,23200.8,29851.0,30184.2,36732.7,40287.9
+F21,Noturar-joy binolari,Нежилые здания,Non-residential buildings,Нотурар-жой бинолари,33408.1,38172.7,50894.5,58225.1,75452.9,91172.9
+F22,Boshqa inshootlar,Другие объекты,Other facilities,Бошқа иншоотлар,23148.7,27039.0,30290.6,43393.4,44244.1,87239.2
+F23,Yerni yaxshilash,Улучшение земел,Land improvement,Ерни яхшилаш,127.3,285.9,277.1,257.1,1000.4,1693.7
+F3,"Mashina va uskunalar, jami","Машины и оборудование, всего","Machinery and equipment, total","Машина ва ускуналар, жами",107305.8,110493.8,113863.9,115040.0,168810.7,241819.0
+F31,Transport uskunalari,Транспортное оборудование,Transportation equipment,Транспорт ускуналари,16588.2,12415.2,14574.5,10718.7,25608.4,36700.8
+F32,"Axborot, kompyuter va telekommunikatsiya (AKT) uskunalari","Информационное, компьютерное и телекоммуникационное (ИКТ) оборудование","Information, computer and telecommunications (ICT) equipment","Ахборот, компьютер ва телекоммуникация (АКТ) ускуналари",3194.8,7347.0,5325.6,5199.7,10230.0,7970.3
+F33,Boshqa mashina va uskunalar,Другие машины и оборудование,Other machinery and equipment,Бошқа машина ва ускуналар,87522.7,90731.6,93963.8,99164.6,126694.6,191802.0
+F51,"Bir necha marta mahsulot beruvchi, xayvonlar resurslari","Многократный поставщик продуктов, животных ресурсов","Multiple time product suppliers, haunted resources","Бир неча марта маҳсулот берувчи, хайвонлар ресурслари",2418.9,2843.0,3656.8,3847.8,390.3,277.0
+F52,"Bir necha marta mahsulot beruvchi daraxtlar, qishloq xo‘jalik ekinlari va ko‘chatlar resurslari","Деревья, сельскохозяйственные культуры и саженцы, дающие многократный урожай","Resources of trees, agricultural crops and seedlings, which give products several times","Бир неча марта маҳсулот берувчи дарахтлар, қишлоқ хўжалик экинлари ва кўчатлар ресурслари",372.0,880.7,838.6,783.8,364.5,1196.7
+F60,Noishlab chiqarish aktivlarga mulk huquqini berish bilan bog‘liq xarajatlar,"Расходы, связанные с передачей права собственности на непроизводственные активы",Non-production costs associated with granting property rights to assets,Ноишлаб чиқариш активларга мулк ҳуқуқини бериш билан боғлиқ харажатлар,198.1,225.0,138.2,365.8,562.4,1166.8
+F71,Kompyuter dasturiy ta'minoti va ma'lumotlar bazalari,Компьютерное программное обеспечение и базы данных,Computer software and databases,Компьютер дастурий таъминоти ва маълумотлар базалари,28.7,25.2,98.6,154.9,1672.8,1216.7
+F72,"Ko‘ngilochar, adabiy va badiiy asarlarning asl nusxalari","Оригиналы развлекательных, литературных и художественных произведений","Originals of entertaining, literary and artistic works","Кўнгилочар, адабий ва бадиий асарларнинг асл нусхалари",3.7,1.6,0.8,26.0,16.8,3.7
+F73,Ilmiy tadqiqotlar va ishlanmalar,Научные исследования и разработки,Scientific research and development,Илмий тадқиқотлар ва ишланмалар,5.9,86.5,30.8,210.7,469.4,41.4
+F74,Foydali qazilmalar zahiralarini razvedka qilish va baholash,Разведка и оценка запасов полезных ископаемых,Exploration and evaluation of mineral reserves,Фойдали қазилмалар заҳираларини разведка қилиш ва баҳолаш,763.7,26.7,96.4,203.6,410.7,902.4
+F79,Boshqa intellektual mulk mahsulotlari,Другие продукты интеллектуальной собственности,Other intellectual property products,Бошқа интеллектуал мулк маҳсулотлари,330.1,229.0,292.3,1169.0,4546.9,9422.6

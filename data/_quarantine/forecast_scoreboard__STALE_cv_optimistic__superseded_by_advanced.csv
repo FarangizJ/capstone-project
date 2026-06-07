@@ -1,0 +1,24 @@
+Model,group,MAPE %,RMSE,R²,CV mean MAPE,CV std,Lewis (CV)
+Ridge α=1 (NB06 rebuild),Baseline rebuild (NB06),4.616,5.225,0.374,4.616,0.0,★ excellent (Lewis)
+Pooled BayesianRidge (5 CA + FE),Advanced (NB07 — Bayesian Ridge + Pooled CA),4.62,3.858,0.505,4.62,0.0,★ excellent (Lewis)
+"Ridge α=10 (UZB, extended feats + UzStat)",Advanced (NB07 — Bayesian Ridge + Pooled CA),4.623,4.104,0.614,4.623,0.0,★ excellent (Lewis)
+"BayesianRidge (UZB, extended)",Advanced (NB07 — Bayesian Ridge + Pooled CA),5.486,4.232,0.59,5.486,0.0,★ excellent (Lewis)
+Prophet,Interim bench (1990-2023),7.65,6.33,0.08,6.43,3.32,★ highly accurate
+"BayesianRidge (UZB, minimal)",Advanced (NB07 — Bayesian Ridge + Pooled CA),6.543,5.265,0.365,6.543,0.0,★ excellent (Lewis)
+Pooled Ridge (5 CA countries + FE),Advanced (NB07 — Bayesian Ridge + Pooled CA),6.844,5.713,-0.086,6.844,0.0,★ excellent (Lewis)
+Holt-Winters,Interim bench (1990-2023),7.34,5.97,0.18,9.07,3.83,★ highly accurate
+"ARIMA(1, 1, 0) (NB06 rebuild)",Baseline rebuild (NB06),9.221,7.432,-0.266,9.221,0.0,★ excellent (Lewis)
+SARIMAX-exog,Interim bench (1990-2023),9.86,8.65,-0.72,9.41,4.56,★ highly accurate
+ARIMA (AICc),Interim bench (1990-2023),17.54,13.25,-3.02,9.68,3.81,★ highly accurate
+Naive RW+drift,Interim bench (1990-2023),10.72,9.55,-1.09,9.82,4.39,★ highly accurate
+OLS first-diff,Interim bench (1990-2023),10.63,9.47,-1.05,9.86,4.66,★ highly accurate
+Theta,Interim bench (1990-2023),12.63,11.03,-1.79,10.33,4.63,✓ good
+"Ridge α=10 (UZB, minimal feats)",Advanced (NB07 — Bayesian Ridge + Pooled CA),10.579,8.71,-0.739,10.579,0.0,✓ good
+First-differenced OLS (NB06 rebuild),Baseline rebuild (NB06),10.827,9.71,-1.161,10.827,0.0,✓ good
+OLS levels (spur.),Interim bench (1990-2023),15.31,12.01,-2.31,11.88,2.76,✓ good
+Ridge (lag+macro),Interim bench (1990-2023),43.53,40.21,-36.05,12.28,3.97,✓ good
+GradientBoosting,Interim bench (1990-2023),19.51,15.25,-4.33,12.96,4.7,✓ good
+Naïve last-value (NB06 rebuild),Baseline rebuild (NB06),13.908,11.976,-2.287,13.908,0.0,✓ good
+Linear trend,Interim bench (1990-2023),23.47,17.35,-5.9,15.73,6.37,✓ good
+Prophet (NB06 rebuild),Baseline rebuild (NB06),18.628,14.058,-3.529,18.628,0.0,✓ good
+Linear trend (NB06 rebuild),Baseline rebuild (NB06),30.646,22.144,-10.237,30.646,0.0,~ acceptable

@@ -25,7 +25,7 @@ demand_fc    = pd.read_csv(DATA / 'forecast_demand.csv')
 scenarios_fc = pd.read_csv(DATA / 'forecast_scenarios.csv')
 co2_fc       = pd.read_csv(DATA / 'forecast_co2.csv')
 invest_fc    = pd.read_csv(DATA / 'investment_signals.csv')
-scoreboard   = pd.read_csv(DATA / 'forecast_scoreboard.csv')
+scoreboard   = pd.read_csv(DATA / 'forecast_scoreboard_advanced.csv')
 oblasts      = pd.read_csv(DATA / 'oblast_atlas.csv')
 
 WINNER       = demand_fc['winner_model'].iat[0]
@@ -141,9 +141,12 @@ app.layout = html.Div(style={'fontFamily':'Inter,system-ui,sans-serif','backgrou
             html.Section(id='methods', children=[
                 html.H2('Methodology — model scoreboard'),
                 html.Div(style=CARD_STYLE, children=[
-                    html.P('Eleven candidate models compared on a 2019–2023 hold-out and on 8-fold expanding-window time-series CV. '
-                           'Selection rule: pre-registered — among models with CV mean MAPE < 10% (Lewis 1982 "highly accurate"), '
-                           'pick the one with lowest CV std. Bootstrap 80/95% CIs from residual sampling.',
+                    html.P('Six forecasting specifications scored on one honest ex-ante out-of-sample test: drivers are forecast (not given), '
+                           'the demand lag is fed recursively, and the 2019–2023 hold-out is predicted with no look-ahead — directly comparable to ARIMA. '
+                           'The conditional (observed-driver) MAPE is shown only as a labelled reference. Headline finding: only the cross-country pooled '
+                           'Central-Asia panels achieve positive ex-ante R² through the 2019–2023 structural break (pooled Ridge CV-α: 6.08% MAPE, R²≈+0.10); '
+                           'every single-country specification has negative ex-ante R². Ridge α is CV-selected by expanding-window, train-only cross-validation, '
+                           'never tuned on the hold-out.',
                            style={'color':'#374151','fontSize':'14px','lineHeight':1.5}),
                     dcc.Graph(id='scoreboard-chart', config={'displayModeBar': False}),
                 ]),
@@ -176,9 +179,9 @@ GLOSSARY = [
         ('Plan B (Nuclear overlay)', 'A *parametric* sensitivity scenario, NOT a baseline forecast. Lets you switch on a small modular reactor (SMR) and see how it would change the RE+nuclear share. Toggle in the left sidebar.'),
     ]),
     ('Power-sector concepts', [
-        ('RE share / penetration', 'Share of total electricity generation that comes from renewables (hydro + solar + wind). Uzbekistan stands at ~10% in 2023; the target is 54% by 2030.'),
+        ('RE share / penetration', 'Share of total electricity generation that comes from renewables (hydro + solar + wind). Uzbekistan stands at ~10% in 2023; the legislated target is 40% by 2030, with 54% cited as a presidential aspiration.'),
         ('Capacity factor (CF)', 'How much of a plant\'s nameplate capacity it actually produces over a year. Assumed annual averages: solar 18%, wind 30%, hydro 36%, gas 55%, nuclear 85%.'),
-        ('T&D losses', 'Transmission & Distribution losses — electricity lost between generation and the customer. Uzbekistan ~9-10% (regional median ~8%); a chronic grid-investment signal.'),
+        ('T&D losses', 'Transmission & Distribution losses — electricity lost between generation and the customer. Uzbekistan ~16% on a like-for-like post-2001 basis (17.8% in 2023; regional median ~8%); a chronic grid-investment signal. The 9% figure is the 2030 policy-reduction TARGET, not the realized rate.'),
         ('Gas self-sufficiency', 'Domestic gas production ÷ consumption. Below 100% means Uzbekistan must import (mainly winter); fell below 100% around 2018.'),
     ]),
     ('Forecasting terms', [
@@ -188,12 +191,12 @@ GLOSSARY = [
         ('Hold-out test', 'A single chunk of recent data (2019-2023 in our case) kept aside and not used for training. Scores on this hold-out are the headline accuracy metric.'),
     ]),
     ('Models in the bench', [
-        ('Prophet', 'Facebook/Meta\'s time-series tool. Decomposes a series into trend + seasonality + holidays. Won our bench (CV MAPE 6.4%) thanks to flexible trend changepoints — good for the post-2018 demand regime shift in Uzbekistan.'),
+        ('Prophet', 'Facebook/Meta\'s time-series tool. Decomposes a series into trend + seasonality + holidays. A benchmark model only — NOT the deployed forecaster. Its flexible changepoints suit the post-2018 demand regime shift, but on the ex-ante hold-out it trailed the deployed Bayesian-ridge driver model (Notebook 07).'),
         ('ARIMA / SARIMAX', 'Classical statistical models — predict next year from past values (and past errors). SARIMAX adds external variables (e.g. GDP, population). Order chosen by AICc.'),
-        ('Holt-Winters / ETS', 'Exponential smoothing — gives recent observations more weight. Simple, robust to small samples; placed 2nd in our bench.'),
-        ('Theta method', 'Decomposes the series and recombines — classic M3-competition winner. 3rd in our bench.'),
+        ('Holt-Winters / ETS', 'Exponential smoothing — gives recent observations more weight. Simple and robust to small samples; one of the benchmark models, not the deployed forecaster.'),
+        ('Theta method', 'Decomposes the series and recombines — a classic M3-competition method. One of the benchmark models, not the deployed forecaster.'),
         ('OLS first-difference', 'Linear regression on year-on-year changes (not levels). Avoids "spurious regression" on non-stationary series (Granger & Newbold 1974).'),
-        ('Ridge / Gradient Boosting', 'Machine-learning models that take lagged values and macro variables as features. Tend to overfit short annual series; placed lower in our bench.'),
+        ('Bayesian Ridge (deployed) / Gradient Boosting', 'Regularised linear regression on macro drivers (GDP, population, prior-year demand) with automatic shrinkage that guards against overfitting the short annual series. Bayesian Ridge is the DEPLOYED demand forecaster (Notebook 07): ex-ante hold-out ~9-10% MAPE single-country, ~6% on the pooled 4-country Central-Asia panel. Plain Ridge and Gradient Boosting were tested as benchmarks but tend to overfit short annual data.'),
     ]),
     ('Acronyms — institutions', [
         ('IEA', 'International Energy Agency (Paris). Publishes country profiles and energy balances; primary data source.'),
@@ -406,19 +409,37 @@ def update_map(_):
 
 @app.callback(Output('scoreboard-chart','figure'), Input('scenario','value'))
 def update_scoreboard(_):
-    df = scoreboard.sort_values('CV mean MAPE')
+    df = scoreboard.sort_values('exante_mape%').copy()
+    # Hero = specs that beat a naive forecast (positive ex-ante R²) — only the pooled CA panels do
+    bar_colors = ['#1d4ed8' if r2 > 0 else '#9ca3af' for r2 in df['exante_r2']]
     fig = go.Figure()
-    colors = ['#16a34a' if v < 10 else '#facc15' if v < 20 else '#dc2626' for v in df['CV mean MAPE']]
-    fig.add_trace(go.Bar(y=df['Model'], x=df['CV mean MAPE'], orientation='h',
-                          marker_color=colors,
-                          text=[f'{v:.1f}%' for v in df['CV mean MAPE']], textposition='auto',
-                          error_x=dict(type='data', array=df['CV std']),
-                          name='CV mean MAPE'))
+    # Headline metric: honest ex-ante MAPE (drivers forecast, demand lag recursive, no look-ahead)
+    fig.add_trace(go.Bar(
+        y=df['model'], x=df['exante_mape%'], orientation='h', marker_color=bar_colors,
+        name='Ex-ante MAPE (out-of-sample)',
+        text=[f'{v:.1f}%' for v in df['exante_mape%']], textposition='auto',
+        customdata=df[['exante_r2', 'conditional_mape% [ref]', 'basis', 'n_train']].to_numpy(),
+        hovertemplate=('<b>%{y}</b><br>Ex-ante MAPE: %{x:.2f}%<br>'
+                       'Ex-ante R²: %{customdata[0]:.2f}<br>'
+                       'Conditional MAPE (ref): %{customdata[1]:.2f}%<br>'
+                       'Basis: %{customdata[2]} • n_train=%{customdata[3]}<extra></extra>'),
+    ))
+    # Reference only: conditional (observed-driver) MAPE — NOT comparable to ARIMA, shown for context
+    fig.add_trace(go.Scatter(
+        y=df['model'], x=df['conditional_mape% [ref]'], mode='markers',
+        name='Conditional MAPE (ref — observed drivers)',
+        marker=dict(symbol='diamond-open', size=11, color='#6b7280', line=dict(width=1.5)),
+        hovertemplate='<b>%{y}</b><br>Conditional MAPE (reference): %{x:.2f}%<extra></extra>',
+    ))
     fig.add_vline(x=10, line=dict(dash='dot', color='grey'),
-                   annotation_text='Lewis 10% threshold', annotation_position='top right')
-    fig.update_layout(template='plotly_white', height=460, margin=dict(l=120,r=20,t=40,b=40),
-                      title='Forecasting model scoreboard — CV mean MAPE (error bars = ±1 σ across folds)',
-                      xaxis_title='MAPE %', yaxis_title='')
+                   annotation_text='Lewis 10% (MAPE only)', annotation_position='top right')
+    fig.update_layout(template='plotly_white', height=max(440, 70*len(df)),
+                      margin=dict(l=300, r=20, t=84, b=40),
+                      title='Forecasting scoreboard — <b>ex-ante</b> MAPE on UZB 2019–2023 hold-out<br>'
+                            '<sub>Bars = honest ex-ante (drivers forecast, lag recursive) • ◇ = conditional MAPE (reference only)<br>'
+                            'Blue = positive ex-ante R² (pooled Central-Asia panels) • Grey = negative ex-ante R² (single-country)</sub>',
+                      xaxis_title='MAPE (%)', yaxis_title='',
+                      legend=dict(orientation='h', y=-0.08, x=0.0))
     return fig
 
 if __name__ == '__main__':
