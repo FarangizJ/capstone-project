@@ -1,0 +1,26 @@
+# Keep the deploy image small: the dashboard only needs dashboard/ + data/processed/*.csv.
+.git
+.claude/
+__pycache__/
+*.pyc
+*.bak*
+*.prev
+.ipynb_checkpoints/
+.DS_Store
+
+# Heavy / irrelevant-to-the-app directories
+readings/
+messy data/
+data/raw/
+data/_quarantine/
+notebooks/
+outputs/
+paper/
+docs/
+research/
+_fallback_build_*/
+
+# Large binaries not needed at runtime
+*.pdf
+*.docx
+*.html

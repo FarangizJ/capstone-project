@@ -64,79 +64,98 @@ def apply_nuclear(scen_df, capacity_mw, commission_year, cf=0.85):
 # ── Layout ────────────────────────────────────────────────────────────
 external_stylesheets = ['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
-                title='Uzbekistan Power Transition Tracker')
+                title='Uzbekistan Power Transition Tracker',
+                meta_tags=[{'name': 'viewport',
+                            'content': 'width=device-width, initial-scale=1'}])
 server = app.server   # for gunicorn
 
 HEADER_STYLE = {'background':'linear-gradient(135deg,#0d4d7a 0%,#1e3a8a 100%)',
                 'color':'white','padding':'24px 36px'}
 CARD_STYLE = {'background':'white','border':'1px solid #e5e7eb','borderRadius':'10px',
               'padding':'18px','marginBottom':'14px','boxShadow':'0 1px 2px rgba(0,0,0,0.02)'}
-SIDEBAR_STYLE = {'background':'white','padding':'18px 14px','borderRight':'1px solid #e5e7eb',
-                 'position':'sticky','top':0,'height':'100vh','overflowY':'auto'}
 LABEL = {'fontSize':'12px','color':'#6b7280','textTransform':'uppercase','letterSpacing':'0.5px',
          'margin':'10px 0 4px','fontWeight':600}
 
+def graph(graph_id):
+    """A chart wrapped in a navy loading spinner so slow callbacks show progress.
+    responsive=True lets Plotly rescale to the container width on phones/tablets."""
+    return dcc.Loading(type='circle', color='#0d4d7a',
+                       children=dcc.Graph(id=graph_id, style={'width': '100%'},
+                                          config={'displayModeBar': False, 'responsive': True}))
+
 app.layout = html.Div(style={'fontFamily':'Inter,system-ui,sans-serif','background':'#fafafa','margin':0}, children=[
-    html.Div(style=HEADER_STYLE, children=[
+    html.Div(className='app-header', style=HEADER_STYLE, children=[
         html.H1('🇺🇿 Uzbekistan — Power Sector Transition Tracker', style={'margin':0,'fontSize':'24px'}),
         html.P(['Capstone Project · Farangiz Jurakhonova · CEU × ILF Consulting Engineers · ',
                 html.Span(f'Forecast winner: {WINNER}', style={'fontWeight':600})],
                style={'margin':'6px 0 0','opacity':0.9,'fontSize':'13px'}),
     ]),
-    html.Div(style={'display':'grid','gridTemplateColumns':'240px 1fr','gap':0}, children=[
+    html.Div(className='app-grid', children=[
         # Sidebar with scenario controls
-        html.Div(style=SIDEBAR_STYLE, children=[
-            html.Div(style=LABEL, children='Scenario'),
-            dcc.RadioItems(id='scenario', value='Government',
-                           options=[{'label': s, 'value': s} for s in ['BAU','Government','Accelerated']],
-                           labelStyle={'display':'block','padding':'4px 0'}),
-            html.Div(style=LABEL, children='Plan B — Nuclear toggle'),
-            dcc.Checklist(id='nuclear-on', options=[{'label':' Include nuclear','value':'on'}],
-                          value=[], labelStyle={'display':'block','padding':'4px 0'}),
-            html.Div(style=LABEL, children='Nuclear capacity (MW)'),
-            dcc.Slider(id='nuc-cap', min=0, max=4000, step=400, value=1200,
-                       marks={0:'0', 1200:'1.2 GW', 2400:'2.4 GW', 3600:'3.6 GW'}),
-            html.Div(style=LABEL, children='Commission year'),
-            dcc.Slider(id='nuc-year', min=2030, max=2034, step=1, value=2032,
-                       marks={2030:'30', 2032:'32', 2034:'34'}),
-            html.Div(style={**LABEL,'marginTop':'24px'}, children='Sections'),
-            html.Ul(style={'listStyle':'none','padding':0,'margin':0,'fontSize':'13px'}, children=[
-                html.Li(html.A('Country snapshot', href='#snap', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('Demand forecast',  href='#demand', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('Generation mix',   href='#mix', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('CO₂ emissions',    href='#co2', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('Investment',       href='#invest', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('Regional map',     href='#map', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('Model scoreboard', href='#methods', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
-                html.Li(html.A('Glossary',         href='#glossary', style={'color':'#111827','textDecoration':'none','padding':'6px 0','display':'block'})),
+        html.Div(className='sidebar', children=[
+            html.Div(className='sidebar-controls', children=[
+                html.Div(children=[
+                    html.Div(style=LABEL, children='Scenario'),
+                    dcc.RadioItems(id='scenario', value='Government',
+                                   options=[{'label': s, 'value': s} for s in ['BAU','Government','Accelerated']],
+                                   labelStyle={'display':'block','padding':'4px 0'}),
+                ]),
+                html.Div(children=[
+                    html.Div(style=LABEL, children='Plan B — Nuclear toggle'),
+                    dcc.Checklist(id='nuclear-on', options=[{'label':' Include nuclear','value':'on'}],
+                                  value=[], labelStyle={'display':'block','padding':'4px 0'}),
+                ]),
+                html.Div(children=[
+                    html.Div(style=LABEL, children='Nuclear capacity (MW)'),
+                    dcc.Slider(id='nuc-cap', min=0, max=4000, step=400, value=1200,
+                               marks={0:'0', 1200:'1.2 GW', 2400:'2.4 GW', 3600:'3.6 GW'}),
+                ]),
+                html.Div(children=[
+                    html.Div(style=LABEL, children='Commission year'),
+                    dcc.Slider(id='nuc-year', min=2030, max=2034, step=1, value=2032,
+                               marks={2030:'30', 2032:'32', 2034:'34'}),
+                ]),
+            ]),
+            html.Div(className='sidebar-nav', children=[
+                html.Div(style={**LABEL,'marginTop':'24px'}, children='Sections'),
+                html.Ul(style={'listStyle':'none','padding':0,'margin':0,'fontSize':'13px'}, children=[
+                    html.Li(html.A('Country snapshot', href='#snap', className='nav-link')),
+                    html.Li(html.A('Demand forecast',  href='#demand', className='nav-link')),
+                    html.Li(html.A('Generation mix',   href='#mix', className='nav-link')),
+                    html.Li(html.A('CO₂ emissions',    href='#co2', className='nav-link')),
+                    html.Li(html.A('Investment',       href='#invest', className='nav-link')),
+                    html.Li(html.A('Regional map',     href='#map', className='nav-link')),
+                    html.Li(html.A('Model scoreboard', href='#methods', className='nav-link')),
+                    html.Li(html.A('Glossary',         href='#glossary', className='nav-link')),
+                ]),
             ]),
         ]),
         # Main
-        html.Div(style={'padding':'24px 36px','maxWidth':'1100px'}, children=[
+        html.Div(className='main', children=[
             html.Section(id='snap', children=[
                 html.H2('Country snapshot'),
                 html.Div(id='kpi-cards', style={'display':'grid','gridTemplateColumns':'repeat(auto-fit,minmax(200px,1fr))','gap':'12px','marginBottom':'18px'}),
             ]),
             html.Section(id='demand', children=[
                 html.H2('Electricity demand forecast'),
-                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='demand-chart', config={'displayModeBar': False})]),
+                html.Div(style=CARD_STYLE, children=[graph('demand-chart')]),
             ]),
             html.Section(id='mix', children=[
                 html.H2('Generation mix by scenario'),
-                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='mix-chart', config={'displayModeBar': False})]),
-                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='re-share-chart', config={'displayModeBar': False})]),
+                html.Div(style=CARD_STYLE, children=[graph('mix-chart')]),
+                html.Div(style=CARD_STYLE, children=[graph('re-share-chart')]),
             ]),
             html.Section(id='co2', children=[
                 html.H2('CO₂ emissions'),
-                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='co2-chart', config={'displayModeBar': False})]),
+                html.Div(style=CARD_STYLE, children=[graph('co2-chart')]),
             ]),
             html.Section(id='invest', children=[
                 html.H2('Investment outlook 2024–2040'),
-                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='invest-chart', config={'displayModeBar': False})]),
+                html.Div(style=CARD_STYLE, children=[graph('invest-chart')]),
             ]),
             html.Section(id='map', children=[
                 html.H2('Regional renewable map'),
-                html.Div(style=CARD_STYLE, children=[dcc.Graph(id='oblast-map', config={'displayModeBar': False})]),
+                html.Div(style=CARD_STYLE, children=[graph('oblast-map')]),
             ]),
             html.Section(id='methods', children=[
                 html.H2('Methodology — model scoreboard'),
@@ -263,7 +282,7 @@ def update_kpis(scen, nuc_on, nuc_cap, nuc_year):
     demand_2030 = demand_fc.loc[demand_fc['year'] == 2030, 'demand_twh'].iat[0]
 
     def card(label, value, sub, color='#0d4d7a'):
-        return html.Div(style={**CARD_STYLE, 'display':'flex','flexDirection':'column','gap':'4px'}, children=[
+        return html.Div(className='kpi-card', style={**CARD_STYLE, 'display':'flex','flexDirection':'column','gap':'4px'}, children=[
             html.Span(label, style={'fontSize':'11px','color':'#6b7280','textTransform':'uppercase','letterSpacing':'0.5px'}),
             html.Span(value, style={'fontSize':'26px','fontWeight':600,'color':color}),
             html.Span(sub, style={'fontSize':'12px','color':'#6b7280'}),
@@ -443,4 +462,8 @@ def update_scoreboard(_):
     return fig
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=8050)
+    import os
+    port = int(os.environ.get('PORT', 8050))
+    debug = os.environ.get('DASH_DEBUG', '1') == '1'
+    host = '0.0.0.0' if os.environ.get('PORT') else '127.0.0.1'
+    app.run(debug=debug, host=host, port=port)

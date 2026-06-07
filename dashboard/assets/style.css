@@ -1,0 +1,117 @@
+/* Uzbekistan Power Sector Transition Tracker — responsive + polish layer.
+   Loaded automatically by Dash from the assets/ folder. Rules here use
+   class selectors so media queries can override the layout (inline styles
+   set in app.py would otherwise win the cascade). */
+
+:root {
+  --navy:        #0d4d7a;
+  --navy-deep:   #1e3a8a;
+  --ink:         #111827;
+  --muted:       #6b7280;
+  --line:        #e5e7eb;
+  --bg:          #fafafa;
+  --maxw:        1100px;
+}
+
+html, body { margin: 0; padding: 0; background: var(--bg); scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+
+/* ── App shell ──────────────────────────────────────────────────────── */
+.app-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 18px 14px;
+  border-right: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main {
+  padding: 24px 36px;
+  max-width: var(--maxw);
+  width: 100%;
+}
+
+/* ── Cards & sections ───────────────────────────────────────────────── */
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+section { scroll-margin-top: 16px; }
+section h2 {
+  font-size: 20px;
+  color: var(--ink);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 6px;
+  margin: 28px 0 14px;
+}
+
+/* ── Sidebar nav links ──────────────────────────────────────────────── */
+.nav-link {
+  color: var(--ink);
+  text-decoration: none;
+  padding: 6px 8px;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-link:hover { background: #eef4f9; color: var(--navy); }
+
+/* ── KPI cards lift on hover ────────────────────────────────────────── */
+.kpi-card { transition: transform 0.12s ease, box-shadow 0.12s ease; }
+.kpi-card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(13,77,122,0.10); }
+
+/* ── Dash loading spinner colour ────────────────────────────────────── */
+._dash-loading-callback, .dash-spinner * { color: var(--navy) !important; }
+
+/* ── Custom scrollbar (desktop) ─────────────────────────────────────── */
+.sidebar::-webkit-scrollbar { width: 8px; }
+.sidebar::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+
+/* ── Tablet ─────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .app-grid { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+  /* lay the scenario controls out horizontally so they don't eat height */
+  .sidebar-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+    align-items: flex-start;
+  }
+  .sidebar-controls > div { flex: 1 1 200px; }
+  /* the in-page section links are redundant once the page is one column */
+  .sidebar-nav { display: none; }
+  .main { padding: 18px 20px; max-width: 100%; }
+}
+
+/* ── Phone ──────────────────────────────────────────────────────────── */
+@media (max-width: 560px) {
+  .main { padding: 14px 12px; }
+  section h2 { font-size: 18px; margin: 20px 0 10px; }
+  .app-header h1 { font-size: 19px !important; }
+  .app-header { padding: 18px 18px !important; }
+  /* stack the scenario controls in one column so labels never clip */
+  .sidebar-controls { flex-direction: column; gap: 4px; }
+  .sidebar-controls > div { flex: 1 1 auto; width: 100%; }
+  /* one KPI card per row (overrides the inline auto-fit grid) */
+  #kpi-cards { grid-template-columns: 1fr !important; }
+}
